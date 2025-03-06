@@ -1,3 +1,254 @@
-2025-03-05 11:10:31,211 - INFO - Logs cleared successfully
-2025-03-05 11:11:15,850 - INFO - API Key saved successfully
-2025-03-05 11:12:39,241 - INFO - API Key saved successfully
+2025-03-05 11:47:18,270 - INFO - Logs cleared successfully
+2025-03-05 11:47:26,081 - INFO - Démarrage OAuth avec redirect_uri: http://localhost:8000
+2025-03-05 11:47:26,082 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000&state=destiny2hub
+2025-03-05 11:47:32,335 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 11:47:32,623 - ERROR - Erreur de requête token: redirect_uri does not match application configuration.
+Redirect URI utilisée: http://localhost:8000
+2025-03-05 11:47:34,117 - INFO - Démarrage OAuth avec redirect_uri: http://localhost:8000
+2025-03-05 11:47:34,117 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000&state=destiny2hub
+2025-03-05 11:47:43,005 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 11:47:43,406 - ERROR - Erreur de requête token: redirect_uri does not match application configuration.
+Redirect URI utilisée: http://localhost:8000
+2025-03-05 11:49:11,146 - INFO - Démarrage OAuth avec redirect_uri: http://localhost:8000
+2025-03-05 11:49:11,146 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000&state=destiny2hub
+2025-03-05 11:50:50,643 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
+2025-03-05 11:59:31,573 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
+2025-03-05 11:59:31,573 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
+2025-03-05 11:59:38,261 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 11:59:38,622 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
+2025-03-05 12:00:10,287 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
+2025-03-05 12:00:10,287 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
+2025-03-05 12:00:25,328 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 12:00:25,574 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
+2025-03-05 13:22:44,314 - WARNING - Attempted to save empty API Key
+2025-03-05 13:22:52,235 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
+2025-03-05 13:22:52,235 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
+2025-03-05 13:22:59,104 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 13:22:59,395 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
+2025-03-05 13:25:40,224 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
+2025-03-05 13:25:40,224 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
+2025-03-05 13:25:45,609 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 13:25:45,871 - INFO - Authentication tokens saved successfully
+2025-03-05 13:25:45,871 - INFO - Authentification OAuth réussie
+2025-03-05 13:26:07,399 - INFO - Searching for player: per#8639
+2025-03-05 13:26:08,462 - INFO - Found player. MembershipId: 4611686018536948250
+2025-03-05 13:26:12,565 - INFO - Searching for player: per#8639
+2025-03-05 13:26:13,231 - INFO - Found player. MembershipId: 4611686018536948250
+2025-03-05 13:26:13,327 - INFO - Searching for player: per#8639
+2025-03-05 13:26:14,411 - INFO - Found player. MembershipId: 4611686018536948250
+2025-03-05 13:30:26,241 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:30:29,510 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
+2025-03-05 13:30:29,510 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
+2025-03-05 13:30:35,977 - INFO - Code d'autorisation reçu (longueur: 32)
+2025-03-05 13:30:36,268 - INFO - Authentication tokens saved successfully
+2025-03-05 13:30:36,268 - INFO - Authentification OAuth réussie
+2025-03-05 13:30:51,584 - INFO - Searching for player: per#8639
+2025-03-05 13:30:51,848 - INFO - Found player. MembershipId: 4611686018536948250
+2025-03-05 13:30:52,713 - INFO - Profil utilisateur sauvegardé
+2025-03-05 13:34:56,404 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:34:57,027 - INFO - Profil utilisateur chargé
+2025-03-05 13:40:26,975 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:40:27,315 - INFO - Profil utilisateur chargé
+2025-03-05 13:40:40,003 - ERROR - Erreur d'enregistrement: 'DestinyHub' object has no attribute 'get_auth_headers'
+2025-03-05 13:40:57,589 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:40:57,842 - INFO - Profil utilisateur chargé
+2025-03-05 13:41:05,922 - ERROR - Erreur d'enregistrement: 'DestinyHub' object has no attribute 'get_auth_headers'
+2025-03-05 13:41:19,749 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:41:20,233 - INFO - Profil utilisateur chargé
+2025-03-05 13:41:25,526 - ERROR - Erreur d'enregistrement: 'DestinyHub' object has no attribute 'get_auth_headers'
+2025-03-05 13:45:41,679 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:45:41,968 - WARNING - Pas de refresh token disponible
+2025-03-05 13:45:41,969 - INFO - Profil utilisateur chargé
+2025-03-05 13:45:49,417 - ERROR - Erreur d'enregistrement: Erreur API: The given Platform API Key is invalid.
+2025-03-05 13:48:38,280 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:48:38,554 - WARNING - Pas de refresh token disponible
+2025-03-05 13:48:38,554 - INFO - Profil utilisateur chargé
+2025-03-05 13:48:44,504 - INFO - Recherche du compte: per#8639
+2025-03-05 13:48:44,768 - ERROR - Erreur d'enregistrement: Erreur API Bungie: The given Platform API Key is invalid.
+2025-03-05 13:50:44,473 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:50:44,786 - WARNING - Pas de refresh token disponible
+2025-03-05 13:50:44,787 - INFO - Profil utilisateur chargé
+2025-03-05 13:50:49,988 - INFO - Recherche du compte: per#8639
+2025-03-05 13:50:50,228 - ERROR - Erreur d'enregistrement: Erreur API Bungie: The given Platform API Key is invalid.
+2025-03-05 13:54:55,950 - INFO - Tokens chargés depuis le fichier
+2025-03-05 13:54:56,212 - WARNING - Pas de refresh token disponible
+2025-03-05 13:54:56,212 - INFO - Profil utilisateur chargé
+2025-03-05 13:55:02,262 - INFO - Recherche du compte: per#8639
+2025-03-05 13:55:02,535 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 13:55:02,535 - INFO - Chargement des données du profil...
+2025-03-05 13:55:03,691 - ERROR - Erreur mise à jour info: 'minutesPlayedTotal'
+2025-03-05 13:55:03,692 - ERROR - Erreur de chargement des données: 'DestinyHub' object has no attribute 'update_equipment_tab'
+2025-03-05 13:55:11,674 - INFO - Recherche du compte: per#8639
+2025-03-05 13:55:11,947 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 13:55:11,947 - INFO - Chargement des données du profil...
+2025-03-05 13:55:12,111 - ERROR - Erreur mise à jour info: 'minutesPlayedTotal'
+2025-03-05 13:55:12,111 - ERROR - Erreur de chargement des données: 'DestinyHub' object has no attribute 'update_equipment_tab'
+2025-03-05 14:00:41,946 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:00:42,268 - WARNING - Pas de refresh token disponible
+2025-03-05 14:00:42,269 - INFO - Profil utilisateur chargé
+2025-03-05 14:02:36,833 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:02:37,078 - WARNING - Pas de refresh token disponible
+2025-03-05 14:02:37,078 - INFO - Profil utilisateur chargé
+2025-03-05 14:03:03,917 - INFO - Recherche du compte: per#8639
+2025-03-05 14:03:04,204 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 14:03:04,204 - INFO - Chargement des données du profil...
+2025-03-05 14:03:06,111 - ERROR - Erreur mise à jour info: 'minutesPlayedTotal'
+2025-03-05 14:03:06,112 - ERROR - Erreur chargement équipement: [Errno 2] No such file or directory: 'account.json'
+2025-03-05 14:03:06,120 - INFO - Données du profil chargées avec succès
+2025-03-05 14:04:24,283 - ERROR - Erreur chargement équipement: [Errno 2] No such file or directory: 'account.json'
+2025-03-05 14:04:25,149 - ERROR - Erreur chargement équipement: [Errno 2] No such file or directory: 'account.json'
+2025-03-05 14:25:52,087 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:25:52,430 - WARNING - Pas de refresh token disponible
+2025-03-05 14:25:52,431 - INFO - Profil utilisateur chargé
+2025-03-05 14:25:58,654 - INFO - Recherche du compte: per#8639
+2025-03-05 14:25:59,014 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 14:25:59,014 - INFO - Chargement des données du profil...
+2025-03-05 14:26:03,279 - INFO - Début du chargement de l'équipement
+2025-03-05 14:26:03,304 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:26:14,615 - INFO - Données du profil chargées avec succès
+2025-03-05 14:26:29,453 - INFO - Début du chargement de l'équipement
+2025-03-05 14:26:29,464 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:26:40,496 - INFO - Début du chargement de l'équipement
+2025-03-05 14:26:40,508 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:32:11,444 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:32:11,841 - WARNING - Pas de refresh token disponible
+2025-03-05 14:32:11,842 - INFO - Profil utilisateur chargé
+2025-03-05 14:32:19,129 - INFO - Recherche du compte: per#8639
+2025-03-05 14:32:19,592 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 14:32:19,592 - INFO - Chargement des données du profil...
+2025-03-05 14:32:21,548 - INFO - Chargement de l'équipement
+2025-03-05 14:32:21,571 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
+2025-03-05 14:32:21,582 - INFO - Données du profil chargées avec succès
+2025-03-05 14:32:26,123 - INFO - Chargement de l'équipement
+2025-03-05 14:32:26,137 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
+2025-03-05 14:32:28,809 - INFO - Chargement de l'équipement
+2025-03-05 14:32:28,810 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
+2025-03-05 14:32:34,589 - INFO - Chargement de l'équipement
+2025-03-05 14:32:34,600 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
+2025-03-05 14:35:17,053 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:35:17,350 - WARNING - Pas de refresh token disponible
+2025-03-05 14:35:17,351 - INFO - Profil utilisateur chargé
+2025-03-05 14:35:23,606 - INFO - Recherche du compte: per#8639
+2025-03-05 14:35:25,068 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 14:35:25,068 - INFO - Chargement des données du profil...
+2025-03-05 14:35:26,707 - INFO - Chargement de l'équipement
+2025-03-05 14:35:26,731 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:35:33,753 - INFO - Données du profil chargées avec succès
+2025-03-05 14:35:37,707 - INFO - Chargement de l'équipement
+2025-03-05 14:35:37,708 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:35:40,954 - INFO - Chargement de l'équipement
+2025-03-05 14:35:40,954 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:36:27,126 - INFO - Chargement de l'équipement
+2025-03-05 14:36:27,126 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:36:29,329 - INFO - Chargement de l'équipement
+2025-03-05 14:36:29,329 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:36:30,578 - INFO - Chargement de l'équipement
+2025-03-05 14:36:30,578 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:39:28,732 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:39:29,346 - WARNING - Pas de refresh token disponible
+2025-03-05 14:39:29,347 - INFO - Profil utilisateur chargé
+2025-03-05 14:39:36,236 - INFO - Recherche du compte: per#8639
+2025-03-05 14:39:36,876 - INFO - Compte trouvé et enregistré: per#8639
+2025-03-05 14:39:36,877 - INFO - Chargement des données du profil...
+2025-03-05 14:39:39,481 - INFO - Chargement de l'équipement
+2025-03-05 14:39:39,509 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:39:47,195 - INFO - Données du profil chargées avec succès
+2025-03-05 14:39:50,892 - INFO - Chargement de l'équipement
+2025-03-05 14:39:50,892 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:48:34,920 - INFO - Chargement de l'équipement
+2025-03-05 14:48:34,920 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:48:37,538 - INFO - Chargement de l'équipement
+2025-03-05 14:48:37,538 - INFO - Début de l'affichage de l'équipement
+2025-03-05 14:58:38,027 - INFO - Tokens chargés depuis le fichier
+2025-03-05 14:58:38,340 - WARNING - Pas de refresh token disponible
+2025-03-05 14:58:38,341 - INFO - Profil utilisateur chargé
+2025-03-05 15:03:44,681 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:03:45,050 - WARNING - Pas de refresh token disponible
+2025-03-05 15:03:45,051 - INFO - Profil utilisateur chargé
+2025-03-05 15:06:30,929 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:06:31,257 - WARNING - Pas de refresh token disponible
+2025-03-05 15:06:31,258 - INFO - Profil utilisateur chargé
+2025-03-05 15:08:42,228 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:08:42,537 - WARNING - Pas de refresh token disponible
+2025-03-05 15:08:42,538 - INFO - Profil utilisateur chargé
+2025-03-05 15:10:42,193 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:10:42,566 - WARNING - Pas de refresh token disponible
+2025-03-05 15:10:42,567 - INFO - Profil utilisateur chargé
+2025-03-05 15:10:42,686 - INFO - Compte chargé: Unknown#0000
+2025-03-05 15:10:51,538 - INFO - Compte enregistré: per#8639
+2025-03-05 15:10:53,060 - INFO - Données complètes du compte chargées
+2025-03-05 15:11:25,694 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:11:26,049 - WARNING - Pas de refresh token disponible
+2025-03-05 15:11:26,050 - INFO - Profil utilisateur chargé
+2025-03-05 15:11:26,218 - INFO - Compte chargé: per#0000
+2025-03-05 15:15:15,096 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:15:15,359 - WARNING - Pas de refresh token disponible
+2025-03-05 15:15:15,360 - INFO - Profil utilisateur chargé
+2025-03-05 15:15:15,497 - INFO - Compte chargé: per#0000
+2025-03-05 15:15:22,851 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:15:23,985 - INFO - Compte enregistré: per#8639
+2025-03-05 15:15:25,906 - INFO - Données complètes du compte chargées
+2025-03-05 15:15:37,727 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:15:37,990 - INFO - Compte enregistré: per#8639
+2025-03-05 15:15:38,249 - INFO - Données complètes du compte chargées
+2025-03-05 15:15:42,320 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:15:42,744 - WARNING - Pas de refresh token disponible
+2025-03-05 15:15:42,745 - INFO - Profil utilisateur chargé
+2025-03-05 15:15:42,891 - INFO - Compte chargé: per#0000
+2025-03-05 15:16:46,860 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:16:47,143 - WARNING - Pas de refresh token disponible
+2025-03-05 15:16:47,144 - INFO - Profil utilisateur chargé
+2025-03-05 15:16:47,288 - INFO - Compte chargé: per#0000
+2025-03-05 15:16:48,320 - WARNING - Format de Bungie Name invalide
+2025-03-05 15:17:15,806 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:17:16,466 - INFO - Compte enregistré: per#8639
+2025-03-05 15:17:19,805 - INFO - Données complètes du compte chargées
+2025-03-05 15:21:44,290 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:21:44,594 - WARNING - Pas de refresh token disponible
+2025-03-05 15:21:44,608 - INFO - Profil utilisateur chargé
+2025-03-05 15:21:49,881 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:21:49,882 - INFO - Compte chargé: per#0000
+2025-03-05 15:22:00,214 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:22:00,489 - INFO - Compte enregistré: per#8639
+2025-03-05 15:22:02,930 - INFO - Données complètes du compte chargées
+2025-03-05 15:22:03,029 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:22:03,122 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:27:41,764 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:27:42,293 - WARNING - Pas de refresh token disponible
+2025-03-05 15:27:42,294 - INFO - Profil utilisateur chargé
+2025-03-05 15:27:46,214 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:27:46,214 - INFO - Compte chargé: per#0000
+2025-03-05 15:27:55,679 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:27:55,980 - INFO - Compte enregistré: per#8639
+2025-03-05 15:27:58,458 - INFO - Données complètes du compte chargées
+2025-03-05 15:27:58,556 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:27:58,655 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:30:34,994 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:30:35,279 - WARNING - Pas de refresh token disponible
+2025-03-05 15:30:35,280 - INFO - Profil utilisateur chargé
+2025-03-05 15:30:39,116 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:30:39,117 - INFO - Compte chargé: per#0000
+2025-03-05 15:30:57,813 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:30:58,075 - INFO - Compte enregistré: per#8639
+2025-03-05 15:31:00,898 - INFO - Données complètes du compte chargées
+2025-03-05 15:31:00,993 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:31:01,092 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:51:53,687 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:51:54,114 - WARNING - Pas de refresh token disponible
+2025-03-05 15:51:54,114 - INFO - Profil utilisateur chargé
+2025-03-05 15:51:58,075 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:51:58,076 - INFO - Compte chargé: per#0000
+2025-03-05 15:52:05,682 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:52:05,953 - INFO - Compte enregistré: per#8639
+2025-03-05 15:52:07,947 - INFO - Données complètes du compte chargées
+2025-03-05 15:52:08,030 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:52:08,116 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:56:35,881 - INFO - Tokens chargés depuis le fichier
+2025-03-05 15:56:36,155 - WARNING - Pas de refresh token disponible
+2025-03-05 15:56:36,155 - INFO - Profil utilisateur chargé
+2025-03-05 15:56:39,548 - INFO - Équipement chargé pour le personnage 2305843010596444327
+2025-03-05 15:56:39,549 - INFO - Compte chargé: per#0000
+2025-03-05 15:56:47,499 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:56:47,757 - ERROR - Erreur API Bungie: 500
+2025-03-05 15:57:06,479 - INFO - Recherche du joueur: per#8639
+2025-03-05 15:57:06,778 - ERROR - Erreur API Bungie: 500
