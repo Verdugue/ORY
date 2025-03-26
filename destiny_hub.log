@@ -1,254 +1,593 @@
-2025-03-05 11:47:18,270 - INFO - Logs cleared successfully
-2025-03-05 11:47:26,081 - INFO - Démarrage OAuth avec redirect_uri: http://localhost:8000
-2025-03-05 11:47:26,082 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000&state=destiny2hub
-2025-03-05 11:47:32,335 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 11:47:32,623 - ERROR - Erreur de requête token: redirect_uri does not match application configuration.
-Redirect URI utilisée: http://localhost:8000
-2025-03-05 11:47:34,117 - INFO - Démarrage OAuth avec redirect_uri: http://localhost:8000
-2025-03-05 11:47:34,117 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000&state=destiny2hub
-2025-03-05 11:47:43,005 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 11:47:43,406 - ERROR - Erreur de requête token: redirect_uri does not match application configuration.
-Redirect URI utilisée: http://localhost:8000
-2025-03-05 11:49:11,146 - INFO - Démarrage OAuth avec redirect_uri: http://localhost:8000
-2025-03-05 11:49:11,146 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8000&state=destiny2hub
-2025-03-05 11:50:50,643 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
-2025-03-05 11:59:31,573 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
-2025-03-05 11:59:31,573 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
-2025-03-05 11:59:38,261 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 11:59:38,622 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
-2025-03-05 12:00:10,287 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
-2025-03-05 12:00:10,287 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
-2025-03-05 12:00:25,328 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 12:00:25,574 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
-2025-03-05 13:22:44,314 - WARNING - Attempted to save empty API Key
-2025-03-05 13:22:52,235 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
-2025-03-05 13:22:52,235 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
-2025-03-05 13:22:59,104 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 13:22:59,395 - ERROR - Erreur lors de la completion OAuth: 'refresh_token'
-2025-03-05 13:25:40,224 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
-2025-03-05 13:25:40,224 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
-2025-03-05 13:25:45,609 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 13:25:45,871 - INFO - Authentication tokens saved successfully
-2025-03-05 13:25:45,871 - INFO - Authentification OAuth réussie
-2025-03-05 13:26:07,399 - INFO - Searching for player: per#8639
-2025-03-05 13:26:08,462 - INFO - Found player. MembershipId: 4611686018536948250
-2025-03-05 13:26:12,565 - INFO - Searching for player: per#8639
-2025-03-05 13:26:13,231 - INFO - Found player. MembershipId: 4611686018536948250
-2025-03-05 13:26:13,327 - INFO - Searching for player: per#8639
-2025-03-05 13:26:14,411 - INFO - Found player. MembershipId: 4611686018536948250
-2025-03-05 13:30:26,241 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:30:29,510 - INFO - Démarrage OAuth avec redirect_uri: https://ory.ovh/
-2025-03-05 13:30:29,510 - INFO - URL d'autorisation générée: https://www.bungie.net/en/OAuth/Authorize?client_id=48588&response_type=code&redirect_uri=https%3A%2F%2Fory.ovh%2F&state=destiny2hub
-2025-03-05 13:30:35,977 - INFO - Code d'autorisation reçu (longueur: 32)
-2025-03-05 13:30:36,268 - INFO - Authentication tokens saved successfully
-2025-03-05 13:30:36,268 - INFO - Authentification OAuth réussie
-2025-03-05 13:30:51,584 - INFO - Searching for player: per#8639
-2025-03-05 13:30:51,848 - INFO - Found player. MembershipId: 4611686018536948250
-2025-03-05 13:30:52,713 - INFO - Profil utilisateur sauvegardé
-2025-03-05 13:34:56,404 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:34:57,027 - INFO - Profil utilisateur chargé
-2025-03-05 13:40:26,975 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:40:27,315 - INFO - Profil utilisateur chargé
-2025-03-05 13:40:40,003 - ERROR - Erreur d'enregistrement: 'DestinyHub' object has no attribute 'get_auth_headers'
-2025-03-05 13:40:57,589 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:40:57,842 - INFO - Profil utilisateur chargé
-2025-03-05 13:41:05,922 - ERROR - Erreur d'enregistrement: 'DestinyHub' object has no attribute 'get_auth_headers'
-2025-03-05 13:41:19,749 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:41:20,233 - INFO - Profil utilisateur chargé
-2025-03-05 13:41:25,526 - ERROR - Erreur d'enregistrement: 'DestinyHub' object has no attribute 'get_auth_headers'
-2025-03-05 13:45:41,679 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:45:41,968 - WARNING - Pas de refresh token disponible
-2025-03-05 13:45:41,969 - INFO - Profil utilisateur chargé
-2025-03-05 13:45:49,417 - ERROR - Erreur d'enregistrement: Erreur API: The given Platform API Key is invalid.
-2025-03-05 13:48:38,280 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:48:38,554 - WARNING - Pas de refresh token disponible
-2025-03-05 13:48:38,554 - INFO - Profil utilisateur chargé
-2025-03-05 13:48:44,504 - INFO - Recherche du compte: per#8639
-2025-03-05 13:48:44,768 - ERROR - Erreur d'enregistrement: Erreur API Bungie: The given Platform API Key is invalid.
-2025-03-05 13:50:44,473 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:50:44,786 - WARNING - Pas de refresh token disponible
-2025-03-05 13:50:44,787 - INFO - Profil utilisateur chargé
-2025-03-05 13:50:49,988 - INFO - Recherche du compte: per#8639
-2025-03-05 13:50:50,228 - ERROR - Erreur d'enregistrement: Erreur API Bungie: The given Platform API Key is invalid.
-2025-03-05 13:54:55,950 - INFO - Tokens chargés depuis le fichier
-2025-03-05 13:54:56,212 - WARNING - Pas de refresh token disponible
-2025-03-05 13:54:56,212 - INFO - Profil utilisateur chargé
-2025-03-05 13:55:02,262 - INFO - Recherche du compte: per#8639
-2025-03-05 13:55:02,535 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 13:55:02,535 - INFO - Chargement des données du profil...
-2025-03-05 13:55:03,691 - ERROR - Erreur mise à jour info: 'minutesPlayedTotal'
-2025-03-05 13:55:03,692 - ERROR - Erreur de chargement des données: 'DestinyHub' object has no attribute 'update_equipment_tab'
-2025-03-05 13:55:11,674 - INFO - Recherche du compte: per#8639
-2025-03-05 13:55:11,947 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 13:55:11,947 - INFO - Chargement des données du profil...
-2025-03-05 13:55:12,111 - ERROR - Erreur mise à jour info: 'minutesPlayedTotal'
-2025-03-05 13:55:12,111 - ERROR - Erreur de chargement des données: 'DestinyHub' object has no attribute 'update_equipment_tab'
-2025-03-05 14:00:41,946 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:00:42,268 - WARNING - Pas de refresh token disponible
-2025-03-05 14:00:42,269 - INFO - Profil utilisateur chargé
-2025-03-05 14:02:36,833 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:02:37,078 - WARNING - Pas de refresh token disponible
-2025-03-05 14:02:37,078 - INFO - Profil utilisateur chargé
-2025-03-05 14:03:03,917 - INFO - Recherche du compte: per#8639
-2025-03-05 14:03:04,204 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 14:03:04,204 - INFO - Chargement des données du profil...
-2025-03-05 14:03:06,111 - ERROR - Erreur mise à jour info: 'minutesPlayedTotal'
-2025-03-05 14:03:06,112 - ERROR - Erreur chargement équipement: [Errno 2] No such file or directory: 'account.json'
-2025-03-05 14:03:06,120 - INFO - Données du profil chargées avec succès
-2025-03-05 14:04:24,283 - ERROR - Erreur chargement équipement: [Errno 2] No such file or directory: 'account.json'
-2025-03-05 14:04:25,149 - ERROR - Erreur chargement équipement: [Errno 2] No such file or directory: 'account.json'
-2025-03-05 14:25:52,087 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:25:52,430 - WARNING - Pas de refresh token disponible
-2025-03-05 14:25:52,431 - INFO - Profil utilisateur chargé
-2025-03-05 14:25:58,654 - INFO - Recherche du compte: per#8639
-2025-03-05 14:25:59,014 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 14:25:59,014 - INFO - Chargement des données du profil...
-2025-03-05 14:26:03,279 - INFO - Début du chargement de l'équipement
-2025-03-05 14:26:03,304 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:26:14,615 - INFO - Données du profil chargées avec succès
-2025-03-05 14:26:29,453 - INFO - Début du chargement de l'équipement
-2025-03-05 14:26:29,464 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:26:40,496 - INFO - Début du chargement de l'équipement
-2025-03-05 14:26:40,508 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:32:11,444 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:32:11,841 - WARNING - Pas de refresh token disponible
-2025-03-05 14:32:11,842 - INFO - Profil utilisateur chargé
-2025-03-05 14:32:19,129 - INFO - Recherche du compte: per#8639
-2025-03-05 14:32:19,592 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 14:32:19,592 - INFO - Chargement des données du profil...
-2025-03-05 14:32:21,548 - INFO - Chargement de l'équipement
-2025-03-05 14:32:21,571 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
-2025-03-05 14:32:21,582 - INFO - Données du profil chargées avec succès
-2025-03-05 14:32:26,123 - INFO - Chargement de l'équipement
-2025-03-05 14:32:26,137 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
-2025-03-05 14:32:28,809 - INFO - Chargement de l'équipement
-2025-03-05 14:32:28,810 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
-2025-03-05 14:32:34,589 - INFO - Chargement de l'équipement
-2025-03-05 14:32:34,600 - ERROR - Erreur chargement équipement: 'DestinyHub' object has no attribute 'display_equipment'
-2025-03-05 14:35:17,053 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:35:17,350 - WARNING - Pas de refresh token disponible
-2025-03-05 14:35:17,351 - INFO - Profil utilisateur chargé
-2025-03-05 14:35:23,606 - INFO - Recherche du compte: per#8639
-2025-03-05 14:35:25,068 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 14:35:25,068 - INFO - Chargement des données du profil...
-2025-03-05 14:35:26,707 - INFO - Chargement de l'équipement
-2025-03-05 14:35:26,731 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:35:33,753 - INFO - Données du profil chargées avec succès
-2025-03-05 14:35:37,707 - INFO - Chargement de l'équipement
-2025-03-05 14:35:37,708 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:35:40,954 - INFO - Chargement de l'équipement
-2025-03-05 14:35:40,954 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:36:27,126 - INFO - Chargement de l'équipement
-2025-03-05 14:36:27,126 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:36:29,329 - INFO - Chargement de l'équipement
-2025-03-05 14:36:29,329 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:36:30,578 - INFO - Chargement de l'équipement
-2025-03-05 14:36:30,578 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:39:28,732 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:39:29,346 - WARNING - Pas de refresh token disponible
-2025-03-05 14:39:29,347 - INFO - Profil utilisateur chargé
-2025-03-05 14:39:36,236 - INFO - Recherche du compte: per#8639
-2025-03-05 14:39:36,876 - INFO - Compte trouvé et enregistré: per#8639
-2025-03-05 14:39:36,877 - INFO - Chargement des données du profil...
-2025-03-05 14:39:39,481 - INFO - Chargement de l'équipement
-2025-03-05 14:39:39,509 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:39:47,195 - INFO - Données du profil chargées avec succès
-2025-03-05 14:39:50,892 - INFO - Chargement de l'équipement
-2025-03-05 14:39:50,892 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:48:34,920 - INFO - Chargement de l'équipement
-2025-03-05 14:48:34,920 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:48:37,538 - INFO - Chargement de l'équipement
-2025-03-05 14:48:37,538 - INFO - Début de l'affichage de l'équipement
-2025-03-05 14:58:38,027 - INFO - Tokens chargés depuis le fichier
-2025-03-05 14:58:38,340 - WARNING - Pas de refresh token disponible
-2025-03-05 14:58:38,341 - INFO - Profil utilisateur chargé
-2025-03-05 15:03:44,681 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:03:45,050 - WARNING - Pas de refresh token disponible
-2025-03-05 15:03:45,051 - INFO - Profil utilisateur chargé
-2025-03-05 15:06:30,929 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:06:31,257 - WARNING - Pas de refresh token disponible
-2025-03-05 15:06:31,258 - INFO - Profil utilisateur chargé
-2025-03-05 15:08:42,228 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:08:42,537 - WARNING - Pas de refresh token disponible
-2025-03-05 15:08:42,538 - INFO - Profil utilisateur chargé
-2025-03-05 15:10:42,193 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:10:42,566 - WARNING - Pas de refresh token disponible
-2025-03-05 15:10:42,567 - INFO - Profil utilisateur chargé
-2025-03-05 15:10:42,686 - INFO - Compte chargé: Unknown#0000
-2025-03-05 15:10:51,538 - INFO - Compte enregistré: per#8639
-2025-03-05 15:10:53,060 - INFO - Données complètes du compte chargées
-2025-03-05 15:11:25,694 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:11:26,049 - WARNING - Pas de refresh token disponible
-2025-03-05 15:11:26,050 - INFO - Profil utilisateur chargé
-2025-03-05 15:11:26,218 - INFO - Compte chargé: per#0000
-2025-03-05 15:15:15,096 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:15:15,359 - WARNING - Pas de refresh token disponible
-2025-03-05 15:15:15,360 - INFO - Profil utilisateur chargé
-2025-03-05 15:15:15,497 - INFO - Compte chargé: per#0000
-2025-03-05 15:15:22,851 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:15:23,985 - INFO - Compte enregistré: per#8639
-2025-03-05 15:15:25,906 - INFO - Données complètes du compte chargées
-2025-03-05 15:15:37,727 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:15:37,990 - INFO - Compte enregistré: per#8639
-2025-03-05 15:15:38,249 - INFO - Données complètes du compte chargées
-2025-03-05 15:15:42,320 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:15:42,744 - WARNING - Pas de refresh token disponible
-2025-03-05 15:15:42,745 - INFO - Profil utilisateur chargé
-2025-03-05 15:15:42,891 - INFO - Compte chargé: per#0000
-2025-03-05 15:16:46,860 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:16:47,143 - WARNING - Pas de refresh token disponible
-2025-03-05 15:16:47,144 - INFO - Profil utilisateur chargé
-2025-03-05 15:16:47,288 - INFO - Compte chargé: per#0000
-2025-03-05 15:16:48,320 - WARNING - Format de Bungie Name invalide
-2025-03-05 15:17:15,806 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:17:16,466 - INFO - Compte enregistré: per#8639
-2025-03-05 15:17:19,805 - INFO - Données complètes du compte chargées
-2025-03-05 15:21:44,290 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:21:44,594 - WARNING - Pas de refresh token disponible
-2025-03-05 15:21:44,608 - INFO - Profil utilisateur chargé
-2025-03-05 15:21:49,881 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:21:49,882 - INFO - Compte chargé: per#0000
-2025-03-05 15:22:00,214 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:22:00,489 - INFO - Compte enregistré: per#8639
-2025-03-05 15:22:02,930 - INFO - Données complètes du compte chargées
-2025-03-05 15:22:03,029 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:22:03,122 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:27:41,764 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:27:42,293 - WARNING - Pas de refresh token disponible
-2025-03-05 15:27:42,294 - INFO - Profil utilisateur chargé
-2025-03-05 15:27:46,214 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:27:46,214 - INFO - Compte chargé: per#0000
-2025-03-05 15:27:55,679 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:27:55,980 - INFO - Compte enregistré: per#8639
-2025-03-05 15:27:58,458 - INFO - Données complètes du compte chargées
-2025-03-05 15:27:58,556 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:27:58,655 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:30:34,994 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:30:35,279 - WARNING - Pas de refresh token disponible
-2025-03-05 15:30:35,280 - INFO - Profil utilisateur chargé
-2025-03-05 15:30:39,116 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:30:39,117 - INFO - Compte chargé: per#0000
-2025-03-05 15:30:57,813 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:30:58,075 - INFO - Compte enregistré: per#8639
-2025-03-05 15:31:00,898 - INFO - Données complètes du compte chargées
-2025-03-05 15:31:00,993 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:31:01,092 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:51:53,687 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:51:54,114 - WARNING - Pas de refresh token disponible
-2025-03-05 15:51:54,114 - INFO - Profil utilisateur chargé
-2025-03-05 15:51:58,075 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:51:58,076 - INFO - Compte chargé: per#0000
-2025-03-05 15:52:05,682 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:52:05,953 - INFO - Compte enregistré: per#8639
-2025-03-05 15:52:07,947 - INFO - Données complètes du compte chargées
-2025-03-05 15:52:08,030 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:52:08,116 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:56:35,881 - INFO - Tokens chargés depuis le fichier
-2025-03-05 15:56:36,155 - WARNING - Pas de refresh token disponible
-2025-03-05 15:56:36,155 - INFO - Profil utilisateur chargé
-2025-03-05 15:56:39,548 - INFO - Équipement chargé pour le personnage 2305843010596444327
-2025-03-05 15:56:39,549 - INFO - Compte chargé: per#0000
-2025-03-05 15:56:47,499 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:56:47,757 - ERROR - Erreur API Bungie: 500
-2025-03-05 15:57:06,479 - INFO - Recherche du joueur: per#8639
-2025-03-05 15:57:06,778 - ERROR - Erreur API Bungie: 500
+2025-03-26 15:39:20,380 - INFO - === Démarrage de Destiny Hub ===
+2025-03-26 15:39:20,380 - INFO - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-03-26 15:39:20,380 - INFO - Système d'exploitation: win32
+2025-03-26 15:39:20,382 - INFO - Vérification des dépendances:
+2025-03-26 15:39:20,382 - WARNING - PyQt6 non trouvé
+2025-03-26 15:39:20,382 - INFO - Requests version: 2.32.3
+2025-03-26 15:39:20,382 - WARNING - python-dotenv non trouvé
+2025-03-26 15:39:20,382 - INFO - psutil version: 5.9.5
+2025-03-26 15:39:20,382 - INFO - Vérification des dossiers:
+2025-03-26 15:39:20,382 - INFO - Dossier 'data' existant
+2025-03-26 15:39:20,383 - INFO - Dossier 'icons' existant
+2025-03-26 15:39:20,383 - INFO - Fichier .env trouvé
+2025-03-26 15:39:20,383 - INFO - Clé API Bungie trouvée dans .env
+2025-03-26 15:39:20,383 - INFO - Tokens chargés depuis le fichier
+2025-03-26 15:39:21,101 - WARNING - Pas de refresh token disponible
+2025-03-26 15:39:21,102 - INFO - Profil utilisateur chargé
+2025-03-26 15:39:21,162 - INFO - === Début du chargement du personnage actif ===
+2025-03-26 15:39:22,254 - INFO - Item 1197771438 - Instance trouvée avec puissance: 2010
+2025-03-26 15:39:22,254 - INFO - Item 2198166292 - Instance trouvée avec puissance: 2004
+2025-03-26 15:39:22,254 - INFO - Item 568611923 - Instance trouvée avec puissance: 2007
+2025-03-26 15:39:22,254 - INFO - Item 3001229473 - Instance trouvée avec puissance: 2005
+2025-03-26 15:39:22,254 - INFO - Item 3797572280 - Instance trouvée avec puissance: 2007
+2025-03-26 15:39:22,254 - INFO - Item 1958630864 - Instance trouvée avec puissance: 2009
+2025-03-26 15:39:22,254 - INFO - Item 129332559 - Instance trouvée avec puissance: 2010
+2025-03-26 15:39:22,254 - INFO - Item 2809120022 - Instance trouvée avec puissance: 2000
+2025-03-26 15:39:22,254 - INFO - Item 1003860281 - Instance trouvée avec puissance: 0
+2025-03-26 15:39:22,255 - INFO - Item 1522633034 - Instance trouvée avec puissance: 190
+2025-03-26 15:39:22,255 - INFO - Item 1320342774 - Instance trouvée avec puissance: 0
+2025-03-26 15:39:22,255 - INFO - Item 4282591831 - Instance trouvée avec puissance: 6
+2025-03-26 15:39:22,255 - INFO - Item 4026763349 - Instance trouvée avec puissance: 0
+2025-03-26 15:39:22,255 - INFO - Item 788073488 - Instance trouvée avec puissance: 0
+2025-03-26 15:39:22,255 - INFO - Item 152583919 - Instance trouvée avec puissance: 0
+2025-03-26 15:39:22,255 - INFO - Item 3183180185 - Instance trouvée avec puissance: 0
+2025-03-26 15:39:22,255 - INFO - Item 1907110519 - Instance trouvée avec puissance: 6
+2025-03-26 15:39:22,255 - INFO - === Début de l'affichage des équipements ===
+2025-03-26 15:39:22,255 - INFO - \U0001f50d Analyse item - BucketHash: 1498876634, Type: kinetic
+2025-03-26 15:39:22,255 - INFO -    Puissance: 2010
+2025-03-26 15:39:22,255 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,257 - INFO - \U0001f50d Analyse item - BucketHash: 2465295065, Type: energy
+2025-03-26 15:39:22,257 - INFO -    Puissance: 2004
+2025-03-26 15:39:22,257 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,257 - INFO - \U0001f50d Analyse item - BucketHash: 953998645, Type: power
+2025-03-26 15:39:22,257 - INFO -    Puissance: 2007
+2025-03-26 15:39:22,257 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,257 - INFO - \U0001f50d Analyse item - BucketHash: 3448274439, Type: helmet
+2025-03-26 15:39:22,258 - INFO -    Puissance: 2005
+2025-03-26 15:39:22,258 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,258 - INFO - \U0001f50d Analyse item - BucketHash: 3551918588, Type: gauntlets
+2025-03-26 15:39:22,258 - INFO -    Puissance: 2007
+2025-03-26 15:39:22,258 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,258 - INFO - \U0001f50d Analyse item - BucketHash: 14239492, Type: chest
+2025-03-26 15:39:22,258 - INFO -    Puissance: 2009
+2025-03-26 15:39:22,258 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,258 - INFO - \U0001f50d Analyse item - BucketHash: 20886954, Type: legs
+2025-03-26 15:39:22,259 - INFO -    Puissance: 2010
+2025-03-26 15:39:22,259 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,259 - INFO - \U0001f50d Analyse item - BucketHash: 1585787867, Type: class_item
+2025-03-26 15:39:22,259 - INFO -    Puissance: 2000
+2025-03-26 15:39:22,259 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:39:22,259 - INFO - \U0001f50d Analyse item - BucketHash: 4023194814, Type: ghost
+2025-03-26 15:39:22,259 - INFO -    Puissance: 0
+2025-03-26 15:39:22,259 - INFO - \U0001f50d Analyse item - BucketHash: 2025709351, Type: unknown
+2025-03-26 15:39:22,259 - INFO -    Puissance: 190
+2025-03-26 15:39:22,259 - INFO - \U0001f50d Analyse item - BucketHash: 284967655, Type: unknown
+2025-03-26 15:39:22,259 - INFO -    Puissance: 0
+2025-03-26 15:39:22,259 - INFO - \U0001f50d Analyse item - BucketHash: 3284755031, Type: unknown
+2025-03-26 15:39:22,259 - INFO -    Puissance: 6
+2025-03-26 15:39:22,261 - INFO - \U0001f50d Analyse item - BucketHash: 4292445962, Type: unknown
+2025-03-26 15:39:22,261 - INFO -    Puissance: 0
+2025-03-26 15:39:22,261 - INFO - \U0001f50d Analyse item - BucketHash: 4274335291, Type: unknown
+2025-03-26 15:39:22,261 - INFO -    Puissance: 0
+2025-03-26 15:39:22,261 - INFO - \U0001f50d Analyse item - BucketHash: 3683254069, Type: unknown
+2025-03-26 15:39:22,261 - INFO -    Puissance: 0
+2025-03-26 15:39:22,261 - INFO - \U0001f50d Analyse item - BucketHash: 1107761855, Type: unknown
+2025-03-26 15:39:22,261 - INFO -    Puissance: 0
+2025-03-26 15:39:22,261 - INFO - \U0001f50d Analyse item - BucketHash: 1506418338, Type: unknown
+2025-03-26 15:39:22,261 - INFO -    Puissance: 6
+2025-03-26 15:39:22,261 - INFO - \U0001f4aa Puissance moyenne calculée: 2006 (Total: 16052 / Items: 8)
+2025-03-26 15:39:22,261 - INFO - \U0001f5e1\ufe0f Armes trouvées: 3
+2025-03-26 15:39:22,261 - INFO - \U0001f6e1\ufe0f Pièces d'armure trouvées: 5
+2025-03-26 15:39:22,262 - INFO - \U0001f4e6 Mise à jour du slot d'arme 1
+2025-03-26 15:39:22,262 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:22,262 - INFO - \U0001f50d Récupération des définitions pour l'item 1197771438
+2025-03-26 15:39:22,496 - INFO - \u2705 Item trouvé: Lost Signal
+2025-03-26 15:39:22,497 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58577a92574f2f57eb2b806ae39de598.jpg
+2025-03-26 15:39:22,497 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:22,499 - INFO - \U0001f4e6 Mise à jour du slot d'arme 2
+2025-03-26 15:39:22,499 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:22,499 - INFO - \U0001f50d Récupération des définitions pour l'item 2198166292
+2025-03-26 15:39:22,745 - INFO - \u2705 Item trouvé: Aberrant Action
+2025-03-26 15:39:22,746 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/fd4ee0fc7c0c6249cb615aed85cd70e7.jpg
+2025-03-26 15:39:22,746 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:22,748 - INFO - \U0001f4e6 Mise à jour du slot d'arme 3
+2025-03-26 15:39:22,748 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:22,748 - INFO - \U0001f50d Récupération des définitions pour l'item 568611923
+2025-03-26 15:39:23,006 - INFO - \u2705 Item trouvé: Edge Transit
+2025-03-26 15:39:23,006 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/728e25f53bcdda0e6e60acb2c8605f21.jpg
+2025-03-26 15:39:23,006 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:23,008 - INFO - \U0001f4e6 Mise à jour du slot d'armure 1
+2025-03-26 15:39:23,008 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:23,008 - INFO - \U0001f50d Récupération des définitions pour l'item 3001229473
+2025-03-26 15:39:23,239 - INFO - \u2705 Item trouvé: Untethered Edge Mask
+2025-03-26 15:39:23,239 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/1b3e3c1957d8d922688178b19a3df2e7.jpg
+2025-03-26 15:39:23,239 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:23,241 - INFO - \U0001f4e6 Mise à jour du slot d'armure 2
+2025-03-26 15:39:23,242 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:23,242 - INFO - \U0001f50d Récupération des définitions pour l'item 3797572280
+2025-03-26 15:39:23,508 - INFO - \u2705 Item trouvé: Untethered Edge Grips
+2025-03-26 15:39:23,508 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/4f49839b3fe8332b10a80ce5404bfa27.jpg
+2025-03-26 15:39:23,509 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:23,509 - INFO - \U0001f4e6 Mise à jour du slot d'armure 3
+2025-03-26 15:39:23,509 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:23,509 - INFO - \U0001f50d Récupération des définitions pour l'item 1958630864
+2025-03-26 15:39:23,759 - INFO - \u2705 Item trouvé: Untethered Edge Vest
+2025-03-26 15:39:23,760 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/a9e9d155f2d5ab1fb228a503fdc6a7d6.jpg
+2025-03-26 15:39:23,760 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:23,762 - INFO - \U0001f4e6 Mise à jour du slot d'armure 4
+2025-03-26 15:39:23,762 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:23,762 - INFO - \U0001f50d Récupération des définitions pour l'item 129332559
+2025-03-26 15:39:24,005 - INFO - \u2705 Item trouvé: Prime Zealot Strides
+2025-03-26 15:39:24,007 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/342a406ccdedbce8680910cfd93d4263.jpg
+2025-03-26 15:39:24,007 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:24,008 - INFO - \U0001f4e6 Mise à jour du slot d'armure 5
+2025-03-26 15:39:24,008 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:39:24,008 - INFO - \U0001f50d Récupération des définitions pour l'item 2809120022
+2025-03-26 15:39:24,089 - INFO - \u2705 Item trouvé: Relativism
+2025-03-26 15:39:24,089 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg
+2025-03-26 15:39:24,090 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:39:24,090 - INFO - \u2705 Affichage des équipements terminé
+2025-03-26 15:39:24,108 - INFO - Compte chargé avec succès
+2025-03-26 15:43:29,398 - INFO - === Démarrage de Destiny Hub ===
+2025-03-26 15:43:29,398 - INFO - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-03-26 15:43:29,400 - INFO - Système d'exploitation: win32
+2025-03-26 15:43:29,400 - INFO - Vérification des dépendances:
+2025-03-26 15:43:29,400 - WARNING - PyQt6 non trouvé
+2025-03-26 15:43:29,400 - INFO - Requests version: 2.32.3
+2025-03-26 15:43:29,400 - WARNING - python-dotenv non trouvé
+2025-03-26 15:43:29,400 - INFO - psutil version: 5.9.5
+2025-03-26 15:43:29,400 - INFO - Vérification des dossiers:
+2025-03-26 15:43:29,401 - INFO - Dossier 'data' existant
+2025-03-26 15:43:29,401 - INFO - Dossier 'icons' existant
+2025-03-26 15:43:29,401 - INFO - Fichier .env trouvé
+2025-03-26 15:43:29,401 - INFO - Clé API Bungie trouvée dans .env
+2025-03-26 15:43:29,401 - INFO - Tokens chargés depuis le fichier
+2025-03-26 15:43:29,663 - WARNING - Pas de refresh token disponible
+2025-03-26 15:43:29,663 - INFO - Profil utilisateur chargé
+2025-03-26 15:43:29,732 - INFO - === Début du chargement du personnage actif ===
+2025-03-26 15:43:31,462 - INFO - Item 1197771438 - Instance trouvée avec puissance: 2010
+2025-03-26 15:43:31,462 - INFO - Item 2198166292 - Instance trouvée avec puissance: 2004
+2025-03-26 15:43:31,463 - INFO - Item 568611923 - Instance trouvée avec puissance: 2007
+2025-03-26 15:43:31,463 - INFO - Item 3001229473 - Instance trouvée avec puissance: 2005
+2025-03-26 15:43:31,463 - INFO - Item 3797572280 - Instance trouvée avec puissance: 2007
+2025-03-26 15:43:31,463 - INFO - Item 1958630864 - Instance trouvée avec puissance: 2009
+2025-03-26 15:43:31,463 - INFO - Item 129332559 - Instance trouvée avec puissance: 2010
+2025-03-26 15:43:31,463 - INFO - Item 2809120022 - Instance trouvée avec puissance: 2000
+2025-03-26 15:43:31,463 - INFO - Item 1003860281 - Instance trouvée avec puissance: 0
+2025-03-26 15:43:31,463 - INFO - Item 1522633034 - Instance trouvée avec puissance: 190
+2025-03-26 15:43:31,463 - INFO - Item 1320342774 - Instance trouvée avec puissance: 0
+2025-03-26 15:43:31,463 - INFO - Item 4282591831 - Instance trouvée avec puissance: 6
+2025-03-26 15:43:31,463 - INFO - Item 4026763349 - Instance trouvée avec puissance: 0
+2025-03-26 15:43:31,463 - INFO - Item 788073488 - Instance trouvée avec puissance: 0
+2025-03-26 15:43:31,463 - INFO - Item 152583919 - Instance trouvée avec puissance: 0
+2025-03-26 15:43:31,463 - INFO - Item 3183180185 - Instance trouvée avec puissance: 0
+2025-03-26 15:43:31,465 - INFO - Item 1907110519 - Instance trouvée avec puissance: 6
+2025-03-26 15:43:31,465 - INFO - === Début de l'affichage des équipements ===
+2025-03-26 15:43:31,465 - INFO - \U0001f50d Analyse item - BucketHash: 1498876634, Type: kinetic
+2025-03-26 15:43:31,465 - INFO -    Puissance: 2010
+2025-03-26 15:43:31,465 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,465 - INFO - \U0001f50d Analyse item - BucketHash: 2465295065, Type: energy
+2025-03-26 15:43:31,465 - INFO -    Puissance: 2004
+2025-03-26 15:43:31,465 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,465 - INFO - \U0001f50d Analyse item - BucketHash: 953998645, Type: power
+2025-03-26 15:43:31,465 - INFO -    Puissance: 2007
+2025-03-26 15:43:31,465 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,465 - INFO - \U0001f50d Analyse item - BucketHash: 3448274439, Type: helmet
+2025-03-26 15:43:31,466 - INFO -    Puissance: 2005
+2025-03-26 15:43:31,466 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,466 - INFO - \U0001f50d Analyse item - BucketHash: 3551918588, Type: gauntlets
+2025-03-26 15:43:31,466 - INFO -    Puissance: 2007
+2025-03-26 15:43:31,466 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,466 - INFO - \U0001f50d Analyse item - BucketHash: 14239492, Type: chest
+2025-03-26 15:43:31,466 - INFO -    Puissance: 2009
+2025-03-26 15:43:31,466 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,466 - INFO - \U0001f50d Analyse item - BucketHash: 20886954, Type: legs
+2025-03-26 15:43:31,466 - INFO -    Puissance: 2010
+2025-03-26 15:43:31,466 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 1585787867, Type: class_item
+2025-03-26 15:43:31,468 - INFO -    Puissance: 2000
+2025-03-26 15:43:31,468 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 4023194814, Type: ghost
+2025-03-26 15:43:31,468 - INFO -    Puissance: 0
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 2025709351, Type: unknown
+2025-03-26 15:43:31,468 - INFO -    Puissance: 190
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 284967655, Type: unknown
+2025-03-26 15:43:31,468 - INFO -    Puissance: 0
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 3284755031, Type: unknown
+2025-03-26 15:43:31,468 - INFO -    Puissance: 6
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 4292445962, Type: unknown
+2025-03-26 15:43:31,468 - INFO -    Puissance: 0
+2025-03-26 15:43:31,468 - INFO - \U0001f50d Analyse item - BucketHash: 4274335291, Type: unknown
+2025-03-26 15:43:31,469 - INFO -    Puissance: 0
+2025-03-26 15:43:31,469 - INFO - \U0001f50d Analyse item - BucketHash: 3683254069, Type: unknown
+2025-03-26 15:43:31,469 - INFO -    Puissance: 0
+2025-03-26 15:43:31,469 - INFO - \U0001f50d Analyse item - BucketHash: 1107761855, Type: unknown
+2025-03-26 15:43:31,469 - INFO -    Puissance: 0
+2025-03-26 15:43:31,469 - INFO - \U0001f50d Analyse item - BucketHash: 1506418338, Type: unknown
+2025-03-26 15:43:31,469 - INFO -    Puissance: 6
+2025-03-26 15:43:31,469 - INFO - \U0001f4aa Puissance moyenne calculée: 2006 (Total: 16052 / Items: 8)
+2025-03-26 15:43:31,469 - INFO - \U0001f5e1\ufe0f Armes trouvées: 3
+2025-03-26 15:43:31,469 - INFO - \U0001f6e1\ufe0f Pièces d'armure trouvées: 5
+2025-03-26 15:43:31,469 - INFO - \U0001f4e6 Mise à jour du slot d'arme 1
+2025-03-26 15:43:31,469 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:31,469 - INFO - \U0001f50d Récupération des définitions pour l'item 1197771438
+2025-03-26 15:43:31,709 - INFO - \u2705 Item trouvé: Lost Signal
+2025-03-26 15:43:31,709 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58577a92574f2f57eb2b806ae39de598.jpg
+2025-03-26 15:43:31,709 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:31,710 - INFO - \U0001f4e6 Mise à jour du slot d'arme 2
+2025-03-26 15:43:31,710 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:31,710 - INFO - \U0001f50d Récupération des définitions pour l'item 2198166292
+2025-03-26 15:43:31,948 - INFO - \u2705 Item trouvé: Aberrant Action
+2025-03-26 15:43:31,948 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/fd4ee0fc7c0c6249cb615aed85cd70e7.jpg
+2025-03-26 15:43:31,948 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:31,950 - INFO - \U0001f4e6 Mise à jour du slot d'arme 3
+2025-03-26 15:43:31,950 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:31,950 - INFO - \U0001f50d Récupération des définitions pour l'item 568611923
+2025-03-26 15:43:32,207 - INFO - \u2705 Item trouvé: Edge Transit
+2025-03-26 15:43:32,207 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/728e25f53bcdda0e6e60acb2c8605f21.jpg
+2025-03-26 15:43:32,209 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:32,209 - INFO - \U0001f4e6 Mise à jour du slot d'armure 1
+2025-03-26 15:43:32,209 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:32,209 - INFO - \U0001f50d Récupération des définitions pour l'item 3001229473
+2025-03-26 15:43:32,446 - INFO - \u2705 Item trouvé: Untethered Edge Mask
+2025-03-26 15:43:32,446 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/1b3e3c1957d8d922688178b19a3df2e7.jpg
+2025-03-26 15:43:32,447 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:32,447 - INFO - \U0001f4e6 Mise à jour du slot d'armure 2
+2025-03-26 15:43:32,447 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:32,447 - INFO - \U0001f50d Récupération des définitions pour l'item 3797572280
+2025-03-26 15:43:32,682 - INFO - \u2705 Item trouvé: Untethered Edge Grips
+2025-03-26 15:43:32,683 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/4f49839b3fe8332b10a80ce5404bfa27.jpg
+2025-03-26 15:43:32,683 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:32,684 - INFO - \U0001f4e6 Mise à jour du slot d'armure 3
+2025-03-26 15:43:32,684 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:32,684 - INFO - \U0001f50d Récupération des définitions pour l'item 1958630864
+2025-03-26 15:43:32,910 - INFO - \u2705 Item trouvé: Untethered Edge Vest
+2025-03-26 15:43:32,910 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/a9e9d155f2d5ab1fb228a503fdc6a7d6.jpg
+2025-03-26 15:43:32,911 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:32,911 - INFO - \U0001f4e6 Mise à jour du slot d'armure 4
+2025-03-26 15:43:32,911 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:32,911 - INFO - \U0001f50d Récupération des définitions pour l'item 129332559
+2025-03-26 15:43:33,148 - INFO - \u2705 Item trouvé: Prime Zealot Strides
+2025-03-26 15:43:33,148 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/342a406ccdedbce8680910cfd93d4263.jpg
+2025-03-26 15:43:33,149 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:33,149 - INFO - \U0001f4e6 Mise à jour du slot d'armure 5
+2025-03-26 15:43:33,149 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:43:33,151 - INFO - \U0001f50d Récupération des définitions pour l'item 2809120022
+2025-03-26 15:43:33,838 - INFO - \u2705 Item trouvé: Relativism
+2025-03-26 15:43:33,838 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg
+2025-03-26 15:43:33,838 - INFO - \u2705 Icône trouvée dans le cache local
+2025-03-26 15:43:33,839 - INFO - \u2705 Affichage des équipements terminé
+2025-03-26 15:43:33,858 - INFO - Compte chargé avec succès
+2025-03-26 15:44:31,343 - INFO - Page changée vers l'index 1
+2025-03-26 15:44:32,252 - INFO - Page changée vers l'index 0
+2025-03-26 15:46:14,661 - INFO - === Démarrage de Destiny Hub ===
+2025-03-26 15:46:14,661 - INFO - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-03-26 15:46:14,661 - INFO - Système d'exploitation: win32
+2025-03-26 15:46:14,661 - INFO - Vérification des dépendances:
+2025-03-26 15:46:14,661 - WARNING - PyQt6 non trouvé
+2025-03-26 15:46:14,661 - INFO - Requests version: 2.32.3
+2025-03-26 15:46:14,661 - WARNING - python-dotenv non trouvé
+2025-03-26 15:46:14,661 - INFO - psutil version: 5.9.5
+2025-03-26 15:46:14,661 - INFO - Vérification des dossiers:
+2025-03-26 15:46:14,662 - INFO - Dossier 'data' existant
+2025-03-26 15:46:14,662 - INFO - Dossier 'icons' existant
+2025-03-26 15:46:14,662 - INFO - Fichier .env trouvé
+2025-03-26 15:46:14,662 - INFO - Clé API Bungie trouvée dans .env
+2025-03-26 15:46:14,662 - INFO - Tokens chargés depuis le fichier
+2025-03-26 15:46:14,918 - WARNING - Pas de refresh token disponible
+2025-03-26 15:46:14,918 - INFO - Profil utilisateur chargé
+2025-03-26 15:46:14,991 - INFO - === Début du chargement du personnage actif ===
+2025-03-26 15:46:16,654 - INFO - Item 1197771438 - Instance trouvée avec puissance: 2010
+2025-03-26 15:46:16,654 - INFO - Item 2198166292 - Instance trouvée avec puissance: 2004
+2025-03-26 15:46:16,654 - INFO - Item 568611923 - Instance trouvée avec puissance: 2007
+2025-03-26 15:46:16,654 - INFO - Item 3001229473 - Instance trouvée avec puissance: 2005
+2025-03-26 15:46:16,654 - INFO - Item 3797572280 - Instance trouvée avec puissance: 2007
+2025-03-26 15:46:16,656 - INFO - Item 1958630864 - Instance trouvée avec puissance: 2009
+2025-03-26 15:46:16,656 - INFO - Item 129332559 - Instance trouvée avec puissance: 2010
+2025-03-26 15:46:16,656 - INFO - Item 2809120022 - Instance trouvée avec puissance: 2000
+2025-03-26 15:46:16,656 - INFO - Item 1003860281 - Instance trouvée avec puissance: 0
+2025-03-26 15:46:16,656 - INFO - Item 1522633034 - Instance trouvée avec puissance: 190
+2025-03-26 15:46:16,656 - INFO - Item 1320342774 - Instance trouvée avec puissance: 0
+2025-03-26 15:46:16,656 - INFO - Item 4282591831 - Instance trouvée avec puissance: 6
+2025-03-26 15:46:16,656 - INFO - Item 4026763349 - Instance trouvée avec puissance: 0
+2025-03-26 15:46:16,657 - INFO - Item 788073488 - Instance trouvée avec puissance: 0
+2025-03-26 15:46:16,657 - INFO - Item 152583919 - Instance trouvée avec puissance: 0
+2025-03-26 15:46:16,657 - INFO - Item 3183180185 - Instance trouvée avec puissance: 0
+2025-03-26 15:46:16,657 - INFO - Item 1907110519 - Instance trouvée avec puissance: 6
+2025-03-26 15:46:16,657 - INFO - === Début de l'affichage des équipements ===
+2025-03-26 15:46:16,657 - INFO - \U0001f50d Analyse item - BucketHash: 1498876634, Type: kinetic
+2025-03-26 15:46:16,657 - INFO -    Puissance: 2010
+2025-03-26 15:46:16,657 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,657 - INFO - \U0001f50d Analyse item - BucketHash: 2465295065, Type: energy
+2025-03-26 15:46:16,657 - INFO -    Puissance: 2004
+2025-03-26 15:46:16,659 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,659 - INFO - \U0001f50d Analyse item - BucketHash: 953998645, Type: power
+2025-03-26 15:46:16,659 - INFO -    Puissance: 2007
+2025-03-26 15:46:16,659 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,659 - INFO - \U0001f50d Analyse item - BucketHash: 3448274439, Type: helmet
+2025-03-26 15:46:16,659 - INFO -    Puissance: 2005
+2025-03-26 15:46:16,659 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,659 - INFO - \U0001f50d Analyse item - BucketHash: 3551918588, Type: gauntlets
+2025-03-26 15:46:16,659 - INFO -    Puissance: 2007
+2025-03-26 15:46:16,659 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,659 - INFO - \U0001f50d Analyse item - BucketHash: 14239492, Type: chest
+2025-03-26 15:46:16,660 - INFO -    Puissance: 2009
+2025-03-26 15:46:16,660 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,660 - INFO - \U0001f50d Analyse item - BucketHash: 20886954, Type: legs
+2025-03-26 15:46:16,660 - INFO -    Puissance: 2010
+2025-03-26 15:46:16,660 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,660 - INFO - \U0001f50d Analyse item - BucketHash: 1585787867, Type: class_item
+2025-03-26 15:46:16,660 - INFO -    Puissance: 2000
+2025-03-26 15:46:16,660 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:46:16,660 - INFO - \U0001f50d Analyse item - BucketHash: 4023194814, Type: ghost
+2025-03-26 15:46:16,660 - INFO -    Puissance: 0
+2025-03-26 15:46:16,660 - INFO - \U0001f50d Analyse item - BucketHash: 2025709351, Type: unknown
+2025-03-26 15:46:16,660 - INFO -    Puissance: 190
+2025-03-26 15:46:16,662 - INFO - \U0001f50d Analyse item - BucketHash: 284967655, Type: unknown
+2025-03-26 15:46:16,662 - INFO -    Puissance: 0
+2025-03-26 15:46:16,662 - INFO - \U0001f50d Analyse item - BucketHash: 3284755031, Type: unknown
+2025-03-26 15:46:16,662 - INFO -    Puissance: 6
+2025-03-26 15:46:16,662 - INFO - \U0001f50d Analyse item - BucketHash: 4292445962, Type: unknown
+2025-03-26 15:46:16,662 - INFO -    Puissance: 0
+2025-03-26 15:46:16,663 - INFO - \U0001f50d Analyse item - BucketHash: 4274335291, Type: unknown
+2025-03-26 15:46:16,663 - INFO -    Puissance: 0
+2025-03-26 15:46:16,663 - INFO - \U0001f50d Analyse item - BucketHash: 3683254069, Type: unknown
+2025-03-26 15:46:16,663 - INFO -    Puissance: 0
+2025-03-26 15:46:16,663 - INFO - \U0001f50d Analyse item - BucketHash: 1107761855, Type: unknown
+2025-03-26 15:46:16,663 - INFO -    Puissance: 0
+2025-03-26 15:46:16,663 - INFO - \U0001f50d Analyse item - BucketHash: 1506418338, Type: unknown
+2025-03-26 15:46:16,663 - INFO -    Puissance: 6
+2025-03-26 15:46:16,663 - INFO - \U0001f4aa Puissance moyenne calculée: 2006 (Total: 16052 / Items: 8)
+2025-03-26 15:46:16,665 - INFO - \U0001f5e1\ufe0f Armes trouvées: 3
+2025-03-26 15:46:16,665 - INFO - \U0001f6e1\ufe0f Pièces d'armure trouvées: 5
+2025-03-26 15:46:16,665 - INFO - \U0001f4e6 Mise à jour du slot d'arme 1
+2025-03-26 15:46:16,665 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:16,665 - INFO - \U0001f50d Récupération des définitions pour l'item 1197771438
+2025-03-26 15:46:16,898 - INFO - \u2705 Item trouvé: Lost Signal
+2025-03-26 15:46:16,898 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58577a92574f2f57eb2b806ae39de598.jpg
+2025-03-26 15:46:16,899 - ERROR - Format invalide pour icons/1197771438.png
+2025-03-26 15:46:16,899 - ERROR - \u274c Image invalide: icons/1197771438.png
+2025-03-26 15:46:16,990 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:16,991 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:16,991 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:16,993 - INFO - \U0001f4e6 Mise à jour du slot d'arme 2
+2025-03-26 15:46:16,993 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:16,993 - INFO - \U0001f50d Récupération des définitions pour l'item 2198166292
+2025-03-26 15:46:17,235 - INFO - \u2705 Item trouvé: Aberrant Action
+2025-03-26 15:46:17,235 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/fd4ee0fc7c0c6249cb615aed85cd70e7.jpg
+2025-03-26 15:46:17,236 - ERROR - Format invalide pour icons/2198166292.png
+2025-03-26 15:46:17,236 - ERROR - \u274c Image invalide: icons/2198166292.png
+2025-03-26 15:46:17,327 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:17,327 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:17,327 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:17,329 - INFO - \U0001f4e6 Mise à jour du slot d'arme 3
+2025-03-26 15:46:17,329 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:17,329 - INFO - \U0001f50d Récupération des définitions pour l'item 568611923
+2025-03-26 15:46:17,722 - INFO - \u2705 Item trouvé: Edge Transit
+2025-03-26 15:46:17,722 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/728e25f53bcdda0e6e60acb2c8605f21.jpg
+2025-03-26 15:46:17,723 - ERROR - Format invalide pour icons/568611923.png
+2025-03-26 15:46:17,723 - ERROR - \u274c Image invalide: icons/568611923.png
+2025-03-26 15:46:17,838 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:17,839 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:17,840 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:17,840 - INFO - \U0001f4e6 Mise à jour du slot d'armure 1
+2025-03-26 15:46:17,840 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:17,840 - INFO - \U0001f50d Récupération des définitions pour l'item 3001229473
+2025-03-26 15:46:18,067 - INFO - \u2705 Item trouvé: Untethered Edge Mask
+2025-03-26 15:46:18,069 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/1b3e3c1957d8d922688178b19a3df2e7.jpg
+2025-03-26 15:46:18,069 - ERROR - Format invalide pour icons/3001229473.png
+2025-03-26 15:46:18,069 - ERROR - \u274c Image invalide: icons/3001229473.png
+2025-03-26 15:46:18,153 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:18,153 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:18,153 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:18,154 - INFO - \U0001f4e6 Mise à jour du slot d'armure 2
+2025-03-26 15:46:18,154 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:18,154 - INFO - \U0001f50d Récupération des définitions pour l'item 3797572280
+2025-03-26 15:46:18,400 - INFO - \u2705 Item trouvé: Untethered Edge Grips
+2025-03-26 15:46:18,400 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/4f49839b3fe8332b10a80ce5404bfa27.jpg
+2025-03-26 15:46:18,401 - ERROR - Format invalide pour icons/3797572280.png
+2025-03-26 15:46:18,401 - ERROR - \u274c Image invalide: icons/3797572280.png
+2025-03-26 15:46:18,483 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:18,484 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:18,484 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:18,484 - INFO - \U0001f4e6 Mise à jour du slot d'armure 3
+2025-03-26 15:46:18,486 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:18,486 - INFO - \U0001f50d Récupération des définitions pour l'item 1958630864
+2025-03-26 15:46:18,763 - INFO - \u2705 Item trouvé: Untethered Edge Vest
+2025-03-26 15:46:18,763 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/a9e9d155f2d5ab1fb228a503fdc6a7d6.jpg
+2025-03-26 15:46:18,763 - ERROR - Format invalide pour icons/1958630864.png
+2025-03-26 15:46:18,763 - ERROR - \u274c Image invalide: icons/1958630864.png
+2025-03-26 15:46:18,844 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:18,845 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:18,845 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:18,845 - INFO - \U0001f4e6 Mise à jour du slot d'armure 4
+2025-03-26 15:46:18,845 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:18,847 - INFO - \U0001f50d Récupération des définitions pour l'item 129332559
+2025-03-26 15:46:19,082 - INFO - \u2705 Item trouvé: Prime Zealot Strides
+2025-03-26 15:46:19,084 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/342a406ccdedbce8680910cfd93d4263.jpg
+2025-03-26 15:46:19,084 - ERROR - Format invalide pour icons/129332559.png
+2025-03-26 15:46:19,084 - ERROR - \u274c Image invalide: icons/129332559.png
+2025-03-26 15:46:19,165 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:19,165 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:19,165 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:19,166 - INFO - \U0001f4e6 Mise à jour du slot d'armure 5
+2025-03-26 15:46:19,166 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:46:19,166 - INFO - \U0001f50d Récupération des définitions pour l'item 2809120022
+2025-03-26 15:46:19,426 - INFO - \u2705 Item trouvé: Relativism
+2025-03-26 15:46:19,427 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg
+2025-03-26 15:46:19,427 - ERROR - Format invalide pour icons/2809120022.png
+2025-03-26 15:46:19,427 - ERROR - \u274c Image invalide: icons/2809120022.png
+2025-03-26 15:46:19,539 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:46:19,539 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:46:19,539 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:46:19,541 - INFO - \u2705 Affichage des équipements terminé
+2025-03-26 15:46:19,562 - INFO - Compte chargé avec succès
+2025-03-26 15:46:20,623 - INFO - Page changée vers l'index 1
+2025-03-26 15:46:55,715 - INFO - Page changée vers l'index 2
+2025-03-26 15:46:55,777 - INFO - Page changée vers l'index 2
+2025-03-26 15:46:56,575 - INFO - Page changée vers l'index 1
+2025-03-26 15:51:09,488 - INFO - === Démarrage de Destiny Hub ===
+2025-03-26 15:51:09,490 - INFO - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-03-26 15:51:09,490 - INFO - Système d'exploitation: win32
+2025-03-26 15:51:09,490 - INFO - Vérification des dépendances:
+2025-03-26 15:51:09,490 - WARNING - PyQt6 non trouvé
+2025-03-26 15:51:09,490 - INFO - Requests version: 2.32.3
+2025-03-26 15:51:09,490 - WARNING - python-dotenv non trouvé
+2025-03-26 15:51:09,491 - INFO - psutil version: 5.9.5
+2025-03-26 15:51:09,491 - INFO - Vérification des dossiers:
+2025-03-26 15:51:09,491 - INFO - Dossier 'data' existant
+2025-03-26 15:51:09,491 - INFO - Dossier 'icons' existant
+2025-03-26 15:51:09,491 - INFO - Fichier .env trouvé
+2025-03-26 15:51:09,491 - INFO - Clé API Bungie trouvée dans .env
+2025-03-26 15:51:09,493 - INFO - Tokens chargés depuis le fichier
+2025-03-26 15:51:09,776 - WARNING - Pas de refresh token disponible
+2025-03-26 15:51:09,778 - INFO - Profil utilisateur chargé
+2025-03-26 15:51:09,879 - INFO - === Début du chargement du personnage actif ===
+2025-03-26 15:51:11,899 - INFO - Item 1197771438 - Instance trouvée avec puissance: 2010
+2025-03-26 15:51:11,900 - INFO - Item 2198166292 - Instance trouvée avec puissance: 2004
+2025-03-26 15:51:11,900 - INFO - Item 568611923 - Instance trouvée avec puissance: 2007
+2025-03-26 15:51:11,901 - INFO - Item 3001229473 - Instance trouvée avec puissance: 2005
+2025-03-26 15:51:11,901 - INFO - Item 3797572280 - Instance trouvée avec puissance: 2007
+2025-03-26 15:51:11,901 - INFO - Item 1958630864 - Instance trouvée avec puissance: 2009
+2025-03-26 15:51:11,901 - INFO - Item 129332559 - Instance trouvée avec puissance: 2010
+2025-03-26 15:51:11,901 - INFO - Item 2809120022 - Instance trouvée avec puissance: 2000
+2025-03-26 15:51:11,901 - INFO - Item 1003860281 - Instance trouvée avec puissance: 0
+2025-03-26 15:51:11,901 - INFO - Item 1522633034 - Instance trouvée avec puissance: 190
+2025-03-26 15:51:11,901 - INFO - Item 1320342774 - Instance trouvée avec puissance: 0
+2025-03-26 15:51:11,901 - INFO - Item 4282591831 - Instance trouvée avec puissance: 6
+2025-03-26 15:51:11,901 - INFO - Item 4026763349 - Instance trouvée avec puissance: 0
+2025-03-26 15:51:11,901 - INFO - Item 788073488 - Instance trouvée avec puissance: 0
+2025-03-26 15:51:11,901 - INFO - Item 152583919 - Instance trouvée avec puissance: 0
+2025-03-26 15:51:11,901 - INFO - Item 3183180185 - Instance trouvée avec puissance: 0
+2025-03-26 15:51:11,903 - INFO - Item 1907110519 - Instance trouvée avec puissance: 6
+2025-03-26 15:51:11,903 - INFO - === Début de l'affichage des équipements ===
+2025-03-26 15:51:11,903 - INFO - \U0001f50d Analyse item - BucketHash: 1498876634, Type: kinetic
+2025-03-26 15:51:11,903 - INFO -    Puissance: 2010
+2025-03-26 15:51:11,903 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,903 - INFO - \U0001f50d Analyse item - BucketHash: 2465295065, Type: energy
+2025-03-26 15:51:11,903 - INFO -    Puissance: 2004
+2025-03-26 15:51:11,903 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,903 - INFO - \U0001f50d Analyse item - BucketHash: 953998645, Type: power
+2025-03-26 15:51:11,903 - INFO -    Puissance: 2007
+2025-03-26 15:51:11,903 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,903 - INFO - \U0001f50d Analyse item - BucketHash: 3448274439, Type: helmet
+2025-03-26 15:51:11,903 - INFO -    Puissance: 2005
+2025-03-26 15:51:11,903 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,903 - INFO - \U0001f50d Analyse item - BucketHash: 3551918588, Type: gauntlets
+2025-03-26 15:51:11,905 - INFO -    Puissance: 2007
+2025-03-26 15:51:11,905 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,905 - INFO - \U0001f50d Analyse item - BucketHash: 14239492, Type: chest
+2025-03-26 15:51:11,905 - INFO -    Puissance: 2009
+2025-03-26 15:51:11,905 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,905 - INFO - \U0001f50d Analyse item - BucketHash: 20886954, Type: legs
+2025-03-26 15:51:11,905 - INFO -    Puissance: 2010
+2025-03-26 15:51:11,905 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,905 - INFO - \U0001f50d Analyse item - BucketHash: 1585787867, Type: class_item
+2025-03-26 15:51:11,905 - INFO -    Puissance: 2000
+2025-03-26 15:51:11,905 - INFO -    \u2705 Item valide compté pour la puissance moyenne
+2025-03-26 15:51:11,906 - INFO - \U0001f50d Analyse item - BucketHash: 4023194814, Type: ghost
+2025-03-26 15:51:11,906 - INFO -    Puissance: 0
+2025-03-26 15:51:11,906 - INFO - \U0001f50d Analyse item - BucketHash: 2025709351, Type: unknown
+2025-03-26 15:51:11,906 - INFO -    Puissance: 190
+2025-03-26 15:51:11,906 - INFO - \U0001f50d Analyse item - BucketHash: 284967655, Type: unknown
+2025-03-26 15:51:11,906 - INFO -    Puissance: 0
+2025-03-26 15:51:11,906 - INFO - \U0001f50d Analyse item - BucketHash: 3284755031, Type: unknown
+2025-03-26 15:51:11,906 - INFO -    Puissance: 6
+2025-03-26 15:51:11,906 - INFO - \U0001f50d Analyse item - BucketHash: 4292445962, Type: unknown
+2025-03-26 15:51:11,906 - INFO -    Puissance: 0
+2025-03-26 15:51:11,906 - INFO - \U0001f50d Analyse item - BucketHash: 4274335291, Type: unknown
+2025-03-26 15:51:11,906 - INFO -    Puissance: 0
+2025-03-26 15:51:11,908 - INFO - \U0001f50d Analyse item - BucketHash: 3683254069, Type: unknown
+2025-03-26 15:51:11,908 - INFO -    Puissance: 0
+2025-03-26 15:51:11,908 - INFO - \U0001f50d Analyse item - BucketHash: 1107761855, Type: unknown
+2025-03-26 15:51:11,908 - INFO -    Puissance: 0
+2025-03-26 15:51:11,908 - INFO - \U0001f50d Analyse item - BucketHash: 1506418338, Type: unknown
+2025-03-26 15:51:11,908 - INFO -    Puissance: 6
+2025-03-26 15:51:11,908 - INFO - \U0001f4aa Puissance moyenne calculée: 2006 (Total: 16052 / Items: 8)
+2025-03-26 15:51:11,908 - INFO - \U0001f5e1\ufe0f Armes trouvées: 3
+2025-03-26 15:51:11,908 - INFO - \U0001f6e1\ufe0f Pièces d'armure trouvées: 5
+2025-03-26 15:51:11,908 - INFO - \U0001f4e6 Mise à jour du slot d'arme 1
+2025-03-26 15:51:11,908 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:11,908 - INFO - \U0001f50d Récupération des définitions pour l'item 1197771438
+2025-03-26 15:51:12,165 - INFO - \u2705 Item trouvé: Lost Signal
+2025-03-26 15:51:12,167 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58577a92574f2f57eb2b806ae39de598.jpg
+2025-03-26 15:51:12,167 - ERROR - Format invalide pour icons/1197771438.png
+2025-03-26 15:51:12,167 - ERROR - \u274c Image invalide: icons/1197771438.png
+2025-03-26 15:51:12,242 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:12,243 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:12,243 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:12,243 - INFO - \U0001f4e6 Mise à jour du slot d'arme 2
+2025-03-26 15:51:12,243 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:12,243 - INFO - \U0001f50d Récupération des définitions pour l'item 2198166292
+2025-03-26 15:51:12,479 - INFO - \u2705 Item trouvé: Aberrant Action
+2025-03-26 15:51:12,479 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/fd4ee0fc7c0c6249cb615aed85cd70e7.jpg
+2025-03-26 15:51:12,480 - ERROR - Format invalide pour icons/2198166292.png
+2025-03-26 15:51:12,480 - ERROR - \u274c Image invalide: icons/2198166292.png
+2025-03-26 15:51:12,556 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:12,556 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:12,556 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:12,556 - INFO - \U0001f4e6 Mise à jour du slot d'arme 3
+2025-03-26 15:51:12,558 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:12,558 - INFO - \U0001f50d Récupération des définitions pour l'item 568611923
+2025-03-26 15:51:12,848 - INFO - \u2705 Item trouvé: Edge Transit
+2025-03-26 15:51:12,849 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/728e25f53bcdda0e6e60acb2c8605f21.jpg
+2025-03-26 15:51:12,849 - ERROR - Format invalide pour icons/568611923.png
+2025-03-26 15:51:12,849 - ERROR - \u274c Image invalide: icons/568611923.png
+2025-03-26 15:51:12,942 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:12,944 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:12,944 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:12,944 - INFO - \U0001f4e6 Mise à jour du slot d'armure 1
+2025-03-26 15:51:12,944 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:12,945 - INFO - \U0001f50d Récupération des définitions pour l'item 3001229473
+2025-03-26 15:51:13,200 - INFO - \u2705 Item trouvé: Untethered Edge Mask
+2025-03-26 15:51:13,201 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/1b3e3c1957d8d922688178b19a3df2e7.jpg
+2025-03-26 15:51:13,201 - ERROR - Format invalide pour icons/3001229473.png
+2025-03-26 15:51:13,201 - ERROR - \u274c Image invalide: icons/3001229473.png
+2025-03-26 15:51:13,276 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:13,276 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:13,276 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:13,276 - INFO - \U0001f4e6 Mise à jour du slot d'armure 2
+2025-03-26 15:51:13,277 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:13,277 - INFO - \U0001f50d Récupération des définitions pour l'item 3797572280
+2025-03-26 15:51:13,521 - INFO - \u2705 Item trouvé: Untethered Edge Grips
+2025-03-26 15:51:13,521 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/4f49839b3fe8332b10a80ce5404bfa27.jpg
+2025-03-26 15:51:13,523 - ERROR - Format invalide pour icons/3797572280.png
+2025-03-26 15:51:13,523 - ERROR - \u274c Image invalide: icons/3797572280.png
+2025-03-26 15:51:13,610 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:13,610 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:13,610 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:13,611 - INFO - \U0001f4e6 Mise à jour du slot d'armure 3
+2025-03-26 15:51:13,611 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:13,611 - INFO - \U0001f50d Récupération des définitions pour l'item 1958630864
+2025-03-26 15:51:13,864 - INFO - \u2705 Item trouvé: Untethered Edge Vest
+2025-03-26 15:51:13,864 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/a9e9d155f2d5ab1fb228a503fdc6a7d6.jpg
+2025-03-26 15:51:13,866 - ERROR - Format invalide pour icons/1958630864.png
+2025-03-26 15:51:13,866 - ERROR - \u274c Image invalide: icons/1958630864.png
+2025-03-26 15:51:13,942 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:13,942 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:13,942 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:13,942 - INFO - \U0001f4e6 Mise à jour du slot d'armure 4
+2025-03-26 15:51:13,942 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:13,942 - INFO - \U0001f50d Récupération des définitions pour l'item 129332559
+2025-03-26 15:51:14,166 - INFO - \u2705 Item trouvé: Prime Zealot Strides
+2025-03-26 15:51:14,166 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/342a406ccdedbce8680910cfd93d4263.jpg
+2025-03-26 15:51:14,166 - ERROR - Format invalide pour icons/129332559.png
+2025-03-26 15:51:14,167 - ERROR - \u274c Image invalide: icons/129332559.png
+2025-03-26 15:51:14,252 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:14,252 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:14,253 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:14,253 - INFO - \U0001f4e6 Mise à jour du slot d'armure 5
+2025-03-26 15:51:14,253 - INFO - === Mise à jour du slot d'équipement ===
+2025-03-26 15:51:14,253 - INFO - \U0001f50d Récupération des définitions pour l'item 2809120022
+2025-03-26 15:51:14,935 - INFO - \u2705 Item trouvé: Relativism
+2025-03-26 15:51:14,935 - INFO - \U0001f5bc\ufe0f Icône: https://www.bungie.net/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg
+2025-03-26 15:51:14,936 - ERROR - Format invalide pour icons/2809120022.png
+2025-03-26 15:51:14,936 - ERROR - \u274c Image invalide: icons/2809120022.png
+2025-03-26 15:51:15,013 - INFO - \U0001f4cf Dimensions originales: 96x96
+2025-03-26 15:51:15,013 - INFO - \U0001f4cf Dimensions après redimensionnement: 64x64
+2025-03-26 15:51:15,013 - INFO - \u2705 Image appliquée au label
+2025-03-26 15:51:15,014 - INFO - \u2705 Affichage des équipements terminé
+2025-03-26 15:51:15,032 - INFO - Compte chargé avec succès
+2025-03-26 15:51:16,309 - INFO - Page changée vers l'index 1
+2025-03-26 15:51:26,130 - INFO - Page changée vers l'index 0
+2025-03-26 15:51:26,701 - INFO - Page changée vers l'index 1

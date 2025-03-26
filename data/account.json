@@ -1,13 +1,22 @@
 {
-    "iconPath": "/img/theme/bungienet/icons/steamLogo.png",
-    "crossSaveOverride": 0,
-    "applicableMembershipTypes": [
-        3
+    "Response": [
+        {
+            "iconPath": "/img/theme/bungienet/icons/steamLogo.png",
+            "crossSaveOverride": 0,
+            "applicableMembershipTypes": [
+                3
+            ],
+            "isPublic": true,
+            "membershipType": 3,
+            "membershipId": "4611686018536948250",
+            "displayName": "per",
+            "bungieGlobalDisplayName": "per",
+            "bungieGlobalDisplayNameCode": 8639
+        }
     ],
-    "isPublic": true,
-    "membershipType": 3,
-    "membershipId": "4611686018536948250",
-    "displayName": "per",
-    "bungieGlobalDisplayName": "per",
-    "bungieGlobalDisplayNameCode": 8639
+    "ErrorCode": 1,
+    "ThrottleSeconds": 0,
+    "ErrorStatus": "Success",
+    "Message": "Ok",
+    "MessageData": {}
 }
