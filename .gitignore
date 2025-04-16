@@ -1,0 +1,12 @@
+# Dossiers de données et ressources
+/icons/
+/data/
+
+# Fichiers de configuration et logs
+.env
+auth_tokens.json
+destiny_hub.log
+
+# Cache Python
+__pycache__/
+*.pyc

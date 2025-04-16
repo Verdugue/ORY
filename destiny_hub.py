@@ -1140,52 +1140,245 @@ class DestinyHub(QMainWindow):
 
     def create_equipment_page(self):
         page = QWidget()
-        layout = QHBoxLayout(page)
+        layout = QVBoxLayout(page)  # Changé en VBoxLayout pour ajouter le sélecteur en haut
         layout.setContentsMargins(20, 20, 20, 20)
         layout.setSpacing(20)
 
-        # Style amélioré pour la page d'équipement
-        equipment_style = """
-            QWidget#equipment_slot {
-                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
-                                          stop:0 rgba(45, 47, 51, 0.9),
-                                          stop:1 rgba(35, 37, 41, 0.9));
-                border: 2px solid #3d3f43;
-                border-radius: 8px;
-                padding: 10px;
-            }
-            
-            QWidget#equipment_slot:hover {
-                border-color: #4d7aff;
-                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
-                                          stop:0 rgba(55, 57, 61, 0.9),
-                                          stop:1 rgba(45, 47, 51, 0.9));
-            }
-            
-            QLabel#power {
-                color: #ffd700;
-                font-size: 18px;
-                font-weight: bold;
-                font-family: 'Arial';
-            }
-            
-            QLabel#item_name {
-                color: #eceeee;
-                font-size: 13px;
-                font-weight: bold;
-                margin-top: 5px;
-            }
-            
-            QLabel#icon_label {
-                background-color: transparent;
-                border: 1px solid rgba(255, 255, 255, 0.1);
+        # Ajouter le sélecteur de personnage et le bouton d'actualisation en haut
+        top_controls = QHBoxLayout()
+        
+        # Sélecteur de personnage
+        self.character_selector = QComboBox()
+        self.character_selector.setStyleSheet("""
+            QComboBox {
+                background-color: #2a2c30;
+                color: white;
+                padding: 8px;
+                border: 1px solid #3d3f43;
                 border-radius: 4px;
-                padding: 2px;
+                min-width: 200px;
             }
-        """
-        page.setStyleSheet(equipment_style)
+            QComboBox::drop-down {
+                border: none;
+            }
+            QComboBox::down-arrow {
+                image: url(icons/arrow-down.png);
+                width: 12px;
+                height: 12px;
+            }
+            QComboBox QAbstractItemView {
+                background-color: #2a2c30;
+                color: white;
+                selection-background-color: #4d7aff;
+            }
+        """)
+        self.character_selector.currentIndexChanged.connect(self.change_character)
+        top_controls.addWidget(self.character_selector)
+        
+        # Bouton d'actualisation
+        refresh_button = QPushButton("Actualiser l'équipement")
+        refresh_button.clicked.connect(self.refresh_character_data)
+        refresh_button.setStyleSheet("""
+            QPushButton {
+                background-color: #4d7aff;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            QPushButton:hover {
+                background-color: #5d8aff;
+            }
+        """)
+        top_controls.addWidget(refresh_button)
+        top_controls.addStretch()
 
-        # Colonne gauche (armes)
+        layout.addLayout(top_controls)
+        
+        # Le reste du layout d'équipement
+        equipment_layout = QHBoxLayout()
+        weapons_column = self.create_weapons_column()
+        character_widget = self.create_character_widget()
+        armor_column = self.create_armor_column()
+        
+        equipment_layout.addLayout(weapons_column)
+        equipment_layout.addWidget(character_widget)
+        equipment_layout.addLayout(armor_column)
+        
+        layout.addLayout(equipment_layout)
+        
+        # Charger la liste des personnages
+        self.load_characters()
+        
+        return page
+
+    def load_characters(self):
+        """Charge la liste des personnages disponibles."""
+        try:
+            self.logger.info("=== Chargement des personnages ===")
+            
+            if not os.path.exists('data/account.json'):
+                self.logger.error("❌ Aucun compte trouvé dans data/account.json")
+                return
+
+            with open('data/account.json', 'r') as f:
+                account_data = json.load(f)
+                
+            if not account_data.get('Response'):
+                self.logger.error("❌ Données de compte invalides")
+                return
+            
+            player_info = account_data['Response'][0]
+            membership_id = player_info['membershipId']
+            membership_type = player_info['membershipType']
+            
+            headers = {
+                'X-API-Key': self.OAUTH_CONFIG['api_key']
+            }
+            
+            profile_url = f'https://www.bungie.net/Platform/Destiny2/{membership_type}/Profile/{membership_id}/'
+            character_response = requests.get(
+                profile_url,
+                headers=headers,
+                params={'components': '200'}  # Characters only
+            )
+            
+            if character_response.status_code == 200:
+                character_data = character_response.json()['Response']
+                characters = character_data.get('characters', {}).get('data', {})
+                
+                # Vider le sélecteur
+                self.character_selector.clear()
+                
+                # Classe de personnage mapping
+                class_types = {
+                    0: "Titan",
+                    1: "Chasseur",
+                    2: "Arcaniste"
+                }
+                
+                # Ajouter chaque personnage au sélecteur
+                for char_id, char_info in characters.items():
+                    class_type = class_types.get(char_info.get('classType'), "Inconnu")
+                    light_level = char_info.get('light', 0)
+                    label = f"{class_type} - Lumière {light_level}"
+                    # Stocker l'ID du personnage comme donnée
+                    self.character_selector.addItem(label, char_id)
+                
+                self.logger.info(f"✅ {len(characters)} personnages chargés")
+                
+                # Charger le premier personnage
+                if self.character_selector.count() > 0:
+                    self.load_character_equipment(self.character_selector.currentData())
+            else:
+                self.logger.error(f"❌ Erreur lors de la récupération des personnages: {character_response.status_code}")
+                
+        except Exception as e:
+            self.logger.error(f"❌ Erreur lors du chargement des personnages: {str(e)}")
+            self.logger.exception("Détails de l'erreur:")
+
+    def change_character(self, index):
+        """Change le personnage actif."""
+        if index >= 0:
+            character_id = self.character_selector.currentData()
+            self.load_character_equipment(character_id)
+
+    def load_character_equipment(self, character_id):
+        """Charge l'équipement pour un personnage spécifique."""
+        try:
+            self.logger.info(f"=== Chargement de l'équipement pour le personnage {character_id} ===")
+            
+            if not os.path.exists('data/account.json'):
+                self.logger.error("❌ Aucun compte trouvé")
+                return
+
+            with open('data/account.json', 'r') as f:
+                account_data = json.load(f)
+                
+            player_info = account_data['Response'][0]
+            membership_id = player_info['membershipId']
+            membership_type = player_info['membershipType']
+            
+            headers = {
+                'X-API-Key': self.OAUTH_CONFIG['api_key']
+            }
+            
+            equipment_url = f'https://www.bungie.net/Platform/Destiny2/{membership_type}/Profile/{membership_id}/Character/{character_id}/'
+            equipment_response = requests.get(
+                equipment_url,
+                headers=headers,
+                params={'components': '205,300,302,304,305'}  # Equipment and instances
+            )
+            
+            if equipment_response.status_code == 200:
+                equipment_data = equipment_response.json()['Response']
+                character_equipment = equipment_data.get('equipment', {}).get('data', {}).get('items', [])
+                instances = equipment_data.get('itemComponents', {}).get('instances', {}).get('data', {})
+                
+                # Associer les données d'instance à chaque item
+                for item in character_equipment:
+                    instance_id = item.get('itemInstanceId')
+                    if instance_id in instances:
+                        item['instance'] = instances[instance_id]
+                
+                self.display_equipment(character_equipment)
+            else:
+                self.logger.error(f"❌ Erreur lors de la récupération de l'équipement: {equipment_response.status_code}")
+                
+        except Exception as e:
+            self.logger.error(f"❌ Erreur lors du chargement de l'équipement: {str(e)}")
+            self.logger.exception("Détails de l'erreur:")
+
+    def refresh_character_data(self):
+        """Actualise les données du personnage depuis l'API Bungie."""
+        try:
+            self.logger.info("=== Actualisation des données du personnage ===")
+            
+            # Charger les données du compte
+            if not os.path.exists('data/account.json'):
+                QMessageBox.warning(self, "Erreur", "Veuillez d'abord enregistrer votre compte")
+                return
+
+            with open('data/account.json', 'r') as f:
+                account_data = json.load(f)
+                
+            if not account_data.get('Response'):
+                QMessageBox.warning(self, "Erreur", "Données de compte invalides")
+                return
+            
+            player_info = account_data['Response'][0]
+            membership_id = player_info['membershipId']
+            membership_type = player_info['membershipType']
+            
+            # Faire une nouvelle requête à l'API pour obtenir les données à jour
+            headers = {
+                'X-API-Key': self.OAUTH_CONFIG['api_key']
+            }
+            
+            profile_url = f'https://www.bungie.net/Platform/Destiny2/{membership_type}/Profile/{membership_id}/'
+            character_response = requests.get(
+                profile_url,
+                headers=headers,
+                params={'components': '200,205,300,302,304,305'}  # Tous les composants nécessaires
+            )
+            
+            if character_response.status_code == 200:
+                # Sauvegarder les nouvelles données
+                with open('data/full_account.json', 'w') as f:
+                    json.dump(character_response.json()['Response'], f, indent=4)
+                
+                # Recharger l'équipement
+                self.load_active_character()
+                
+                QMessageBox.information(self, "Succès", "Données actualisées avec succès!")
+            else:
+                QMessageBox.warning(self, "Erreur", "Impossible d'actualiser les données")
+                
+        except Exception as e:
+            self.logger.error(f"Erreur lors de l'actualisation: {str(e)}")
+            QMessageBox.warning(self, "Erreur", f"Erreur lors de l'actualisation: {str(e)}")
+
+    def create_weapons_column(self):
         weapons_column = QVBoxLayout()
         weapons_column.setSpacing(10)
         weapons_column.setContentsMargins(20, 20, 20, 20)
@@ -1202,11 +1395,11 @@ class DestinyHub(QMainWindow):
             icon_label = QLabel()
             icon_label.setFixedSize(64, 64)
             icon_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            icon_label.setObjectName("icon_label")  # Ajouter un nom d'objet
-            icon_label.setScaledContents(True)  # Permettre le redimensionnement du contenu
+            icon_label.setObjectName("icon_label")
+            icon_label.setScaledContents(True)
             
-            power_label = QLabel("0")
-            power_label.setObjectName("power")
+            power_label = QLabel("0")  # Label de lumière
+            power_label.setObjectName("lumiere")  # Modifié ici
             power_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
             
             name_label = QLabel("Vide")
@@ -1222,13 +1415,14 @@ class DestinyHub(QMainWindow):
             self.weapon_slots.append(slot)
         
         weapons_column.addStretch()
+        return weapons_column
 
-        # Zone centrale (personnage)
+    def create_character_widget(self):
         character_widget = QWidget()
         character_layout = QVBoxLayout(character_widget)
         
-        # Niveau de puissance
-        power_label = QLabel("POWER")
+        # Niveau de lumière (au lieu de power)
+        power_label = QLabel("LUMIÈRE")  # Modifié ici
         power_label.setStyleSheet("color: white; font-size: 20px;")
         power_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         character_layout.addWidget(power_label)
@@ -1244,7 +1438,9 @@ class DestinyHub(QMainWindow):
         character_view.setStyleSheet("background-color: rgba(0, 0, 0, 0.3); border-radius: 10px;")
         character_layout.addWidget(character_view)
 
-        # Colonne droite (armure)
+        return character_widget
+
+    def create_armor_column(self):
         armor_column = QVBoxLayout()
         armor_column.setSpacing(10)
         armor_column.setContentsMargins(20, 20, 20, 20)
@@ -1261,11 +1457,11 @@ class DestinyHub(QMainWindow):
             icon_label = QLabel()
             icon_label.setFixedSize(64, 64)
             icon_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            icon_label.setObjectName("icon_label")  # Ajouter un nom d'objet
-            icon_label.setScaledContents(True)  # Permettre le redimensionnement du contenu
+            icon_label.setObjectName("icon_label")
+            icon_label.setScaledContents(True)
             
-            power_label = QLabel("0")
-            power_label.setObjectName("power")
+            power_label = QLabel("0")  # Label de lumière
+            power_label.setObjectName("lumiere")  # Modifié ici
             power_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
             
             name_label = QLabel("Vide")
@@ -1281,65 +1477,66 @@ class DestinyHub(QMainWindow):
             self.armor_slots.append(slot)
         
         armor_column.addStretch()
-
-        # Ajouter les colonnes au layout principal
-        layout.addLayout(weapons_column)
-        layout.addWidget(character_widget)
-        layout.addLayout(armor_column)
-
-        # Charger l'équipement du personnage actif
-        self.load_active_character()
-
-        return page
+        return armor_column
 
     def display_equipment(self, equipment):
         try:
             self.logger.info("=== Début de l'affichage des équipements ===")
             
+            # Récupérer la lumière du personnage actuel
+            character_id = self.character_selector.currentData()
+            if not os.path.exists('data/account.json'):
+                self.logger.error("❌ Aucun compte trouvé dans data/account.json")
+                return
+
+            with open('data/account.json', 'r') as f:
+                account_data = json.load(f)
+                
+            player_info = account_data['Response'][0]
+            membership_id = player_info['membershipId']
+            membership_type = player_info['membershipType']
+            
+            # Faire une requête pour obtenir les données à jour du personnage
+            headers = {
+                'X-API-Key': self.OAUTH_CONFIG['api_key']
+            }
+            
+            character_url = f'https://www.bungie.net/Platform/Destiny2/{membership_type}/Profile/{membership_id}/Character/{character_id}/'
+            character_response = requests.get(
+                character_url,
+                headers=headers,
+                params={'components': '200'}  # Composant Characters pour avoir la lumière
+            )
+            
+            if character_response.status_code == 200:
+                character_data = character_response.json()['Response']
+                character_info = character_data.get('character', {}).get('data', {})
+                character_light = character_info.get('light', 0)
+                
+                # Mettre à jour l'affichage de la lumière avec la valeur exacte du personnage
+                self.power_value.setText(str(character_light))
+                self.logger.info(f"💪 Lumière du personnage mise à jour: {character_light}")
+            else:
+                self.logger.error(f"❌ Erreur lors de la récupération des données du personnage: {character_response.status_code}")
+
             # Trier l'équipement par type
             sorted_equipment = {
                 'weapons': [],
                 'armor': []
             }
 
-            # Calculer la puissance totale (uniquement pour les items d'équipement valides)
-            total_power = 0
-            valid_items = 0
+            # Mise à jour des slots
+            self.logger.info(f"🗡️ Armes trouvées: {len(sorted_equipment['weapons'])}")
+            self.logger.info(f"🛡️ Pièces d'armure trouvées: {len(sorted_equipment['armor'])}")
 
             for item in equipment:
-                power = item.get('instance', {}).get('primaryStat', {}).get('value', 0)
                 bucket_hash = str(item.get('bucketHash', ''))
                 bucket_type = self.get_bucket_type(bucket_hash)
                 
-                self.logger.info(f"🔍 Analyse item - BucketHash: {bucket_hash}, Type: {bucket_type}")
-                self.logger.info(f"   Puissance: {power}")
-
-                # Ne compter que les items d'équipement valides (armes et armure)
-                if bucket_type in ['kinetic', 'energy', 'power', 'helmet', 'gauntlets', 'chest', 'legs', 'class_item']:
-                    if power > 1000:  # Vérifier que c'est un item valide avec une puissance normale
-                        total_power += power
-                        valid_items += 1
-                        self.logger.info(f"   ✅ Item valide compté pour la puissance moyenne")
-                    else:
-                        self.logger.info(f"   ⚠️ Item ignoré car puissance trop basse: {power}")
-
                 if bucket_type in ['kinetic', 'energy', 'power']:
                     sorted_equipment['weapons'].append(item)
                 elif bucket_type in ['helmet', 'gauntlets', 'chest', 'legs', 'class_item']:
                     sorted_equipment['armor'].append(item)
-
-            # Mise à jour de la puissance moyenne
-            if valid_items > 0:
-                average_power = total_power // valid_items
-                self.logger.info(f"💪 Puissance moyenne calculée: {average_power} (Total: {total_power} / Items: {valid_items})")
-                self.power_value.setText(str(average_power))
-            else:
-                self.logger.warning("⚠️ Aucun item valide pour calculer la puissance")
-                self.power_value.setText("0")
-
-            # Mise à jour des slots
-            self.logger.info(f"🗡️ Armes trouvées: {len(sorted_equipment['weapons'])}")
-            self.logger.info(f"🛡️ Pièces d'armure trouvées: {len(sorted_equipment['armor'])}")
 
             # Mise à jour des slots d'armes
             for i, slot in enumerate(self.weapon_slots):
