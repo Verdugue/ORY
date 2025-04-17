@@ -4,12 +4,15 @@ from PyQt6.QtCore import Qt
 import logging
 import json
 import requests
+import os
 from api.bungie_client import BungieClient
 from utils.config import OAUTH_CONFIG
 
 class AccountPage(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
+        # Initialiser le logger
+        self.logger = logging.getLogger(__name__)
         self.bungie_client = BungieClient()
         self.setup_ui()
         self.load_saved_account()
@@ -93,7 +96,7 @@ class AccountPage(QWidget):
         """Enregistre un nouveau compte Destiny 2."""
         try:
             bungie_name = self.bungie_name_input.text().strip()
-            logging.info(f"Tentative d'enregistrement du compte: {bungie_name}")
+            self.logger.info(f"Tentative d'enregistrement du compte: {bungie_name}")
             
             if not bungie_name or '#' not in bungie_name:
                 self.show_error("Format de Bungie Name invalide (ex: Guardian#1234)")
@@ -107,22 +110,55 @@ class AccountPage(QWidget):
                 return
             
             # Faire la requête
-            response = self.bungie_client.search_destiny_player(display_name, display_name_code)
+            response = requests.post(
+                'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayerByBungieName/-1/',
+                headers={'X-API-Key': OAUTH_CONFIG['api_key']},
+                json={
+                    'displayName': display_name,
+                    'displayNameCode': int(display_name_code)
+                }
+            )
             
-            if response and response.get('Response'):
-                # Sauvegarder les données
-                self.save_account_data(response)
-                
-                # Mettre à jour l'interface
-                self.update_account_status("Compte connecté", True)
-                self.display_account_info(response['Response'][0])
-                
-                self.show_success("Compte enregistré avec succès!")
+            self.logger.info(f"Réponse reçue - Status: {response.status_code}")
+            
+            if response.status_code == 200:
+                response_data = response.json()
+                if response_data.get('Response'):
+                    # Sauvegarder les données
+                    if not os.path.exists('data'):
+                        os.makedirs('data')
+                    
+                    with open('data/account.json', 'w') as f:
+                        json.dump(response_data, f, indent=4)
+                    self.logger.info("Données du compte sauvegardées")
+                    
+                    # Mettre à jour l'interface
+                    self.account_status.setText(f"Compte enregistré: {bungie_name}")
+                    self.account_status.setStyleSheet("color: green;")
+                    
+                    # Actualiser l'équipement automatiquement
+                    main_window = self.window()
+                    if hasattr(main_window, 'equipment_page'):
+                        self.logger.info("Actualisation automatique de l'équipement")
+                        main_window.equipment_page.refresh_character_data()
+                        # Changer automatiquement vers la page d'équipement
+                        main_window.switch_page(1)
+                    
+                    self.show_success("Compte enregistré avec succès!")
+                else:
+                    self.show_error("Compte Destiny 2 non trouvé")
             else:
-                self.show_error("Compte Destiny 2 non trouvé")
+                error_msg = f"Erreur API: {response.status_code}"
+                if response.text:
+                    try:
+                        error_data = response.json()
+                        error_msg += f"\n{error_data.get('Message', '')}"
+                    except:
+                        error_msg += f"\n{response.text}"
+                self.show_error(error_msg)
                 
         except Exception as e:
-            logging.error(f"Erreur lors de l'enregistrement du compte: {str(e)}")
+            self.logger.error(f"Erreur lors de l'enregistrement du compte: {str(e)}")
             self.show_error(f"Erreur lors de l'enregistrement: {str(e)}")
 
     def save_account_data(self, data):
@@ -201,7 +237,9 @@ class AccountPage(QWidget):
     def show_error(self, message):
         """Affiche une boîte de dialogue d'erreur."""
         QMessageBox.warning(self, "Erreur", message)
+        self.logger.error(message)
 
     def show_success(self, message):
         """Affiche une boîte de dialogue de succès."""
         QMessageBox.information(self, "Succès", message)
+        self.logger.info(message)

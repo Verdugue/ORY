@@ -6,6 +6,7 @@ from PyQt6.QtGui import QIcon, QFont
 from ui.pages.account_page import AccountPage
 from ui.pages.equipment_page import EquipmentPage
 from ui.pages.missions_page import MissionsPage
+from ui.pages.meta_page import MetaPage
 from ui.styles import setup_dark_theme, GLOBAL_STYLE
 import logging
 import os
@@ -69,7 +70,8 @@ class DestinyHub(QMainWindow):
         for text, icon_path in [
             ("Compte", "icons/account.png"),
             ("Équipement", "icons/equipment.png"),
-            ("Missions", "icons/missions.png")
+            ("Missions", "icons/missions.png"),
+            ("Meta", "icons/meta.png")
         ]:
             btn = QPushButton(text)
             btn.setCheckable(True)
@@ -117,15 +119,20 @@ class DestinyHub(QMainWindow):
             self.missions_page = MissionsPage(self)
             logging.debug("✓ Page missions créée")
             
+            self.meta_page = MetaPage(self)
+            logging.debug("✓ Page meta créée")
+            
             # Ajouter les pages
             self.stacked_widget.addWidget(self.account_page)
             self.stacked_widget.addWidget(self.equipment_page)
             self.stacked_widget.addWidget(self.missions_page)
+            self.stacked_widget.addWidget(self.meta_page)
             
             # Connecter les boutons aux pages
             self.nav_buttons[0].clicked.connect(lambda: self.switch_page(0))
             self.nav_buttons[1].clicked.connect(lambda: self.switch_page(1))
             self.nav_buttons[2].clicked.connect(lambda: self.switch_page(2))
+            self.nav_buttons[3].clicked.connect(lambda: self.switch_page(3))
             
             # Sélectionner la première page par défaut
             self.nav_buttons[0].setChecked(True)
