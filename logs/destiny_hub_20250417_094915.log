@@ -1,0 +1,99 @@
+2025-04-17 09:49:15,532 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-04-17 09:49:15,533 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-17 09:49:15,533 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-04-17 09:49:15,534 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250417_094915.log
+2025-04-17 09:49:15,534 - INFO - [logger.py:55] - === Informations Système ===
+2025-04-17 09:49:15,534 - INFO - [logger.py:56] - OS: Windows 10
+2025-04-17 09:49:15,553 - INFO - [logger.py:57] - Architecture: AMD64
+2025-04-17 09:49:15,553 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-04-17 09:49:15,565 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-04-17 09:49:15,566 - INFO - [logger.py:63] - Mémoire disponible: 13.13 GB
+2025-04-17 09:49:15,566 - INFO - [logger.py:64] - Utilisation mémoire: 58.0%
+2025-04-17 09:49:15,566 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-04-17 09:49:15,566 - INFO - [logger.py:69] - Espace disque libre: 218.63 GB
+2025-04-17 09:49:15,568 - INFO - [logger.py:70] - Utilisation disque: 77.0%
+2025-04-17 09:49:15,568 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-04-17 09:49:15,569 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-04-17 09:49:15,570 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-04-17 09:49:15,570 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-04-17 09:49:15,570 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-04-17 09:49:15,570 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-04-17 09:49:15,570 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-04-17 09:49:15,571 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-04-17 09:49:15,571 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-04-17 09:49:15,571 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-04-17 09:49:15,571 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-04-17 09:49:15,571 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-04-17 09:49:15,572 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-04-17 09:49:15,572 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-04-17 09:49:15,572 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-04-17 09:49:15,573 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-04-17 09:49:15,573 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-04-17 09:49:15,573 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-04-17 09:49:15,574 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-04-17 09:49:15,574 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-04-17 09:49:15,575 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-04-17 09:49:15,575 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-17 09:49:15,575 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-04-17 09:49:15,576 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-17 09:49:15,576 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-04-17 09:49:15,576 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-17 09:49:15,577 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-04-17 09:49:15,577 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-17 09:49:15,578 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-04-17 09:49:15,578 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-17 09:49:15,578 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 64 fichiers
+2025-04-17 09:49:15,579 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-17 09:49:15,579 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 12 fichiers
+2025-04-17 09:49:15,579 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log
+2025-04-17 09:49:15,581 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-04-17 09:49:15,581 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-04-17 09:49:15,624 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-04-17 09:49:15,625 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-04-17 09:49:15,633 - DEBUG - [main_window.py:112] - Création des pages...
+2025-04-17 09:49:15,645 - DEBUG - [main_window.py:114] - ✓ Page compte créée
+2025-04-17 09:49:15,676 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-17 09:49:15,683 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:49:17,727 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2477
+2025-04-17 09:49:17,734 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843010596444327
+2025-04-17 09:49:17,739 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:49:18,679 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-04-17 09:49:18,681 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 2019
+2025-04-17 09:49:18,682 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 09:49:18,684 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:49:19,547 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 09:49:19,552 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 09:49:19,579 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 09:49:19,580 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 09:49:19,582 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:49:19,731 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 09:49:19,732 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 09:49:19,734 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 09:49:19,735 - DEBUG - [main_window.py:117] - ✓ Page équipement créée
+2025-04-17 09:49:19,738 - DEBUG - [main_window.py:120] - ✓ Page missions créée
+2025-04-17 09:49:19,743 - DEBUG - [main_window.py:123] - ✓ Page meta créée
+2025-04-17 09:49:19,745 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:49:19,745 - INFO - [main_window.py:141] - ✅ Pages ajoutées avec succès
+2025-04-17 09:49:19,746 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg API ===
+2025-04-17 09:49:19,746 - INFO - [main_window.py:148] - Configuration de la barre de statut
+2025-04-17 09:49:19,747 - INFO - [main_window.py:161] - ✅ Barre de statut configurée
+2025-04-17 09:49:19,748 - INFO - [main_window.py:167] - Application des styles
+2025-04-17 09:49:19,748 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-17 09:49:19,758 - INFO - [main_window.py:172] - ✅ Styles appliqués
+2025-04-17 09:49:19,758 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-04-17 09:49:19,961 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET / HTTP/1.1" 403 None
+2025-04-17 09:49:20,966 - DEBUG - [connectionpool.py:289] - Resetting dropped connection: www.light.gg
+2025-04-17 09:49:21,132 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /god-roll/ HTTP/1.1" 403 None
+2025-04-17 09:49:22,137 - DEBUG - [connectionpool.py:289] - Resetting dropped connection: www.light.gg
+2025-04-17 09:49:22,284 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /god-roll/hub/?v=2.2.9228.27988 HTTP/1.1" 403 None
+2025-04-17 09:49:22,287 - ERROR - [meta_page.py:113] - Erreur HTTP 403 lors de la récupération des données
+2025-04-17 09:49:22,287 - DEBUG - [meta_page.py:114] - Réponse: <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;max-width:60rem;padding-left:1.5rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{font-size:1.5rem;font-weight:500;line-height:2.25rem}@media (width <= 720px){.h2{font-size:1.25rem;line-height:1.5rem}}#challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme:dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body class="no-js"><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt={cvId: '3',cZone: "www.light.gg",cType: 'managed',cRay: '931a53534d596ab7',cH: 'en82ckFR0x1bXGwbW.ZvN3OgMnIKSpQ9_tU9q9JFFyo-1744876163-1.2.1.1-axqIk62D0KyGtZeobvnpQi83sTnlX_kMrcK1Rv69S5Fly_wezi6ai46aHCx2Um2c',cUPMDTk: "\/god-roll\/hub\/?v=2.2.9228.27988&__cf_chl_tk=ucFXVgipawnc4efPmHaW3d6dgg9TOJurKWRvUVm2.zo-1744876163-1.0.1.1-syh_YsF1FKd.h2y1ZBGC2CRQztri7D21CfPb7wyxw9E",cFPWv: 'g',cITimeS: '1744876163',cTplC: 0,cTplV: 5,cTplB: 'cf',cK: "unsupported_browser_beacon",fa: "\/god-roll\/hub\/?v=2.2.9228.27988&__cf_chl_f_tk=ucFXVgipawnc4efPmHaW3d6dgg9TOJurKWRvUVm2.zo-1744876163-1.0.1.1-syh_YsF1FKd.h2y1ZBGC2CRQztri7D21CfPb7wyxw9E",md: "WtgC56.tkgxkI4Ss8M1e6LEwQufE5jTJk8j8i1R4w1o-1744876163-1.2.1.1-C3NxC9qO3xCo04CNN7xTxbo5TttHdj99uYBv7uTpCTwLqOSxSGOlGWlKs.sZrqs93x9bcVCgCoS0Z7nefq22APL11bBw4YtzlXfHsLRXf7__Rhu6K_BDYrr1zw7vtExvF3mzCGST_ymTMbtz_nv2u00_WRA6GHjrZolW_ha2WCLjkFSz15UxdCz_os.hYVQqDrJ5RxIiLp_2h1VzLk5se3682.MFbLlF7kC_7evI2K1ETlfypPe96GB96GdxeE.UMxaXyUJUSf7MLNuUlB4I9oL5D6dnEQbrThOjthkHOKtl5QMq.ZTdPy_W3NRrDsD5L7Vh3bzV046tM.MWQlh80h8xKm3VP3PqUXZbD6DoI9OTb.qhsXvpJfWYfUNig.DFeR_Dk4bZ6WAKMmD2rulTKtnj1_crPtS.yy3y43dLZzWK4hRXndBQNRPekotskdNcfwu1TP_Hg1b42wS8dGTXbQAqcVyvLbPaSjPVsJFU4ROcZLt4sTC6d8E0wEZeE9ttY8PEqe9JNq1CwsLdJezJtwN4tqpox4.59MsolTjJKa0JehRD.uBORdcaVtg1d3E4omN0NLY.vtRXxgvaJBHsW7cLjhc9atEhmOB0OmQPA.JQzbkqiGiB.W.FHKYRAU_jnux45nDf3e56VxVn.Kn7vceUxqsyMHJGV2OoAqQTt16Poh0Yyp9RCDyL7GZ8I4scr9SMAeW0v9fMzVcQktrENhDxsJVOpw06GIzHdyszUBLY2Iye8dUW4D3xuQ5cegF9sVWsNO9_AoF8KZUpVXud.gcnerLW5cjO5M4S1c7zY.ADb2Tnq4VFyT7cLXp0HzLeMR8LqFMhK7lv_i0g7yR8VDoV2mV5.Ztx0SYvL.Q3iwcBpGPphhUE1a1WAImJ1p0AIcS6bOsopnPJA_Z0lUhGBSeuFWUykVYfdaRlIQwGr1Ph4ADxRoJlMtqnxuj2w2xmjEiD4fpSlYIwSQn_DRgMeephx6bb8ZTALLEIjbc6PJqx13xTrYCqzHBQMfuyDv5K3YK_.BLWzck1.27Awaiy0wJRiByXZNE0VuFDxL7lVVu3N2w41yeN.3vhH7VLbPXST7cuK6Zs_J4h8FmWYSAwh_IIPTTnLrgrb.5_YKvxKrrfY.m97wri6ukeKYYk.LnzxufqtxELmD9AaMmJpfHrGQTVY3JYi9Cz3wlCVpehc.r.LHZxMAQSkvg7nlba9FzmetruvPc8ioZTINvBOYNYIh1Lvj6cT63lHu1R06u7U3Y",mdrd: "l1cPuBfbjd6dtbQnaB137k20F1Q6ZNqXM3E4FkfQYM0-1744876163-1.2.1.1-QDkER115Ym2OFPRNjgCPlrHQ_HosI97w4aJLcVwTVPxGkigMBW1Qznqq5rfo6CRn1hwAPUQ9PYXBKXtzMXhHNoZSdHzIUcE7oN5haEVDAvR3470VdJZPsmRtp6xFis_jpp0.URZvMNumcGnKWWYU5zn0VX1YsUSh8QEFnVpX_qGIs_gKQL0Uxrwu6AgsbTmK48EcNSLAk1w5oEGWm_gIu8rRPn1FyhBbTO7vhtn53Vt3L5nLDlO6jhSMZRpIUv6zCoagBYZGL0KclbXkk6Nd_.nBKAU0Hgy700Dbq7bvz34biVbZaLoYCt8bXip_AolYYzgEVpu9_HxC2efM1F_sDxlEIHAGapoJHTSzANd2YKDNQnznzelnfIf2i9z.auqTYxonXaeRfYWz2BjDclM22NYc4dC2g7aMy1XcRujgq056T10tUa59OEG.w64EWnrL09cpDpjmxmPpmdp6QIcSA8Xqu2DJy0t.7nmIYv4YFI5qI3H5arhx1PtRL7NAz46zvudsGh3lci.Rdqj.i8CzgusH4P0I.g76agGSwIPnPLsM3yAuDC5OsNGpKunXYxNT0hvk3o7vaU0a4HAn_KEz_DFL4vIn5WKHxE2K99BY9JdAXtDxmJy93HVhT0.._gnLb4q51jTh7zswV9qGfUCdzI0znA2F2WeM2jL96H.1QUs2M3lk9X96kSTCAdruodAVE3APWZgW0P8gLh04pX3sqFz6SdDydik.tNSi_kfj93MKlsdBtBlU7k3akaEFqJ0EZpbaW2agyAozlPa7RMHFV4dDVU_FJW5WAPnWNui3vBW_XGgLsq9jsg440KJVAuTdW7QVfYuE9gTUPXas8iFj9_nF7RAoURi1orwyiTkVzWt1SVgAd_77t6g4Ao5mwNrgDTKkPBcuqyJP_LdDYdTrIgCKS0Pd.AWOtckyj.tla.UmHMmJ8_5IXzRMg3vbQdNxr0ni4sMrAHEdk43gysugZBVVyKTZBHKTqQDx955j5AwSfgEMbyhPJde38wZikBUy9dO0_Pv69m8sqKXOjRkDW0Y9EJDXWR3Ukd44gzT2_bGGZxOfG5De22FzKGQDFmjgpmFdt8mWoZAFFrkpz5woEAq9cROzVzi.jnW.UHtLUq7WO4v3dLenwCaMP2AIynY8FWSN6llbfwOlfHen2sAECd9ix35t0xr9H.edRiqE64TtW.U4vfEPfdzper67w8i1qxKBY0iurcTIQRugM.li53.q9M.YNrkkbXIGVmKFVBhsj.JLY5eUUG02P_3zXNB20D6qmODXYGLg7WxjT_5..YJA43B5LPRn3nLUQHY8otFbN.0c4GvlMBah_XdA_X_tHXNuxNt39x4YX_sCJvA8E_vouFbf1Tb_0ghYv.gnkVinS0PWS87aXLZ8Xl8XCCrFV4CzyIieC5R_lN_Ja7p3Rbp63H16DHaqMdbu3b_jCnOMTmC2.6h9W89yWiOK09C7W5DDefxz9.8TCA.wi3dDJ0yjgMaqYfY9lL_wtVZVSCdLwdwyn3b1OVobTiunKfEfiEiuQGuyi0ikPHt2ScyXujhykJ.InOfZ4ekUBf6UEa7d.W24ZU01UUpp5kGU0ZWAA7u7TmRp3nkjueBTJ5I.n8oNwSR3oYYEHH41_E5kQFHrGINXdgW2mOrqoQRdHVu9tyAE5q1bf.sgLuAF3CaBEQ6gjJ5QWGfZShPmVCePCo.ncAAuSmxWL6wtObOs6pdVb6Sbm2FAnw1aAIHGPFUVdZIB9tutSwZDAW9w9DslemFozsmqU670bHSRlREKxt3_Mm2R7RV7cOTmHlAHo5kNVTMNxuU2iqSTiM5fpSFz8XuDPkehs_RiCBqP5IgMTlCZyKj4UfjUFqkmYolclGauyRtMu34qvQOpDh6ZZgEObLsM3w.nMh8iZBJYAXOlUZNyJoFiLI6OkFr3Y3OrwFkwD3mmlsQ0C8HgeHWDdQXsQCRcROcrB7ZKW8oxLDxIFVl0ZJrN8FqzIeEFLrz.MBb9YqCAyrMcQNGBIFYbqezmtetQvK_XLrK4wdQlJqYd0Buwr6jRgK.cqv7VRZhrdjdMOO4XBCI8B3.BaH.f5.elQKse.NfDK3csMjriryEj3c7lUDrBgRReYPAwscTpo_lM9bLiDEt5UMIkqHmwoBlScNhrs31IxRLLikKyV_fbrQposDjDeCyTAwayO.wgZPKD5JXKcQ93wqZOTfBTd3Y_sA0y6yyfajn.Jqr6nkSmavbSAeyDnIES7geC2hdSDco8tg3iPSYdmKInfApvdP32hzlIPVgxSRtEfJQ4cdz03FgPb2fZn7OwsBV7EZdlvFbP1uScw.Zegm4b39dDk8DLVTsNEnJqyjU8Hj0.59LMuZ5hYx7Apz3G_u6E7Ly_L8BGmI_NtO6hWqLYP7Wmp_9483FIjK1zxeBGGILDHZ7TJbuRERyVapuOPIsL2U21hxQQDCyh2Ko.CKcoVeuhi__LGXhmuXuwYT7ws8UXySjGwm5lJ1k9fpXNweOmEAqDLH4lHlmXe2WmKKv7LztX0yCdFSCwiGnaD3NIcs42sYvwPHhnt3S6M82OB.Y.QuVE4XYennu2zSfkWrZg7KkEbr5e0sTtsNzPSr.n76PR8ABroQk.Rsro5KEEFDoK770wRsFN24XxNcwTx6A6eqFhw2Cdrr4"};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=931a53534d596ab7';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, "\/god-roll\/hub\/?v=2.2.9228.27988&__cf_chl_rt_tk=ucFXVgipawnc4efPmHaW3d6dgg9TOJurKWRvUVm2.zo-1744876163-1.0.1.1-syh_YsF1FKd.h2y1ZBGC2CRQztri7D21CfPb7wyxw9E" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script></body></html>
+2025-04-17 09:49:22,289 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-04-17 09:49:28,367 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-17 09:49:28,368 - DEBUG - [main_window.py:187] - ✓ Page changée avec succès vers 3
+2025-04-17 09:49:29,213 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:49:29,214 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg API ===
+2025-04-17 09:49:29,215 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-17 09:49:29,380 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET / HTTP/1.1" 403 None
+2025-04-17 09:49:30,463 - DEBUG - [connectionpool.py:289] - Resetting dropped connection: www.light.gg
+2025-04-17 09:49:30,820 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /god-roll/ HTTP/1.1" 403 None

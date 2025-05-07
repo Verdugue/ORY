@@ -1,0 +1,36 @@
+2025-04-16 13:55:47,314 - INFO - [logger.py:25] - === Démarrage de Destiny Hub ===
+2025-04-16 13:55:47,314 - INFO - [logger.py:26] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-16 13:55:47,314 - INFO - [logger.py:27] - Système d'exploitation: win32
+2025-04-16 13:55:47,316 - INFO - [logger.py:36] - === Vérification de l'environnement ===
+2025-04-16 13:55:47,323 - DEBUG - [logger.py:45] - Longueur de la clé API: 32
+2025-04-16 13:55:47,323 - INFO - [logger.py:51] - === Vérification des dépendances ===
+2025-04-16 13:55:47,333 - INFO - [logger.py:70] - === Vérification des fichiers ===
+2025-04-16 13:55:47,340 - DEBUG - [logger.py:98] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-16 13:55:47,343 - DEBUG - [logger.py:98] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-16 13:55:47,347 - DEBUG - [logger.py:98] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-16 13:55:47,350 - DEBUG - [logger.py:98] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-16 13:55:47,355 - DEBUG - [logger.py:98] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-16 13:55:47,359 - DEBUG - [logger.py:98] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-16 13:55:47,403 - INFO - [main_window.py:16] - === Initialisation de la fenêtre principale ===
+2025-04-16 13:55:47,405 - INFO - [main_window.py:31] - Configuration de l'interface utilisateur
+2025-04-16 13:55:47,409 - DEBUG - [main_window.py:110] - Création des pages...
+2025-04-16 13:55:47,449 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-16 13:55:47,455 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 13:55:49,233 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 None
+2025-04-16 13:55:49,239 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843010596444327
+2025-04-16 13:55:49,241 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 13:55:50,441 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 996
+2025-04-16 13:55:50,442 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-04-16 13:55:50,442 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-16 13:55:50,444 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 13:55:51,144 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3039
+2025-04-16 13:55:51,145 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-16 13:55:51,174 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-16 13:55:51,175 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-16 13:55:51,177 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 13:55:51,265 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3039
+2025-04-16 13:55:51,267 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-16 13:55:51,269 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-16 13:55:51,281 - INFO - [main_window.py:141] - Configuration de la barre de statut
+2025-04-16 13:55:51,284 - INFO - [main_window.py:160] - Application des styles
+2025-04-16 13:55:55,525 - INFO - [main_window.py:171] - Changement de page vers l'index 1

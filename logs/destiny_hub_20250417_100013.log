@@ -1,0 +1,112 @@
+2025-04-17 10:00:13,919 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-04-17 10:00:13,920 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-17 10:00:13,920 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-04-17 10:00:13,920 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250417_100013.log
+2025-04-17 10:00:13,921 - INFO - [logger.py:55] - === Informations Système ===
+2025-04-17 10:00:13,921 - INFO - [logger.py:56] - OS: Windows 10
+2025-04-17 10:00:13,942 - INFO - [logger.py:57] - Architecture: AMD64
+2025-04-17 10:00:13,942 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-04-17 10:00:13,952 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-04-17 10:00:13,953 - INFO - [logger.py:63] - Mémoire disponible: 14.78 GB
+2025-04-17 10:00:13,953 - INFO - [logger.py:64] - Utilisation mémoire: 52.7%
+2025-04-17 10:00:13,953 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-04-17 10:00:13,953 - INFO - [logger.py:69] - Espace disque libre: 218.56 GB
+2025-04-17 10:00:13,954 - INFO - [logger.py:70] - Utilisation disque: 77.1%
+2025-04-17 10:00:13,954 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-04-17 10:00:13,955 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-04-17 10:00:13,955 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-04-17 10:00:13,955 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-04-17 10:00:13,955 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-04-17 10:00:13,956 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-04-17 10:00:13,956 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-04-17 10:00:13,956 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-04-17 10:00:13,956 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-04-17 10:00:13,956 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-04-17 10:00:13,956 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-04-17 10:00:13,957 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-04-17 10:00:13,957 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-04-17 10:00:13,957 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-04-17 10:00:13,957 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-04-17 10:00:13,958 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-04-17 10:00:13,958 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-04-17 10:00:13,958 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-04-17 10:00:13,960 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-04-17 10:00:13,960 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-04-17 10:00:13,960 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-04-17 10:00:13,960 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-17 10:00:13,961 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-04-17 10:00:13,961 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-17 10:00:13,961 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-04-17 10:00:13,961 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-17 10:00:13,963 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-04-17 10:00:13,963 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-17 10:00:13,963 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-04-17 10:00:13,963 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-17 10:00:13,963 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 64 fichiers
+2025-04-17 10:00:13,965 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-17 10:00:13,965 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 15 fichiers
+2025-04-17 10:00:13,966 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log, destiny_hub_20250417_095450.log, destiny_hub_20250417_095800.log, destiny_hub_20250417_100013.log
+2025-04-17 10:00:13,966 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-04-17 10:00:13,966 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-04-17 10:00:14,000 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-04-17 10:00:14,001 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-04-17 10:00:14,006 - DEBUG - [main_window.py:112] - Création des pages...
+2025-04-17 10:00:14,017 - DEBUG - [main_window.py:114] - ✓ Page compte créée
+2025-04-17 10:00:14,043 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-17 10:00:14,048 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:00:14,841 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2477
+2025-04-17 10:00:14,848 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843010596444327
+2025-04-17 10:00:14,850 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:00:16,112 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 994
+2025-04-17 10:00:16,114 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 2019
+2025-04-17 10:00:16,114 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 10:00:16,116 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:00:17,756 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 10:00:17,758 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 10:00:17,783 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 10:00:17,783 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 10:00:17,785 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:00:17,938 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 10:00:17,939 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 10:00:17,941 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 10:00:17,941 - DEBUG - [main_window.py:117] - ✓ Page équipement créée
+2025-04-17 10:00:17,943 - DEBUG - [main_window.py:120] - ✓ Page missions créée
+2025-04-17 10:00:17,948 - DEBUG - [main_window.py:123] - ✓ Page meta créée
+2025-04-17 10:00:17,950 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 10:00:17,951 - INFO - [main_window.py:141] - ✅ Pages ajoutées avec succès
+2025-04-17 10:00:17,951 - INFO - [meta_page.py:41] - === Début de l'extraction avec API key uniquement ===
+2025-04-17 10:00:17,951 - INFO - [main_window.py:148] - Configuration de la barre de statut
+2025-04-17 10:00:17,951 - INFO - [main_window.py:161] - ✅ Barre de statut configurée
+2025-04-17 10:00:17,953 - INFO - [main_window.py:167] - Application des styles
+2025-04-17 10:00:17,953 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:00:17,959 - INFO - [main_window.py:172] - ✅ Styles appliqués
+2025-04-17 10:00:17,960 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-04-17 10:00:18,737 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/ HTTP/1.1" 200 9958
+2025-04-17 10:00:18,776 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:00:18,934 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /common/destiny2_content/json/en/DestinyInventoryItemDefinition-e41c8ceb-3806-4c6c-86d9-e27af1bb4622.json HTTP/1.1" 200 None
+2025-04-17 10:00:19,348 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-17 10:00:19,349 - DEBUG - [main_window.py:187] - ✓ Page changée avec succès vers 3
+2025-04-17 10:00:22,585 - INFO - [meta_page.py:273] - === Mise à jour de l'affichage ===
+2025-04-17 10:00:22,586 - INFO - [meta_page.py:274] - Nombre d'armes à afficher: 10
+2025-04-17 10:00:22,606 - DEBUG - [meta_page.py:289] - Armes PvE: 10, Armes PvP: 0
+2025-04-17 10:00:22,607 - DEBUG - [meta_page.py:295] - Ajout arme PvE 1: Liminal Vigil
+2025-04-17 10:00:22,608 - ERROR - [meta_page.py:453] - Erreur image icons/3421639790.png: Invalid URL 'icons/3421639790.png': No scheme supplied. Perhaps you meant https://icons/3421639790.png?
+2025-04-17 10:00:22,609 - DEBUG - [meta_page.py:295] - Ajout arme PvE 2: Liminal Vigil
+2025-04-17 10:00:22,610 - ERROR - [meta_page.py:453] - Erreur image icons/1460079227.png: Invalid URL 'icons/1460079227.png': No scheme supplied. Perhaps you meant https://icons/1460079227.png?
+2025-04-17 10:00:22,610 - DEBUG - [meta_page.py:295] - Ajout arme PvE 3: Long Arm
+2025-04-17 10:00:22,612 - ERROR - [meta_page.py:453] - Erreur image icons/3692140710.png: Invalid URL 'icons/3692140710.png': No scheme supplied. Perhaps you meant https://icons/3692140710.png?
+2025-04-17 10:00:22,613 - DEBUG - [meta_page.py:295] - Ajout arme PvE 4: Long Arm
+2025-04-17 10:00:22,614 - ERROR - [meta_page.py:453] - Erreur image icons/14929251.png: Invalid URL 'icons/14929251.png': No scheme supplied. Perhaps you meant https://icons/14929251.png?
+2025-04-17 10:00:22,616 - DEBUG - [meta_page.py:295] - Ajout arme PvE 5: Terminus Horizon
+2025-04-17 10:00:22,617 - ERROR - [meta_page.py:453] - Erreur image icons/4267192886.png: Invalid URL 'icons/4267192886.png': No scheme supplied. Perhaps you meant https://icons/4267192886.png?
+2025-04-17 10:00:22,618 - DEBUG - [meta_page.py:295] - Ajout arme PvE 6: Terminus Horizon
+2025-04-17 10:00:22,618 - ERROR - [meta_page.py:453] - Erreur image icons/2730671571.png: Invalid URL 'icons/2730671571.png': No scheme supplied. Perhaps you meant https://icons/2730671571.png?
+2025-04-17 10:00:22,619 - DEBUG - [meta_page.py:295] - Ajout arme PvE 7: Wilderflight
+2025-04-17 10:00:22,621 - ERROR - [meta_page.py:453] - Erreur image icons/2477408004.png: Invalid URL 'icons/2477408004.png': No scheme supplied. Perhaps you meant https://icons/2477408004.png?
+2025-04-17 10:00:22,621 - DEBUG - [meta_page.py:295] - Ajout arme PvE 8: Wilderflight
+2025-04-17 10:00:22,623 - ERROR - [meta_page.py:453] - Erreur image icons/2982006965.png: Invalid URL 'icons/2982006965.png': No scheme supplied. Perhaps you meant https://icons/2982006965.png?
+2025-04-17 10:00:22,624 - DEBUG - [meta_page.py:295] - Ajout arme PvE 9: Liminal Vigil
+2025-04-17 10:00:22,625 - ERROR - [meta_page.py:453] - Erreur image icons/1905934655.png: Invalid URL 'icons/1905934655.png': No scheme supplied. Perhaps you meant https://icons/1905934655.png?
+2025-04-17 10:00:22,627 - DEBUG - [meta_page.py:295] - Ajout arme PvE 10: Liminal Vigil
+2025-04-17 10:00:22,627 - ERROR - [meta_page.py:453] - Erreur image icons/2575844666.png: Invalid URL 'icons/2575844666.png': No scheme supplied. Perhaps you meant https://icons/2575844666.png?
+2025-04-17 10:00:22,628 - INFO - [meta_page.py:315] - Mise à jour de l'affichage terminée

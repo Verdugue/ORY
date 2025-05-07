@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
                            QStackedWidget, QToolBar, QStatusBar, QToolButton,
-                           QLabel, QPushButton)
+                           QLabel, QPushButton, QComboBox)
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon, QFont
 from ui.pages.account_page import AccountPage
@@ -18,6 +18,7 @@ class DestinyHub(QMainWindow):
         
         self.setWindowTitle("Destiny 2 Hub")
         self.setMinimumSize(1000, 600)
+        self.meta_page = None  # Ajouté : page meta non créée au départ
         
         try:
             self.setup_ui()
@@ -50,6 +51,7 @@ class DestinyHub(QMainWindow):
         """)
         header_layout = QHBoxLayout(header)
         header_layout.setContentsMargins(10, 5, 10, 5)
+        header_layout.setSpacing(20)  # <-- Ajoute un peu d'espace entre titre et onglets
         
         # Titre
         title_label = QLabel("Destiny 2 Hub")
@@ -61,47 +63,61 @@ class DestinyHub(QMainWindow):
             }
         """)
         header_layout.addWidget(title_label)
+        self.language_selector = QComboBox()
+        self.language_selector.addItem("Français", "fr")
+        self.language_selector.addItem("English", "en")
+        self.language_selector.addItem("Deutsch", "de")
+        self.language_selector.addItem("Español", "es")
+        self.language_selector.addItem("Italiano", "it")
+        self.language_selector.addItem("日本語", "ja")
+        self.language_selector.addItem("Português (Brasil)", "pt-br")
+        self.language_selector.addItem("Русский", "ru")
+        self.language_selector.addItem("Polski", "pl")
+        self.language_selector.addItem("中文(简体)", "zh-chs")
+        self.language_selector.addItem("中文(繁體)", "zh-cht")
+        self.language_selector.addItem("한국어", "ko")
+        self.language_selector.setCurrentIndex(0)
+        self.language_selector.currentIndexChanged.connect(self.on_language_changed)
+        header_layout.addWidget(self.language_selector)
+        self.selected_locale = "fr"
         
-        # Boutons de navigation
-        nav_buttons = QHBoxLayout()
-        nav_buttons.setSpacing(5)
-        
+        # Barre d'onglets (juste à droite du titre)
         self.nav_buttons = []
-        for text, icon_path in [
+        nav_bar = QHBoxLayout()
+        nav_bar.setSpacing(0)
+        for idx, (text, icon_path) in enumerate([
             ("Compte", "icons/account.png"),
             ("Équipement", "icons/equipment.png"),
             ("Missions", "icons/missions.png"),
             ("Meta", "icons/meta.png")
-        ]:
+        ]):
             btn = QPushButton(text)
             btn.setCheckable(True)
+            btn.setAutoExclusive(True)
             btn.setStyleSheet("""
                 QPushButton {
                     color: white;
                     background-color: transparent;
                     border: none;
-                    padding: 8px 15px;
-                    font-size: 14px;
+                    padding: 8px 20px;
+                    font-size: 15px;
                 }
                 QPushButton:hover {
                     background-color: #333;
                 }
                 QPushButton:checked {
                     background-color: #444;
-                    border-bottom: 2px solid #4d7aff;
+                    border-bottom: 3px solid #4d7aff;
                 }
             """)
-            
             if os.path.exists(icon_path):
                 btn.setIcon(QIcon(icon_path))
-            
-            nav_buttons.addWidget(btn)
+            btn.clicked.connect(lambda checked, i=idx: self.switch_page(i))
+            nav_bar.addWidget(btn)
             self.nav_buttons.append(btn)
+        header_layout.addLayout(nav_bar)
+        header_layout.addStretch()  # Le stretch pousse tout à gauche
         
-        header_layout.addLayout(nav_buttons)
-        header_layout.addStretch()
-        
-        # Ajouter l'en-tête au layout principal
         main_layout.addWidget(header)
         
         try:
@@ -119,23 +135,14 @@ class DestinyHub(QMainWindow):
             self.missions_page = MissionsPage(self)
             logging.debug("✓ Page missions créée")
             
-            self.meta_page = MetaPage(self)
-            logging.debug("✓ Page meta créée")
-            
             # Ajouter les pages
             self.stacked_widget.addWidget(self.account_page)
             self.stacked_widget.addWidget(self.equipment_page)
             self.stacked_widget.addWidget(self.missions_page)
-            self.stacked_widget.addWidget(self.meta_page)
-            
-            # Connecter les boutons aux pages
-            self.nav_buttons[0].clicked.connect(lambda: self.switch_page(0))
-            self.nav_buttons[1].clicked.connect(lambda: self.switch_page(1))
-            self.nav_buttons[2].clicked.connect(lambda: self.switch_page(2))
-            self.nav_buttons[3].clicked.connect(lambda: self.switch_page(3))
             
             # Sélectionner la première page par défaut
             self.nav_buttons[0].setChecked(True)
+            self.stacked_widget.setCurrentIndex(0)
             
             main_layout.addWidget(self.stacked_widget)
             logging.info("✅ Pages ajoutées avec succès")
@@ -177,13 +184,16 @@ class DestinyHub(QMainWindow):
     def switch_page(self, index):
         logging.info(f"Changement de page vers l'index {index}")
         try:
-            # Changer la page
-            self.stacked_widget.setCurrentIndex(index)
-            
-            # Mettre à jour l'état des boutons
+            # Si on clique sur l'onglet Meta (dernier index)
+            if index == 3:
+                if self.meta_page is None:
+                    self.meta_page = MetaPage(self)
+                    self.stacked_widget.addWidget(self.meta_page)
+                self.stacked_widget.setCurrentWidget(self.meta_page)
+            else:
+                self.stacked_widget.setCurrentIndex(index)
             for i, btn in enumerate(self.nav_buttons):
                 btn.setChecked(i == index)
-            
             logging.debug(f"✓ Page changée avec succès vers {index}")
         except Exception as e:
             logging.error(f"❌ Erreur lors du changement de page: {str(e)}")
@@ -196,3 +206,10 @@ class DestinyHub(QMainWindow):
             logging.debug(f"Status mis à jour: {message}")
         except Exception as e:
             logging.error(f"❌ Erreur lors de la mise à jour du status: {str(e)}")
+
+    def on_language_changed(self, index):
+        self.selected_locale = self.language_selector.currentData()
+        # Rafraîchir la page équipements si elle est affichée
+        if self.stacked_widget.currentWidget() == self.equipment_page:
+            self.equipment_page.set_locale(self.selected_locale)
+            self.equipment_page.refresh_character_data()

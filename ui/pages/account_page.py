@@ -140,9 +140,8 @@ class AccountPage(QWidget):
                     main_window = self.window()
                     if hasattr(main_window, 'equipment_page'):
                         self.logger.info("Actualisation automatique de l'équipement")
-                        main_window.equipment_page.refresh_character_data()
-                        # Changer automatiquement vers la page d'équipement
-                        main_window.switch_page(1)
+                        main_window.equipment_page.setup_ui()  # <-- Forcer le refresh de la page équipement
+                        main_window.switch_page(1)  # Aller sur l'onglet équipement
                     
                     self.show_success("Compte enregistré avec succès!")
                 else:

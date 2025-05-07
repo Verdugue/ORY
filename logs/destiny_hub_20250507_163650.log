@@ -1,0 +1,374 @@
+2025-05-07 16:36:50,472 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-05-07 16:36:50,472 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-05-07 16:36:50,472 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-05-07 16:36:50,472 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250507_163650.log
+2025-05-07 16:36:50,473 - INFO - [logger.py:55] - === Informations Système ===
+2025-05-07 16:36:50,473 - INFO - [logger.py:56] - OS: Windows 10
+2025-05-07 16:36:50,473 - INFO - [logger.py:57] - Architecture: AMD64
+2025-05-07 16:36:50,474 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-05-07 16:36:50,481 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-05-07 16:36:50,481 - INFO - [logger.py:63] - Mémoire disponible: 16.41 GB
+2025-05-07 16:36:50,482 - INFO - [logger.py:64] - Utilisation mémoire: 47.5%
+2025-05-07 16:36:50,482 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-05-07 16:36:50,482 - INFO - [logger.py:69] - Espace disque libre: 219.78 GB
+2025-05-07 16:36:50,482 - INFO - [logger.py:70] - Utilisation disque: 76.9%
+2025-05-07 16:36:50,482 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-05-07 16:36:50,484 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-05-07 16:36:50,485 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-05-07 16:36:50,485 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-05-07 16:36:50,485 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-05-07 16:36:50,485 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-05-07 16:36:50,485 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-05-07 16:36:50,485 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-05-07 16:36:50,485 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-05-07 16:36:50,486 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-05-07 16:36:50,486 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-05-07 16:36:50,486 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-05-07 16:36:50,486 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-05-07 16:36:50,486 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-05-07 16:36:50,487 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-05-07 16:36:50,487 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-05-07 16:36:50,487 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-05-07 16:36:50,487 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-05-07 16:36:50,488 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-05-07 16:36:50,488 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-05-07 16:36:50,488 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-05-07 16:36:50,488 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-05-07 16:36:50,488 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-05-07 16:36:50,489 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-05-07 16:36:50,489 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-05-07 16:36:50,489 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-05-07 16:36:50,489 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-05-07 16:36:50,490 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-05-07 16:36:50,490 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-05-07 16:36:50,490 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-05-07 16:36:50,490 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 70 fichiers
+2025-05-07 16:36:50,491 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1762785662.png, 1896309757.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2763843898.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 431721920.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 814876685.png, 952431286.png, 991314988.png, spectre.gif
+2025-05-07 16:36:50,492 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 75 fichiers
+2025-05-07 16:36:50,492 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log, destiny_hub_20250417_095450.log, destiny_hub_20250417_095800.log, destiny_hub_20250417_100013.log, destiny_hub_20250417_101050.log, destiny_hub_20250417_101112.log, destiny_hub_20250417_101728.log, destiny_hub_20250417_101938.log, destiny_hub_20250417_102126.log, destiny_hub_20250417_102514.log, destiny_hub_20250417_102736.log, destiny_hub_20250417_103000.log, destiny_hub_20250417_103209.log, destiny_hub_20250417_103307.log, destiny_hub_20250417_103545.log, destiny_hub_20250507_114434.log, destiny_hub_20250507_114815.log, destiny_hub_20250507_114838.log, destiny_hub_20250507_115102.log, destiny_hub_20250507_115217.log, destiny_hub_20250507_135035.log, destiny_hub_20250507_135311.log, destiny_hub_20250507_135523.log, destiny_hub_20250507_135724.log, destiny_hub_20250507_135955.log, destiny_hub_20250507_140048.log, destiny_hub_20250507_140128.log, destiny_hub_20250507_140251.log, destiny_hub_20250507_140627.log, destiny_hub_20250507_140642.log, destiny_hub_20250507_140654.log, destiny_hub_20250507_141253.log, destiny_hub_20250507_141602.log, destiny_hub_20250507_141617.log, destiny_hub_20250507_141823.log, destiny_hub_20250507_142031.log, destiny_hub_20250507_142224.log, destiny_hub_20250507_142429.log, destiny_hub_20250507_142436.log, destiny_hub_20250507_142454.log, destiny_hub_20250507_142651.log, destiny_hub_20250507_142811.log, destiny_hub_20250507_142939.log, destiny_hub_20250507_143243.log, destiny_hub_20250507_143515.log, destiny_hub_20250507_144051.log, destiny_hub_20250507_144159.log, destiny_hub_20250507_145705.log, destiny_hub_20250507_145935.log, destiny_hub_20250507_154447.log, destiny_hub_20250507_155149.log, destiny_hub_20250507_155315.log, destiny_hub_20250507_155447.log, destiny_hub_20250507_160412.log, destiny_hub_20250507_160637.log, destiny_hub_20250507_160827.log, destiny_hub_20250507_161249.log, destiny_hub_20250507_161443.log, destiny_hub_20250507_161544.log, destiny_hub_20250507_161814.log, destiny_hub_20250507_162735.log, destiny_hub_20250507_163135.log, destiny_hub_20250507_163311.log, destiny_hub_20250507_163650.log
+2025-05-07 16:36:50,493 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-05-07 16:36:50,493 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-05-07 16:36:50,526 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-05-07 16:36:50,527 - INFO - [main_window.py:33] - Configuration de l'interface utilisateur
+2025-05-07 16:36:50,906 - DEBUG - [main_window.py:128] - Création des pages...
+2025-05-07 16:36:50,911 - DEBUG - [main_window.py:130] - ✓ Page compte créée
+2025-05-07 16:36:50,937 - INFO - [equipment_page.py:188] - === Chargement des personnages ===
+2025-05-07 16:36:50,941 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:51,781 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 16:36:51,791 - INFO - [equipment_page.py:368] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 16:36:51,793 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:52,666 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 16:36:52,667 - INFO - [equipment_page.py:393] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 16:36:52,668 - INFO - [equipment_page.py:243] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 16:36:52,670 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:53,618 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302%2C304 HTTP/1.1" 200 3576
+2025-05-07 16:36:53,620 - INFO - [equipment_page.py:296] - === Affichage de l'équipement ===
+2025-05-07 16:36:53,620 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:53,893 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2763843898/ HTTP/1.1" 200 3859
+2025-05-07 16:36:53,918 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:54,181 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1480404414/ HTTP/1.1" 200 275
+2025-05-07 16:36:54,184 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:54,486 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:36:54,488 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:54,577 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /common/destiny2_content/icons/d5bea0d356792af8ca0a582fae89b87f.png HTTP/1.1" 200 557
+2025-05-07 16:36:54,580 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:54,870 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:36:54,872 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:55,125 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3555269338/ HTTP/1.1" 200 271
+2025-05-07 16:36:55,127 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:55,802 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4284893193/ HTTP/1.1" 200 277
+2025-05-07 16:36:55,806 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:56,591 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4043523819/ HTTP/1.1" 200 266
+2025-05-07 16:36:56,594 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:56,865 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1240592695/ HTTP/1.1" 200 264
+2025-05-07 16:36:56,869 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:57,575 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/155624089/ HTTP/1.1" 200 282
+2025-05-07 16:36:57,577 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:58,341 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3871231066/ HTTP/1.1" 200 277
+2025-05-07 16:36:58,343 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:59,074 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4188031367/ HTTP/1.1" 200 265
+2025-05-07 16:36:59,076 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:59,328 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1931675084/ HTTP/1.1" 200 272
+2025-05-07 16:36:59,331 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:59,574 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/943549884/ HTTP/1.1" 200 276
+2025-05-07 16:36:59,577 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:36:59,855 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1345609583/ HTTP/1.1" 200 275
+2025-05-07 16:36:59,857 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:00,123 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2715839340/ HTTP/1.1" 200 272
+2025-05-07 16:37:00,125 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:00,369 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2714457168/ HTTP/1.1" 200 281
+2025-05-07 16:37:00,370 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:00,373 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:00,794 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/814876685/ HTTP/1.1" 200 2386
+2025-05-07 16:37:00,797 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:00,879 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1480404414/ HTTP/1.1" 200 275
+2025-05-07 16:37:00,881 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:00,960 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:00,979 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:01,082 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:01,085 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:01,177 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3555269338/ HTTP/1.1" 200 271
+2025-05-07 16:37:01,179 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:01,897 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2961396640/ HTTP/1.1" 200 270
+2025-05-07 16:37:01,899 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:01,978 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4043523819/ HTTP/1.1" 200 266
+2025-05-07 16:37:01,981 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,237 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1591432999/ HTTP/1.1" 200 273
+2025-05-07 16:37:02,240 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,323 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/155624089/ HTTP/1.1" 200 282
+2025-05-07 16:37:02,335 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,598 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/447667954/ HTTP/1.1" 200 None
+2025-05-07 16:37:02,600 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,696 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4188031367/ HTTP/1.1" 200 265
+2025-05-07 16:37:02,698 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,778 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1931675084/ HTTP/1.1" 200 272
+2025-05-07 16:37:02,780 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,883 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/943549884/ HTTP/1.1" 200 276
+2025-05-07 16:37:02,886 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:02,975 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1345609583/ HTTP/1.1" 200 275
+2025-05-07 16:37:02,978 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,060 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2715839340/ HTTP/1.1" 200 272
+2025-05-07 16:37:03,062 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,143 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2714457168/ HTTP/1.1" 200 281
+2025-05-07 16:37:03,144 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:03,146 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,402 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1896309757/ HTTP/1.1" 200 3821
+2025-05-07 16:37:03,406 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,488 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1480404414/ HTTP/1.1" 200 275
+2025-05-07 16:37:03,490 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,598 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:03,600 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,681 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:03,701 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,797 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3555269338/ HTTP/1.1" 200 271
+2025-05-07 16:37:03,799 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,888 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4284893193/ HTTP/1.1" 200 277
+2025-05-07 16:37:03,890 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:03,967 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4043523819/ HTTP/1.1" 200 266
+2025-05-07 16:37:03,969 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,060 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1240592695/ HTTP/1.1" 200 264
+2025-05-07 16:37:04,062 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,150 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/155624089/ HTTP/1.1" 200 282
+2025-05-07 16:37:04,151 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,238 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3871231066/ HTTP/1.1" 200 277
+2025-05-07 16:37:04,241 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,321 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4188031367/ HTTP/1.1" 200 265
+2025-05-07 16:37:04,323 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,411 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1931675084/ HTTP/1.1" 200 272
+2025-05-07 16:37:04,414 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,508 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/943549884/ HTTP/1.1" 200 276
+2025-05-07 16:37:04,511 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,613 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1345609583/ HTTP/1.1" 200 275
+2025-05-07 16:37:04,614 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,698 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2715839340/ HTTP/1.1" 200 272
+2025-05-07 16:37:04,700 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:04,783 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2714457168/ HTTP/1.1" 200 281
+2025-05-07 16:37:04,784 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:04,786 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,062 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2134769653/ HTTP/1.1" 200 2578
+2025-05-07 16:37:05,064 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,340 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:05,342 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,439 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:05,441 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,522 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:05,523 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:05,525 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,815 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/810612804/ HTTP/1.1" 200 2584
+2025-05-07 16:37:05,818 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,906 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:05,908 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:05,989 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:05,991 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:06,076 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:06,077 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:06,079 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:06,343 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1183187516/ HTTP/1.1" 200 2582
+2025-05-07 16:37:06,348 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:06,438 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:06,440 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:06,524 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:06,526 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:06,651 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:06,652 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:06,654 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:06,996 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2741258862/ HTTP/1.1" 200 2583
+2025-05-07 16:37:06,999 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:07,086 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:07,088 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:07,168 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:07,171 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:07,255 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:07,256 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:07,258 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:07,984 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/266021826/ HTTP/1.1" 200 2348
+2025-05-07 16:37:07,988 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,076 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:08,079 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,162 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:08,164 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,250 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:08,251 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:08,251 - INFO - [equipment_page.py:343] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 16:37:08,252 - INFO - [equipment_page.py:243] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 16:37:08,255 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,339 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302%2C304 HTTP/1.1" 200 3576
+2025-05-07 16:37:08,340 - INFO - [equipment_page.py:296] - === Affichage de l'équipement ===
+2025-05-07 16:37:08,341 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,432 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2763843898/ HTTP/1.1" 200 3859
+2025-05-07 16:37:08,435 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,517 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1480404414/ HTTP/1.1" 200 275
+2025-05-07 16:37:08,520 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,605 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:08,607 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,684 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:08,686 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,767 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3555269338/ HTTP/1.1" 200 271
+2025-05-07 16:37:08,769 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,849 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4284893193/ HTTP/1.1" 200 277
+2025-05-07 16:37:08,851 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:08,932 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4043523819/ HTTP/1.1" 200 266
+2025-05-07 16:37:08,933 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,013 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1240592695/ HTTP/1.1" 200 264
+2025-05-07 16:37:09,015 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,100 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/155624089/ HTTP/1.1" 200 282
+2025-05-07 16:37:09,102 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,191 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3871231066/ HTTP/1.1" 200 277
+2025-05-07 16:37:09,193 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,274 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4188031367/ HTTP/1.1" 200 265
+2025-05-07 16:37:09,276 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,355 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1931675084/ HTTP/1.1" 200 272
+2025-05-07 16:37:09,357 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,446 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/943549884/ HTTP/1.1" 200 276
+2025-05-07 16:37:09,448 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,532 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1345609583/ HTTP/1.1" 200 275
+2025-05-07 16:37:09,534 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,615 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2715839340/ HTTP/1.1" 200 272
+2025-05-07 16:37:09,617 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,713 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2714457168/ HTTP/1.1" 200 281
+2025-05-07 16:37:09,714 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:09,716 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,796 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/814876685/ HTTP/1.1" 200 2386
+2025-05-07 16:37:09,798 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,889 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1480404414/ HTTP/1.1" 200 275
+2025-05-07 16:37:09,892 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:09,978 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:09,980 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,066 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:10,068 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,153 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3555269338/ HTTP/1.1" 200 271
+2025-05-07 16:37:10,156 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,237 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2961396640/ HTTP/1.1" 200 270
+2025-05-07 16:37:10,239 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,324 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4043523819/ HTTP/1.1" 200 266
+2025-05-07 16:37:10,326 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,405 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1591432999/ HTTP/1.1" 200 273
+2025-05-07 16:37:10,407 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,489 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/155624089/ HTTP/1.1" 200 282
+2025-05-07 16:37:10,492 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,611 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/447667954/ HTTP/1.1" 200 None
+2025-05-07 16:37:10,613 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,696 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4188031367/ HTTP/1.1" 200 265
+2025-05-07 16:37:10,699 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,779 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1931675084/ HTTP/1.1" 200 272
+2025-05-07 16:37:10,782 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,859 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/943549884/ HTTP/1.1" 200 276
+2025-05-07 16:37:10,860 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:10,935 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1345609583/ HTTP/1.1" 200 275
+2025-05-07 16:37:10,937 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,019 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2715839340/ HTTP/1.1" 200 272
+2025-05-07 16:37:11,021 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,103 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2714457168/ HTTP/1.1" 200 281
+2025-05-07 16:37:11,103 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:11,105 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,189 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1896309757/ HTTP/1.1" 200 3821
+2025-05-07 16:37:11,192 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,269 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1480404414/ HTTP/1.1" 200 275
+2025-05-07 16:37:11,271 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,349 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:11,352 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,428 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:11,430 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,510 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3555269338/ HTTP/1.1" 200 271
+2025-05-07 16:37:11,513 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,598 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4284893193/ HTTP/1.1" 200 277
+2025-05-07 16:37:11,600 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,679 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4043523819/ HTTP/1.1" 200 266
+2025-05-07 16:37:11,682 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,764 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1240592695/ HTTP/1.1" 200 264
+2025-05-07 16:37:11,766 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,852 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/155624089/ HTTP/1.1" 200 282
+2025-05-07 16:37:11,854 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:11,945 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3871231066/ HTTP/1.1" 200 277
+2025-05-07 16:37:11,947 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,032 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/4188031367/ HTTP/1.1" 200 265
+2025-05-07 16:37:12,034 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,114 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1931675084/ HTTP/1.1" 200 272
+2025-05-07 16:37:12,116 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,197 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/943549884/ HTTP/1.1" 200 276
+2025-05-07 16:37:12,199 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,281 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1345609583/ HTTP/1.1" 200 275
+2025-05-07 16:37:12,283 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,362 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2715839340/ HTTP/1.1" 200 272
+2025-05-07 16:37:12,364 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,440 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/2714457168/ HTTP/1.1" 200 281
+2025-05-07 16:37:12,441 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:12,443 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,521 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2134769653/ HTTP/1.1" 200 2578
+2025-05-07 16:37:12,523 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,611 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:12,613 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,698 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:12,702 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,787 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:12,788 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:12,790 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,876 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/810612804/ HTTP/1.1" 200 2584
+2025-05-07 16:37:12,878 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:12,964 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:12,966 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,048 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:13,051 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,130 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:13,131 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:13,133 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,216 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1183187516/ HTTP/1.1" 200 2582
+2025-05-07 16:37:13,219 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,304 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:13,306 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,385 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:13,388 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,468 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:13,470 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:13,471 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,559 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2741258862/ HTTP/1.1" 200 2583
+2025-05-07 16:37:13,562 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,645 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:13,647 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,727 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:13,729 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,820 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:13,821 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:13,823 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,908 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/266021826/ HTTP/1.1" 200 2348
+2025-05-07 16:37:13,911 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:13,987 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/3897883278/ HTTP/1.1" 200 264
+2025-05-07 16:37:13,989 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:14,083 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1935470627/ HTTP/1.1" 200 348
+2025-05-07 16:37:14,085 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 16:37:14,161 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyStatDefinition/1885944937/ HTTP/1.1" 200 230
+2025-05-07 16:37:14,161 - ERROR - [equipment_page.py:551] - Erreur update_equipment_slot: 'list' object has no attribute 'get'
+2025-05-07 16:37:14,162 - INFO - [equipment_page.py:343] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 16:37:14,163 - DEBUG - [main_window.py:133] - ✓ Page équipement créée
+2025-05-07 16:37:14,164 - DEBUG - [main_window.py:136] - ✓ Page missions créée
+2025-05-07 16:37:14,165 - INFO - [main_window.py:148] - ✅ Pages ajoutées avec succès
+2025-05-07 16:37:14,166 - INFO - [main_window.py:155] - Configuration de la barre de statut
+2025-05-07 16:37:14,166 - INFO - [main_window.py:168] - ✅ Barre de statut configurée
+2025-05-07 16:37:14,167 - INFO - [main_window.py:174] - Application des styles
+2025-05-07 16:37:14,172 - INFO - [main_window.py:179] - ✅ Styles appliqués
+2025-05-07 16:37:14,172 - INFO - [main_window.py:27] - ✅ Interface principale initialisée avec succès
+2025-05-07 16:37:16,143 - INFO - [main_window.py:185] - Changement de page vers l'index 1
+2025-05-07 16:37:16,148 - DEBUG - [main_window.py:197] - ✓ Page changée avec succès vers 1
+2025-05-07 16:37:16,783 - INFO - [equipment_page.py:439] - Ouverture des détails pour l'item : Midnight Coup
+2025-05-07 16:37:16,784 - INFO - [equipment_page.py:451] - Affichage du template non-exotique.
+2025-05-07 16:37:16,784 - DEBUG - [equipment_page.py:584] - Création du widget détail non-exotique pour : Midnight Coup

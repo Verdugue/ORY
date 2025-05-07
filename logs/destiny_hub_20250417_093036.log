@@ -1,0 +1,198 @@
+2025-04-17 09:30:36,173 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-04-17 09:30:36,174 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-17 09:30:36,174 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-04-17 09:30:36,174 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250417_093036.log
+2025-04-17 09:30:36,174 - INFO - [logger.py:55] - === Informations Système ===
+2025-04-17 09:30:36,174 - INFO - [logger.py:56] - OS: Windows 10
+2025-04-17 09:30:36,175 - INFO - [logger.py:57] - Architecture: AMD64
+2025-04-17 09:30:36,176 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-04-17 09:30:36,186 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-04-17 09:30:36,186 - INFO - [logger.py:63] - Mémoire disponible: 15.55 GB
+2025-04-17 09:30:36,186 - INFO - [logger.py:64] - Utilisation mémoire: 50.2%
+2025-04-17 09:30:36,186 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-04-17 09:30:36,187 - INFO - [logger.py:69] - Espace disque libre: 219.10 GB
+2025-04-17 09:30:36,187 - INFO - [logger.py:70] - Utilisation disque: 77.0%
+2025-04-17 09:30:36,187 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-04-17 09:30:36,189 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-04-17 09:30:36,189 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-04-17 09:30:36,189 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-04-17 09:30:36,190 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-04-17 09:30:36,190 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-04-17 09:30:36,190 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-04-17 09:30:36,191 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-04-17 09:30:36,191 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-04-17 09:30:36,191 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-04-17 09:30:36,191 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-04-17 09:30:36,191 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-04-17 09:30:36,191 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-04-17 09:30:36,193 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-04-17 09:30:36,193 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-04-17 09:30:36,193 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-04-17 09:30:36,194 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-04-17 09:30:36,194 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-04-17 09:30:36,194 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-04-17 09:30:36,195 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-04-17 09:30:36,195 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-04-17 09:30:36,196 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-17 09:30:36,196 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-04-17 09:30:36,196 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-17 09:30:36,197 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-04-17 09:30:36,197 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-17 09:30:36,198 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-04-17 09:30:36,199 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-17 09:30:36,199 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-04-17 09:30:36,199 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-17 09:30:36,200 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 64 fichiers
+2025-04-17 09:30:36,200 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-17 09:30:36,201 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 7 fichiers
+2025-04-17 09:30:36,201 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log
+2025-04-17 09:30:36,201 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-04-17 09:30:36,202 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-04-17 09:30:36,247 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-04-17 09:30:36,248 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-04-17 09:30:36,253 - DEBUG - [main_window.py:112] - Création des pages...
+2025-04-17 09:30:36,273 - DEBUG - [main_window.py:114] - ✓ Page compte créée
+2025-04-17 09:30:36,304 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-17 09:30:36,310 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:30:36,316 - ERROR - [equipment_page.py:213] - Erreur lors du chargement des personnages: HTTPSConnectionPool(host='www.bungie.net', port=443): Max retries exceeded with url: /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000268CB344CD0>: Failed to resolve 'www.bungie.net' ([Errno 11001] getaddrinfo failed)"))
+2025-04-17 09:30:36,316 - ERROR - [equipment_page.py:214] - Détails de l'erreur:
+Traceback (most recent call last):
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000268CB344CD0>: Failed to resolve 'www.bungie.net' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.bungie.net', port=443): Max retries exceeded with url: /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000268CB344CD0>: Failed to resolve 'www.bungie.net' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\perio\OneDrive\Documents\GitHub\ORY\ui\pages\equipment_page.py", line 183, in load_characters
+    response = requests.get(
+               ^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.bungie.net', port=443): Max retries exceeded with url: /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000268CB344CD0>: Failed to resolve 'www.bungie.net' ([Errno 11001] getaddrinfo failed)"))
+2025-04-17 09:30:36,483 - DEBUG - [main_window.py:117] - ✓ Page équipement créée
+2025-04-17 09:30:36,485 - DEBUG - [main_window.py:120] - ✓ Page missions créée
+2025-04-17 09:30:36,490 - DEBUG - [main_window.py:123] - ✓ Page meta créée
+2025-04-17 09:30:36,493 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:30:36,493 - INFO - [main_window.py:141] - ✅ Pages ajoutées avec succès
+2025-04-17 09:30:36,494 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg ===
+2025-04-17 09:30:36,494 - INFO - [main_window.py:148] - Configuration de la barre de statut
+2025-04-17 09:30:36,494 - INFO - [meta_page.py:56] - Initialisation du navigateur en mode headless
+2025-04-17 09:30:36,495 - INFO - [main_window.py:161] - ✅ Barre de statut configurée
+2025-04-17 09:30:36,495 - INFO - [main_window.py:167] - Application des styles
+2025-04-17 09:30:36,505 - INFO - [main_window.py:172] - ✅ Styles appliqués
+2025-04-17 09:30:36,505 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-04-17 09:30:36,576 - DEBUG - [selenium_manager.py:101] - Selenium Manager binary found at: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-04-17 09:30:36,576 - DEBUG - [selenium_manager.py:114] - Executing process: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-04-17 09:30:36,852 - DEBUG - [selenium_manager.py:140] - chromedriver not found in PATH
+2025-04-17 09:30:36,852 - DEBUG - [selenium_manager.py:140] - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 09:30:36,852 - DEBUG - [selenium_manager.py:140] - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-04-17 09:30:36,852 - DEBUG - [selenium_manager.py:140] - Output: "\r\r\n\r\r\nVersion=135.0.7049.85\r\r\n\r\r\n\r\r\n\r"
+2025-04-17 09:30:36,852 - DEBUG - [selenium_manager.py:140] - Detected browser: chrome 135.0.7049.85
+2025-04-17 09:30:36,852 - DEBUG - [selenium_manager.py:140] - Required driver: chromedriver 135.0.7049.95
+2025-04-17 09:30:36,853 - DEBUG - [selenium_manager.py:140] - chromedriver 135.0.7049.95 already in the cache
+2025-04-17 09:30:36,853 - DEBUG - [selenium_manager.py:140] - Driver path: C:\Users\perio\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-17 09:30:36,853 - DEBUG - [selenium_manager.py:140] - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 09:30:36,860 - DEBUG - [service.py:231] - Started executable: `C:\Users\perio\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 23816 using 0 to output -3
+2025-04-17 09:30:37,375 - DEBUG - [remote_connection.py:403] - POST http://localhost:62251/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'useAutomationExtension': False, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--headless=new', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--window-size=1920,1080', '--disable-blink-features=AutomationControlled', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36']}}}}
+2025-04-17 09:30:37,376 - DEBUG - [connectionpool.py:241] - Starting new HTTP connection (1): localhost:62251
+2025-04-17 09:30:37,735 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-17 09:30:37,737 - DEBUG - [main_window.py:187] - ✓ Page changée avec succès vers 3
+2025-04-17 09:30:37,994 - DEBUG - [connectionpool.py:544] - http://localhost:62251 "POST /session HTTP/1.1" 200 0
+2025-04-17 09:30:37,994 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\perio\\AppData\\Local\\Temp\\scoped_dir23816_2001768008"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62255"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"017fd7c536f0419078654c39cccecf3c"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 09:30:37,995 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 09:30:37,995 - INFO - [meta_page.py:62] - Accès à https://www.light.gg/god-roll/
+2025-04-17 09:30:37,995 - DEBUG - [remote_connection.py:403] - POST http://localhost:62251/session/017fd7c536f0419078654c39cccecf3c/url {'url': 'https://www.light.gg/god-roll/'}
+2025-04-17 09:30:38,163 - DEBUG - [connectionpool.py:544] - http://localhost:62251 "POST /session/017fd7c536f0419078654c39cccecf3c/url HTTP/1.1" 500 0
+2025-04-17 09:30:38,163 - DEBUG - [remote_connection.py:436] - Remote response: status=500 | data={"value":{"error":"unknown error","message":"unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=135.0.7049.85)","stacktrace":"\tGetHandleVerifier [0x00007FF657335355+78597]\n\tGetHandleVerifier [0x00007FF6573353B0+78688]\n\t(No symbol) [0x00007FF6570E91AA]\n\t(No symbol) [0x00007FF6570E5BA0]\n\t(No symbol) [0x00007FF6570D6849]\n\t(No symbol) [0x00007FF6570D85A8]\n\t(No symbol) [0x00007FF6570D6B56]\n\t(No symbol) [0x00007FF6570D65D6]\n\t(No symbol) [0x00007FF6570D629A]\n\t(No symbol) [0x00007FF6570D3F4A]\n\t(No symbol) [0x00007FF6570D471C]\n\t(No symbol) [0x00007FF6570ED07A]\n\t(No symbol) [0x00007FF65719002E]\n\t(No symbol) [0x00007FF6571670EA]\n\t(No symbol) [0x00007FF65718F2BB]\n\t(No symbol) [0x00007FF657166EC3]\n\t(No symbol) [0x00007FF6571303F8]\n\t(No symbol) [0x00007FF657131163]\n\tGetHandleVerifier [0x00007FF6575DEF0D+2870973]\n\tGetHandleVerifier [0x00007FF6575D96B8+2848360]\n\tGetHandleVerifier [0x00007FF6575F6993+2967875]\n\tGetHandleVerifier [0x00007FF65735019A+188746]\n\tGetHandleVerifier [0x00007FF65735847F+222255]\n\tGetHandleVerifier [0x00007FF65733D2D4+111236]\n\tGetHandleVerifier [0x00007FF65733D482+111666]\n\tGetHandleVerifier [0x00007FF6573235A9+5465]\n\tBaseThreadInitThunk [0x00007FFA9441E8D7+23]\n\tRtlUserThreadStart [0x00007FFA959314FC+44]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1303', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 09:30:38,165 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 09:30:38,165 - ERROR - [meta_page.py:105] - Erreur lors de la récupération des données: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF657335355+78597]
+	GetHandleVerifier [0x00007FF6573353B0+78688]
+	(No symbol) [0x00007FF6570E91AA]
+	(No symbol) [0x00007FF6570E5BA0]
+	(No symbol) [0x00007FF6570D6849]
+	(No symbol) [0x00007FF6570D85A8]
+	(No symbol) [0x00007FF6570D6B56]
+	(No symbol) [0x00007FF6570D65D6]
+	(No symbol) [0x00007FF6570D629A]
+	(No symbol) [0x00007FF6570D3F4A]
+	(No symbol) [0x00007FF6570D471C]
+	(No symbol) [0x00007FF6570ED07A]
+	(No symbol) [0x00007FF65719002E]
+	(No symbol) [0x00007FF6571670EA]
+	(No symbol) [0x00007FF65718F2BB]
+	(No symbol) [0x00007FF657166EC3]
+	(No symbol) [0x00007FF6571303F8]
+	(No symbol) [0x00007FF657131163]
+	GetHandleVerifier [0x00007FF6575DEF0D+2870973]
+	GetHandleVerifier [0x00007FF6575D96B8+2848360]
+	GetHandleVerifier [0x00007FF6575F6993+2967875]
+	GetHandleVerifier [0x00007FF65735019A+188746]
+	GetHandleVerifier [0x00007FF65735847F+222255]
+	GetHandleVerifier [0x00007FF65733D2D4+111236]
+	GetHandleVerifier [0x00007FF65733D482+111666]
+	GetHandleVerifier [0x00007FF6573235A9+5465]
+	BaseThreadInitThunk [0x00007FFA9441E8D7+23]
+	RtlUserThreadStart [0x00007FFA959314FC+44]
+
+2025-04-17 09:30:38,166 - DEBUG - [remote_connection.py:403] - DELETE http://localhost:62251/session/017fd7c536f0419078654c39cccecf3c {}
+2025-04-17 09:30:38,203 - DEBUG - [connectionpool.py:544] - http://localhost:62251 "DELETE /session/017fd7c536f0419078654c39cccecf3c HTTP/1.1" 200 0
+2025-04-17 09:30:38,203 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 09:30:38,204 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 09:30:40,286 - INFO - [meta_page.py:108] - Navigateur fermé
+2025-04-17 09:30:40,287 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée

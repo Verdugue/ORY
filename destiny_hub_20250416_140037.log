@@ -1,0 +1,89 @@
+2025-04-16 14:00:37,552 - INFO - [logger.py:25] - === Démarrage de Destiny Hub ===
+2025-04-16 14:00:37,553 - INFO - [logger.py:26] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-16 14:00:37,553 - INFO - [logger.py:27] - Système d'exploitation: win32
+2025-04-16 14:00:37,553 - INFO - [logger.py:36] - === Vérification de l'environnement ===
+2025-04-16 14:00:37,558 - DEBUG - [logger.py:45] - Longueur de la clé API: 32
+2025-04-16 14:00:37,558 - INFO - [logger.py:51] - === Vérification des dépendances ===
+2025-04-16 14:00:37,569 - INFO - [logger.py:70] - === Vérification des fichiers ===
+2025-04-16 14:00:37,578 - DEBUG - [logger.py:98] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-16 14:00:37,581 - DEBUG - [logger.py:98] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-16 14:00:37,582 - DEBUG - [logger.py:98] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-16 14:00:37,586 - DEBUG - [logger.py:98] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-16 14:00:37,590 - DEBUG - [logger.py:98] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-16 14:00:37,593 - DEBUG - [logger.py:98] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-16 14:00:37,642 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-04-16 14:00:37,644 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-04-16 14:00:37,649 - DEBUG - [main_window.py:112] - Création des pages...
+2025-04-16 14:00:37,686 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-16 14:00:37,692 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:00:38,525 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2461
+2025-04-16 14:00:38,530 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843010596444327
+2025-04-16 14:00:38,532 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:00:42,251 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 994
+2025-04-16 14:00:42,252 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-04-16 14:00:42,252 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-16 14:00:42,252 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:00:42,511 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3039
+2025-04-16 14:00:42,513 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-16 14:00:42,545 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-16 14:00:42,547 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-16 14:00:42,549 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:00:42,637 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3039
+2025-04-16 14:00:42,639 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-16 14:00:42,641 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-16 14:00:42,672 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-16 14:00:42,679 - INFO - [main_window.py:148] - Configuration de la barre de statut
+2025-04-16 14:00:42,682 - INFO - [main_window.py:167] - Application des styles
+2025-04-16 14:00:42,884 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /db/items/weapon/ HTTP/1.1" 403 None
+2025-04-16 14:00:49,123 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:00:51,890 - INFO - [main_window.py:178] - Changement de page vers l'index 0
+2025-04-16 14:01:04,652 - INFO - [account_page.py:99] - Tentative d'enregistrement du compte: Alex6#8669
+2025-04-16 14:01:04,654 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:01:04,938 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "POST /Platform/Destiny2/SearchDestinyPlayerByBungieName/-1/ HTTP/1.1" 200 111
+2025-04-16 14:01:04,940 - INFO - [account_page.py:122] - Réponse reçue - Status: 200
+2025-04-16 14:01:06,070 - ERROR - [account_page.py:240] - Compte Destiny 2 non trouvé
+2025-04-16 14:01:19,144 - INFO - [account_page.py:99] - Tentative d'enregistrement du compte: Alex6#8969
+2025-04-16 14:01:19,145 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:01:19,413 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "POST /Platform/Destiny2/SearchDestinyPlayerByBungieName/-1/ HTTP/1.1" 200 263
+2025-04-16 14:01:19,415 - INFO - [account_page.py:122] - Réponse reçue - Status: 200
+2025-04-16 14:01:19,416 - INFO - [account_page.py:133] - Données du compte sauvegardées
+2025-04-16 14:01:19,416 - INFO - [account_page.py:142] - Actualisation automatique de l'équipement
+2025-04-16 14:01:19,416 - INFO - [equipment_page.py:369] - === Actualisation des données du personnage ===
+2025-04-16 14:01:19,416 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-16 14:01:19,420 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:01:20,483 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018512514923/?components=200%2C205 HTTP/1.1" 200 1308
+2025-04-16 14:01:20,489 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843009764974411
+2025-04-16 14:01:20,490 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:01:22,384 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018512514923/?components=200 HTTP/1.1" 200 669
+2025-04-16 14:01:22,385 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 1989
+2025-04-16 14:01:22,385 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843009764974411 ===
+2025-04-16 14:01:22,387 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:01:25,376 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018512514923/Character/2305843009764974411/?components=205%2C300%2C302 HTTP/1.1" 200 2740
+2025-04-16 14:01:25,378 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-16 14:01:25,380 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-16 14:01:25,381 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843009764974411 ===
+2025-04-16 14:01:25,385 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-16 14:01:25,475 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018512514923/Character/2305843009764974411/?components=205%2C300%2C302 HTTP/1.1" 200 2740
+2025-04-16 14:01:25,476 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-16 14:01:25,477 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-16 14:01:25,477 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:01:27,240 - INFO - [account_page.py:245] - Compte enregistré avec succès!
+2025-04-16 14:01:29,151 - INFO - [main_window.py:178] - Changement de page vers l'index 0
+2025-04-16 14:01:29,158 - INFO - [main_window.py:178] - Changement de page vers l'index 0
+2025-04-16 14:01:30,240 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:01:37,274 - INFO - [main_window.py:178] - Changement de page vers l'index 2
+2025-04-16 14:01:46,916 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-16 14:01:59,223 - INFO - [main_window.py:178] - Changement de page vers l'index 0
+2025-04-16 14:01:59,231 - INFO - [main_window.py:178] - Changement de page vers l'index 0
+2025-04-16 14:01:59,233 - INFO - [main_window.py:178] - Changement de page vers l'index 0
+2025-04-16 14:02:40,741 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:02:49,156 - INFO - [main_window.py:178] - Changement de page vers l'index 2
+2025-04-16 14:02:49,166 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-16 14:02:50,497 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:02:51,089 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:02:51,411 - INFO - [main_window.py:178] - Changement de page vers l'index 2
+2025-04-16 14:02:51,831 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-16 14:02:52,681 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:02:54,175 - INFO - [main_window.py:178] - Changement de page vers l'index 2
+2025-04-16 14:02:55,257 - INFO - [main_window.py:178] - Changement de page vers l'index 1
+2025-04-16 14:02:56,116 - INFO - [main_window.py:178] - Changement de page vers l'index 3

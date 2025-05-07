@@ -1,0 +1,172 @@
+2025-04-17 10:35:45,449 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-04-17 10:35:45,450 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-17 10:35:45,450 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-04-17 10:35:45,450 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250417_103545.log
+2025-04-17 10:35:45,451 - INFO - [logger.py:55] - === Informations Système ===
+2025-04-17 10:35:45,451 - INFO - [logger.py:56] - OS: Windows 10
+2025-04-17 10:35:45,470 - INFO - [logger.py:57] - Architecture: AMD64
+2025-04-17 10:35:45,471 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-04-17 10:35:45,482 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-04-17 10:35:45,482 - INFO - [logger.py:63] - Mémoire disponible: 14.62 GB
+2025-04-17 10:35:45,482 - INFO - [logger.py:64] - Utilisation mémoire: 53.2%
+2025-04-17 10:35:45,482 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-04-17 10:35:45,482 - INFO - [logger.py:69] - Espace disque libre: 218.08 GB
+2025-04-17 10:35:45,484 - INFO - [logger.py:70] - Utilisation disque: 77.1%
+2025-04-17 10:35:45,484 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-04-17 10:35:45,485 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-04-17 10:35:45,485 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-04-17 10:35:45,485 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-04-17 10:35:45,485 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-04-17 10:35:45,485 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-04-17 10:35:45,485 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-04-17 10:35:45,485 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-04-17 10:35:45,485 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-04-17 10:35:45,487 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-04-17 10:35:45,487 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-04-17 10:35:45,487 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-04-17 10:35:45,487 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-04-17 10:35:45,488 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-04-17 10:35:45,488 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-04-17 10:35:45,488 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-04-17 10:35:45,489 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-04-17 10:35:45,489 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-04-17 10:35:45,489 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-04-17 10:35:45,489 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-04-17 10:35:45,490 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-04-17 10:35:45,490 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-17 10:35:45,490 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-04-17 10:35:45,490 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-17 10:35:45,491 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-04-17 10:35:45,491 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-17 10:35:45,491 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-04-17 10:35:45,491 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-17 10:35:45,491 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-04-17 10:35:45,492 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-17 10:35:45,492 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 64 fichiers
+2025-04-17 10:35:45,492 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-17 10:35:45,493 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 26 fichiers
+2025-04-17 10:35:45,493 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log, destiny_hub_20250417_095450.log, destiny_hub_20250417_095800.log, destiny_hub_20250417_100013.log, destiny_hub_20250417_101050.log, destiny_hub_20250417_101112.log, destiny_hub_20250417_101728.log, destiny_hub_20250417_101938.log, destiny_hub_20250417_102126.log, destiny_hub_20250417_102514.log, destiny_hub_20250417_102736.log, destiny_hub_20250417_103000.log, destiny_hub_20250417_103209.log, destiny_hub_20250417_103307.log, destiny_hub_20250417_103545.log
+2025-04-17 10:35:45,494 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-04-17 10:35:45,494 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-04-17 10:35:45,525 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-04-17 10:35:45,525 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-04-17 10:35:45,531 - DEBUG - [main_window.py:112] - Création des pages...
+2025-04-17 10:35:45,542 - DEBUG - [main_window.py:114] - ✓ Page compte créée
+2025-04-17 10:35:45,564 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-17 10:35:45,569 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:35:46,395 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2478
+2025-04-17 10:35:46,401 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843010596444327
+2025-04-17 10:35:46,404 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:35:47,960 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-04-17 10:35:47,961 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 2019
+2025-04-17 10:35:47,961 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 10:35:47,963 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:35:48,995 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 10:35:48,999 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 10:35:49,022 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 10:35:49,024 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 10:35:49,026 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 10:35:49,197 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 10:35:49,198 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 10:35:49,200 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 10:35:49,201 - DEBUG - [main_window.py:117] - ✓ Page équipement créée
+2025-04-17 10:35:49,202 - DEBUG - [main_window.py:120] - ✓ Page missions créée
+2025-04-17 10:35:49,207 - DEBUG - [main_window.py:123] - ✓ Page meta créée
+2025-04-17 10:35:49,210 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 10:35:49,210 - INFO - [main_window.py:141] - ✅ Pages ajoutées avec succès
+2025-04-17 10:35:49,210 - INFO - [meta_page.py:41] - === Début de l'extraction avec authentification manuelle ===
+2025-04-17 10:35:49,210 - INFO - [main_window.py:148] - Configuration de la barre de statut
+2025-04-17 10:35:49,212 - INFO - [main_window.py:161] - ✅ Barre de statut configurée
+2025-04-17 10:35:49,212 - INFO - [main_window.py:167] - Application des styles
+2025-04-17 10:35:49,220 - INFO - [main_window.py:172] - ✅ Styles appliqués
+2025-04-17 10:35:49,221 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-04-17 10:35:49,299 - DEBUG - [selenium_manager.py:101] - Selenium Manager binary found at: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-04-17 10:35:49,300 - DEBUG - [selenium_manager.py:114] - Executing process: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-04-17 10:35:49,580 - DEBUG - [selenium_manager.py:140] - chromedriver not found in PATH
+2025-04-17 10:35:49,581 - DEBUG - [selenium_manager.py:140] - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:35:49,581 - DEBUG - [selenium_manager.py:140] - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-04-17 10:35:49,581 - DEBUG - [selenium_manager.py:140] - Output: "\r\r\n\r\r\nVersion=135.0.7049.85\r\r\n\r\r\n\r\r\n\r"
+2025-04-17 10:35:49,581 - DEBUG - [selenium_manager.py:140] - Detected browser: chrome 135.0.7049.85
+2025-04-17 10:35:49,582 - DEBUG - [selenium_manager.py:140] - Required driver: chromedriver 135.0.7049.95
+2025-04-17 10:35:49,582 - DEBUG - [selenium_manager.py:140] - chromedriver 135.0.7049.95 already in the cache
+2025-04-17 10:35:49,582 - DEBUG - [selenium_manager.py:140] - Driver path: C:\Users\perio\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-17 10:35:49,582 - DEBUG - [selenium_manager.py:140] - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:35:49,589 - DEBUG - [service.py:231] - Started executable: `C:\Users\perio\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 22304 using 0 to output -3
+2025-04-17 10:35:50,101 - DEBUG - [remote_connection.py:403] - POST http://localhost:55037/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'useAutomationExtension': False, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--start-maximized', '--disable-blink-features=AutomationControlled']}}}}
+2025-04-17 10:35:50,102 - DEBUG - [connectionpool.py:241] - Starting new HTTP connection (1): localhost:55037
+2025-04-17 10:35:50,778 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "POST /session HTTP/1.1" 200 0
+2025-04-17 10:35:50,779 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\perio\\AppData\\Local\\Temp\\scoped_dir22304_867666103"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55040"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8e2cb97350cbe3a640bf77c1ac306905"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:35:50,779 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:35:50,780 - DEBUG - [remote_connection.py:403] - POST http://localhost:55037/session/8e2cb97350cbe3a640bf77c1ac306905/url {'url': 'https://www.light.gg'}
+2025-04-17 10:35:53,831 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "POST /session/8e2cb97350cbe3a640bf77c1ac306905/url HTTP/1.1" 200 0
+2025-04-17 10:35:53,831 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:35:53,832 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:35:55,862 - DEBUG - [remote_connection.py:403] - POST http://localhost:55037/session/8e2cb97350cbe3a640bf77c1ac306905/refresh {}
+2025-04-17 10:35:56,857 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "POST /session/8e2cb97350cbe3a640bf77c1ac306905/refresh HTTP/1.1" 200 0
+2025-04-17 10:35:56,857 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:35:56,858 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:35:56,858 - DEBUG - [remote_connection.py:403] - GET http://localhost:55037/session/8e2cb97350cbe3a640bf77c1ac306905/url {}
+2025-04-17 10:35:56,864 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "GET /session/8e2cb97350cbe3a640bf77c1ac306905/url HTTP/1.1" 200 0
+2025-04-17 10:35:56,865 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":"https://www.light.gg/"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:35:56,865 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:35:56,865 - DEBUG - [remote_connection.py:403] - POST http://localhost:55037/session/8e2cb97350cbe3a640bf77c1ac306905/url {'url': 'https://www.light.gg/god-roll/'}
+2025-04-17 10:35:57,093 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "POST /session/8e2cb97350cbe3a640bf77c1ac306905/url HTTP/1.1" 200 0
+2025-04-17 10:35:57,094 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:35:57,094 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:02,095 - DEBUG - [remote_connection.py:403] - POST http://localhost:55037/session/8e2cb97350cbe3a640bf77c1ac306905/execute/sync {'script': "\n                    return Array.from(document.querySelectorAll('.weapon-name')).map(el => ({\n     ...", 'args': []}
+2025-04-17 10:36:02,368 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "POST /session/8e2cb97350cbe3a640bf77c1ac306905/execute/sync HTTP/1.1" 200 0
+2025-04-17 10:36:02,368 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:02,370 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:02,370 - DEBUG - [remote_connection.py:403] - DELETE http://localhost:55037/session/8e2cb97350cbe3a640bf77c1ac306905 {}
+2025-04-17 10:36:02,466 - DEBUG - [connectionpool.py:544] - http://localhost:55037 "DELETE /session/8e2cb97350cbe3a640bf77c1ac306905 HTTP/1.1" 200 0
+2025-04-17 10:36:02,466 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:02,466 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:04,668 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-04-17 10:36:05,517 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-17 10:36:05,518 - DEBUG - [main_window.py:187] - ✓ Page changée avec succès vers 3
+2025-04-17 10:36:05,523 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-17 10:36:05,523 - DEBUG - [main_window.py:187] - ✓ Page changée avec succès vers 3
+2025-04-17 10:36:08,362 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 10:36:08,364 - INFO - [meta_page.py:41] - === Début de l'extraction avec authentification manuelle ===
+2025-04-17 10:36:08,366 - DEBUG - [selenium_manager.py:101] - Selenium Manager binary found at: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-04-17 10:36:08,367 - DEBUG - [selenium_manager.py:114] - Executing process: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-04-17 10:36:08,605 - DEBUG - [selenium_manager.py:140] - chromedriver not found in PATH
+2025-04-17 10:36:08,605 - DEBUG - [selenium_manager.py:140] - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:36:08,605 - DEBUG - [selenium_manager.py:140] - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-04-17 10:36:08,605 - DEBUG - [selenium_manager.py:140] - Output: "\r\r\n\r\r\nVersion=135.0.7049.85\r\r\n\r\r\n\r\r\n\r"
+2025-04-17 10:36:08,605 - DEBUG - [selenium_manager.py:140] - Detected browser: chrome 135.0.7049.85
+2025-04-17 10:36:08,606 - DEBUG - [selenium_manager.py:140] - Required driver: chromedriver 135.0.7049.95
+2025-04-17 10:36:08,606 - DEBUG - [selenium_manager.py:140] - chromedriver 135.0.7049.95 already in the cache
+2025-04-17 10:36:08,606 - DEBUG - [selenium_manager.py:140] - Driver path: C:\Users\perio\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-17 10:36:08,606 - DEBUG - [selenium_manager.py:140] - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:36:08,614 - DEBUG - [service.py:231] - Started executable: `C:\Users\perio\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 4500 using 0 to output -3
+2025-04-17 10:36:09,126 - DEBUG - [remote_connection.py:403] - POST http://localhost:55175/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'useAutomationExtension': False, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--start-maximized', '--disable-blink-features=AutomationControlled']}}}}
+2025-04-17 10:36:09,127 - DEBUG - [connectionpool.py:241] - Starting new HTTP connection (1): localhost:55175
+2025-04-17 10:36:09,802 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "POST /session HTTP/1.1" 200 0
+2025-04-17 10:36:09,831 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\perio\\AppData\\Local\\Temp\\scoped_dir4500_353967700"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55181"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e6145c83e52e43a29a330db2d1a9899b"}} | headers=HTTPHeaderDict({'Content-Length': '880', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:09,859 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:09,910 - DEBUG - [remote_connection.py:403] - POST http://localhost:55175/session/e6145c83e52e43a29a330db2d1a9899b/url {'url': 'https://www.light.gg'}
+2025-04-17 10:36:12,986 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "POST /session/e6145c83e52e43a29a330db2d1a9899b/url HTTP/1.1" 200 0
+2025-04-17 10:36:12,987 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:12,987 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:15,025 - DEBUG - [remote_connection.py:403] - POST http://localhost:55175/session/e6145c83e52e43a29a330db2d1a9899b/refresh {}
+2025-04-17 10:36:15,905 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "POST /session/e6145c83e52e43a29a330db2d1a9899b/refresh HTTP/1.1" 200 0
+2025-04-17 10:36:15,939 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:15,975 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:16,012 - DEBUG - [remote_connection.py:403] - GET http://localhost:55175/session/e6145c83e52e43a29a330db2d1a9899b/url {}
+2025-04-17 10:36:16,019 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "GET /session/e6145c83e52e43a29a330db2d1a9899b/url HTTP/1.1" 200 0
+2025-04-17 10:36:16,019 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":"https://www.light.gg/"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:16,020 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:16,020 - DEBUG - [remote_connection.py:403] - POST http://localhost:55175/session/e6145c83e52e43a29a330db2d1a9899b/url {'url': 'https://www.light.gg/god-roll/'}
+2025-04-17 10:36:16,187 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "POST /session/e6145c83e52e43a29a330db2d1a9899b/url HTTP/1.1" 200 0
+2025-04-17 10:36:16,187 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:16,187 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:21,189 - DEBUG - [remote_connection.py:403] - POST http://localhost:55175/session/e6145c83e52e43a29a330db2d1a9899b/execute/sync {'script': "\n                    return Array.from(document.querySelectorAll('.weapon-name')).map(el => ({\n     ...", 'args': []}
+2025-04-17 10:36:21,964 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "POST /session/e6145c83e52e43a29a330db2d1a9899b/execute/sync HTTP/1.1" 200 0
+2025-04-17 10:36:21,965 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:21,965 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:21,965 - DEBUG - [remote_connection.py:403] - DELETE http://localhost:55175/session/e6145c83e52e43a29a330db2d1a9899b {}
+2025-04-17 10:36:22,040 - DEBUG - [connectionpool.py:544] - http://localhost:55175 "DELETE /session/e6145c83e52e43a29a330db2d1a9899b HTTP/1.1" 200 0
+2025-04-17 10:36:22,040 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-17 10:36:22,040 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-04-17 10:36:24,325 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée

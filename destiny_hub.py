@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 import logging
 from datetime import datetime
 import webbrowser
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse, parse_qs
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import threading
 import socket
@@ -1558,89 +1558,41 @@ class DestinyHub(QMainWindow):
 
     def update_equipment_slot(self, slot, item):
         try:
-            self.logger.info(f"=== Mise à jour du slot d'équipement ===")
-            
-            layout = slot.layout()
-            if not layout:
-                self.logger.error("❌ Layout non trouvé pour le slot")
+            if not item:
+                slot.set_item(None)
                 return
-
-            # Récupérer le hash de l'item
             item_hash = str(item.get('itemHash', ''))
-            self.logger.info(f"🔍 Récupération des définitions pour l'item {item_hash}")
-
-            # Faire la requête à l'API Manifest
             headers = {
                 'X-API-Key': self.OAUTH_CONFIG['api_key'],
                 'Content-Type': 'application/json'
             }
             manifest_url = f"https://www.bungie.net/Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/{item_hash}/"
-            
             response = requests.get(manifest_url, headers=headers)
             if response.status_code == 200:
                 item_def = response.json()['Response']
-                item_name = item_def['displayProperties']['name']
-                icon_path = item_def['displayProperties']['icon']
-                icon_url = f"https://www.bungie.net{icon_path}"
-                
-                self.logger.info(f"✅ Item trouvé: {item_name}")
-                self.logger.info(f"🖼️ Icône: {icon_url}")
-
-                # Mise à jour de l'icône
-                icon_label = layout.itemAt(0).widget()
-                icon_filename = f"icons/{item_hash}.png"
-                
-                if not self.verify_image_file(icon_filename):
-                    self.logger.error(f"❌ Image invalide: {icon_filename}")
-                    # Retélécharger l'image
-                    icon_response = requests.get(icon_url)
-                    if icon_response.status_code == 200:
-                        with open(icon_filename, 'wb') as f:
-                            f.write(icon_response.content)
-
-                pixmap = QPixmap(icon_filename)
-                if pixmap.isNull():
-                    self.logger.error(f"❌ Échec du chargement du pixmap pour {icon_filename}")
-                    # Vérifier le format du fichier
-                    with open(icon_filename, 'rb') as f:
-                        header = f.read(8)
-                        self.logger.info(f"En-tête du fichier: {header.hex()}")
-                    return
-                
-                self.logger.info(f"📏 Dimensions originales: {pixmap.width()}x{pixmap.height()}")
-                
-                # Redimensionner
-                scaled_pixmap = pixmap.scaled(
-                    64, 64,
-                    Qt.AspectRatioMode.KeepAspectRatio,
-                    Qt.TransformationMode.SmoothTransformation
-                )
-                
-                if scaled_pixmap.isNull():
-                    self.logger.error("❌ Échec du redimensionnement")
-                    return
-                
-                self.logger.info(f"📏 Dimensions après redimensionnement: {scaled_pixmap.width()}x{scaled_pixmap.height()}")
-                
-                # Appliquer au label
-                icon_label.setPixmap(scaled_pixmap)
-                self.logger.info("✅ Image appliquée au label")
-
-                # Mise à jour de la puissance
-                power = item.get('instance', {}).get('primaryStat', {}).get('value', 0)
-                power_label = layout.itemAt(1).widget()
-                power_label.setText(str(power))
-
-                # Mise à jour du nom
-                name_label = layout.itemAt(2).widget()
-                name_label.setText(item_name)
-                
+                # Enrichir l'item avec toutes les infos utiles
+                item['name'] = item_def['displayProperties']['name']
+                item['description'] = item_def['displayProperties']['description']
+                item['itemTypeDisplayName'] = item_def.get('itemTypeDisplayName', '')
+                item['inventory'] = item_def.get('inventory', {})
+                item['itemCategoryHashes'] = [
+                    self.get_category_name(h) for h in item_def.get('itemCategoryHashes', [])
+                ]
+                item['stats'] = self.get_stats(item_def.get('stats', {}))
+                item['perks'] = self.get_perks(item_def.get('perks', []))
+                item['sockets'] = self.get_sockets(item_def.get('sockets', {}))
+                item['energy'] = item_def.get('energy', {}).get('energyTypeHash', '')
+                item['ammoType'] = item_def.get('equippingBlock', {}).get('ammoType', '')
+                item['sourceData'] = item_def.get('sourceData', '')
+                item['exoticTraitHash'] = item_def.get('traitIds', [''])[0] if item['inventory'].get('tierTypeName', '').lower() == 'exotique' else ''
+                item['lore'] = self.get_lore(item_def.get('loreHash', None))
+                # ... (ajoute d'autres enrichissements si besoin)
+                slot.set_item(item)
             else:
-                self.logger.error(f"❌ Erreur lors de la récupération des définitions: {response.status_code}")
-            
+                slot.set_item(item)
         except Exception as e:
-            self.logger.error(f"❌ Erreur lors de la mise à jour de l'affichage: {str(e)}")
-            self.logger.exception("   Détails de l'erreur:")
+            logging.error(f"Erreur update_equipment_slot: {str(e)}")
+            slot.set_item(item)
 
     def get_bucket_type(self, bucket_hash):
         """Retourne le type d'emplacement d'équipement basé sur le bucket hash."""
@@ -2122,6 +2074,49 @@ class DestinyHub(QMainWindow):
         except Exception as e:
             self.logger.error(f"Erreur lors de la vérification de {filename}: {e}")
             return False
+
+    def get_category_name(self, category_hash):
+        # Récupère le nom de la catégorie via l'API Manifest
+        url = f"https://www.bungie.net/Platform/Destiny2/Manifest/DestinyItemCategoryDefinition/{category_hash}/"
+        headers = {'X-API-Key': self.OAUTH_CONFIG['api_key']}
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            return response.json()['Response']['displayProperties']['name']
+        return str(category_hash)
+
+    def get_stats(self, stats_dict):
+        # Récupère les noms des stats
+        stats = {}
+        for stat_hash, stat_data in stats_dict.get('stats', {}).items():
+            stat_name = self.get_stat_name(stat_hash)
+            stats[stat_name] = stat_data.get('value', 0)
+        return stats
+
+    def get_stat_name(self, stat_hash):
+        url = f"https://www.bungie.net/Platform/Destiny2/Manifest/DestinyStatDefinition/{stat_hash}/"
+        headers = {'X-API-Key': self.OAUTH_CONFIG['api_key']}
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            return response.json()['Response']['displayProperties']['name']
+        return str(stat_hash)
+
+    def get_perks(self, perks_list):
+        # Récupère les noms des perks
+        return [perk.get('perkHash', '') for perk in perks_list]
+
+    def get_sockets(self, sockets_dict):
+        # Récupère les infos des sockets
+        return sockets_dict.get('socketEntries', [])
+
+    def get_lore(self, lore_hash):
+        if not lore_hash:
+            return ""
+        url = f"https://www.bungie.net/Platform/Destiny2/Manifest/DestinyLoreDefinition/{lore_hash}/"
+        headers = {'X-API-Key': self.OAUTH_CONFIG['api_key']}
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            return response.json()['Response']['displayProperties']['description']
+        return ""
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

@@ -1,6 +1,6 @@
 {
     "Response": {
-        "responseMintedTimestamp": "2025-04-17T07:58:03.74Z",
+        "responseMintedTimestamp": "2025-05-07T14:38:55.359Z",
         "secondaryComponentsMintedTimestamp": "0001-01-01T00:00:00Z",
         "characters": {
             "data": {
@@ -8,16 +8,16 @@
                     "membershipId": "4611686018536948250",
                     "membershipType": 3,
                     "characterId": "2305843010596444327",
-                    "dateLastPlayed": "2025-04-16T11:07:28Z",
-                    "minutesPlayedThisSession": "0",
-                    "minutesPlayedTotal": "14569",
-                    "light": 2019,
+                    "dateLastPlayed": "2025-05-06T22:39:02Z",
+                    "minutesPlayedThisSession": "49",
+                    "minutesPlayedTotal": "14867",
+                    "light": 2018,
                     "stats": {
-                        "1935470627": 2019,
+                        "1935470627": 2018,
                         "2996146975": 33,
-                        "392767087": 108,
+                        "392767087": 118,
                         "1943323491": 18,
-                        "1735777505": 104,
+                        "1735777505": 94,
                         "144602215": 22,
                         "4244567218": 100
                     },
@@ -57,18 +57,18 @@
                     "membershipId": "4611686018536948250",
                     "membershipType": 3,
                     "characterId": "2305843010617604833",
-                    "dateLastPlayed": "2025-04-17T00:50:25Z",
+                    "dateLastPlayed": "2025-04-22T21:21:32Z",
                     "minutesPlayedThisSession": "0",
-                    "minutesPlayedTotal": "9690",
-                    "light": 2018,
+                    "minutesPlayedTotal": "9804",
+                    "light": 2017,
                     "stats": {
-                        "1935470627": 2018,
-                        "2996146975": 19,
-                        "392767087": 100,
-                        "1943323491": 67,
+                        "1935470627": 2017,
+                        "2996146975": 23,
+                        "392767087": 102,
+                        "1943323491": 23,
                         "1735777505": 100,
-                        "144602215": 38,
-                        "4244567218": 52
+                        "144602215": 30,
+                        "4244567218": 88
                     },
                     "raceHash": 898834093,
                     "genderHash": 3111576190,
@@ -109,9 +109,9 @@
                     "dateLastPlayed": "2025-04-14T21:45:37Z",
                     "minutesPlayedThisSession": "121",
                     "minutesPlayedTotal": "378",
-                    "light": 2016,
+                    "light": 2017,
                     "stats": {
-                        "1935470627": 2016,
+                        "1935470627": 2017,
                         "2996146975": 29,
                         "392767087": 81,
                         "1943323491": 54,
@@ -159,8 +159,8 @@
                 "2305843010596444327": {
                     "items": [
                         {
-                            "itemHash": 3947966653,
-                            "itemInstanceId": "6917530053500511028",
+                            "itemHash": 2763843898,
+                            "itemInstanceId": "6917530018383131569",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
@@ -170,12 +170,14 @@
                             "state": 8,
                             "dismantlePermission": 2,
                             "isWrapper": false,
-                            "tooltipNotificationIndexes": [],
+                            "tooltipNotificationIndexes": [
+                                2
+                            ],
                             "versionNumber": 0
                         },
                         {
-                            "itemHash": 3628991658,
-                            "itemInstanceId": "6917530064905182962",
+                            "itemHash": 814876685,
+                            "itemInstanceId": "6917530066212041715",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
@@ -189,19 +191,19 @@
                             "versionNumber": 0
                         },
                         {
-                            "itemHash": 568611923,
-                            "itemInstanceId": "6917530065933364005",
+                            "itemHash": 1896309757,
+                            "itemInstanceId": "6917530061754113217",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
                             "bucketHash": 953998645,
                             "transferStatus": 1,
                             "lockable": true,
-                            "state": 9,
+                            "state": 4,
                             "dismantlePermission": 2,
                             "isWrapper": false,
                             "tooltipNotificationIndexes": [
-                                2
+                                0
                             ],
                             "versionNumber": 0
                         },
@@ -299,8 +301,8 @@
                             "tooltipNotificationIndexes": []
                         },
                         {
-                            "itemHash": 3158812152,
-                            "itemInstanceId": "6917530064319600624",
+                            "itemHash": 2818858336,
+                            "itemInstanceId": "6917530108591666395",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
@@ -432,17 +434,16 @@
                             "versionNumber": 0
                         },
                         {
-                            "itemHash": 2905188646,
-                            "itemInstanceId": "6917530021454580519",
+                            "itemHash": 431721920,
+                            "itemInstanceId": "6917530027685130761",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
                             "bucketHash": 2465295065,
                             "transferStatus": 1,
                             "lockable": true,
-                            "state": 0,
-                            "dismantlePermission": 1,
-                            "overrideStyleItemHash": 2402948371,
+                            "state": 8,
+                            "dismantlePermission": 2,
                             "isWrapper": false,
                             "tooltipNotificationIndexes": [],
                             "versionNumber": 0
@@ -465,8 +466,8 @@
                             "versionNumber": 0
                         },
                         {
-                            "itemHash": 1321354573,
-                            "itemInstanceId": "6917530055129002584",
+                            "itemHash": 3001229473,
+                            "itemInstanceId": "6917530055122865572",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
@@ -474,7 +475,8 @@
                             "transferStatus": 1,
                             "lockable": true,
                             "state": 4,
-                            "dismantlePermission": 1,
+                            "dismantlePermission": 2,
+                            "overrideStyleItemHash": 4146568779,
                             "isWrapper": false,
                             "tooltipNotificationIndexes": [],
                             "versionNumber": 0
@@ -522,14 +524,14 @@
                             "lockable": true,
                             "state": 4,
                             "dismantlePermission": 2,
-                            "overrideStyleItemHash": 4061292537,
+                            "overrideStyleItemHash": 2990500972,
                             "isWrapper": false,
                             "tooltipNotificationIndexes": [],
                             "versionNumber": 0
                         },
                         {
-                            "itemHash": 1294217731,
-                            "itemInstanceId": "6917530071824510515",
+                            "itemHash": 2809120022,
+                            "itemInstanceId": "6917530071121723089",
                             "quantity": 1,
                             "bindStatus": 0,
                             "location": 1,
@@ -537,8 +539,7 @@
                             "transferStatus": 1,
                             "lockable": true,
                             "state": 4,
-                            "dismantlePermission": 2,
-                            "overrideStyleItemHash": 2960861399,
+                            "dismantlePermission": 1,
                             "isWrapper": false,
                             "tooltipNotificationIndexes": [],
                             "versionNumber": 0

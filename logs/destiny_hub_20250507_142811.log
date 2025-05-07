@@ -1,0 +1,246 @@
+2025-05-07 14:28:11,991 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-05-07 14:28:11,991 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-05-07 14:28:11,992 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-05-07 14:28:11,992 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250507_142811.log
+2025-05-07 14:28:11,993 - INFO - [logger.py:55] - === Informations Système ===
+2025-05-07 14:28:11,993 - INFO - [logger.py:56] - OS: Windows 10
+2025-05-07 14:28:12,012 - INFO - [logger.py:57] - Architecture: AMD64
+2025-05-07 14:28:12,013 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-05-07 14:28:12,021 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-05-07 14:28:12,021 - INFO - [logger.py:63] - Mémoire disponible: 16.46 GB
+2025-05-07 14:28:12,022 - INFO - [logger.py:64] - Utilisation mémoire: 47.3%
+2025-05-07 14:28:12,022 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-05-07 14:28:12,022 - INFO - [logger.py:69] - Espace disque libre: 219.92 GB
+2025-05-07 14:28:12,024 - INFO - [logger.py:70] - Utilisation disque: 76.9%
+2025-05-07 14:28:12,024 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-05-07 14:28:12,025 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-05-07 14:28:12,026 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-05-07 14:28:12,026 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-05-07 14:28:12,026 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-05-07 14:28:12,026 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-05-07 14:28:12,027 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-05-07 14:28:12,027 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-05-07 14:28:12,027 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-05-07 14:28:12,028 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-05-07 14:28:12,028 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-05-07 14:28:12,028 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-05-07 14:28:12,029 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-05-07 14:28:12,029 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-05-07 14:28:12,030 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-05-07 14:28:12,030 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-05-07 14:28:12,031 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-05-07 14:28:12,031 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-05-07 14:28:12,031 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-05-07 14:28:12,032 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-05-07 14:28:12,032 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-05-07 14:28:12,033 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-05-07 14:28:12,033 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-05-07 14:28:12,033 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-05-07 14:28:12,034 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-05-07 14:28:12,034 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-05-07 14:28:12,035 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-05-07 14:28:12,035 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-05-07 14:28:12,036 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-05-07 14:28:12,036 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-05-07 14:28:12,037 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 70 fichiers
+2025-05-07 14:28:12,037 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1762785662.png, 1896309757.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2763843898.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 431721920.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 814876685.png, 952431286.png, 991314988.png, spectre.gif
+2025-05-07 14:28:12,039 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 53 fichiers
+2025-05-07 14:28:12,039 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log, destiny_hub_20250417_095450.log, destiny_hub_20250417_095800.log, destiny_hub_20250417_100013.log, destiny_hub_20250417_101050.log, destiny_hub_20250417_101112.log, destiny_hub_20250417_101728.log, destiny_hub_20250417_101938.log, destiny_hub_20250417_102126.log, destiny_hub_20250417_102514.log, destiny_hub_20250417_102736.log, destiny_hub_20250417_103000.log, destiny_hub_20250417_103209.log, destiny_hub_20250417_103307.log, destiny_hub_20250417_103545.log, destiny_hub_20250507_114434.log, destiny_hub_20250507_114815.log, destiny_hub_20250507_114838.log, destiny_hub_20250507_115102.log, destiny_hub_20250507_115217.log, destiny_hub_20250507_135035.log, destiny_hub_20250507_135311.log, destiny_hub_20250507_135523.log, destiny_hub_20250507_135724.log, destiny_hub_20250507_135955.log, destiny_hub_20250507_140048.log, destiny_hub_20250507_140128.log, destiny_hub_20250507_140251.log, destiny_hub_20250507_140627.log, destiny_hub_20250507_140642.log, destiny_hub_20250507_140654.log, destiny_hub_20250507_141253.log, destiny_hub_20250507_141602.log, destiny_hub_20250507_141617.log, destiny_hub_20250507_141823.log, destiny_hub_20250507_142031.log, destiny_hub_20250507_142224.log, destiny_hub_20250507_142429.log, destiny_hub_20250507_142436.log, destiny_hub_20250507_142454.log, destiny_hub_20250507_142651.log, destiny_hub_20250507_142811.log
+2025-05-07 14:28:12,040 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-05-07 14:28:12,040 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-05-07 14:28:12,084 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-05-07 14:28:12,085 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-05-07 14:28:12,091 - DEBUG - [main_window.py:110] - Création des pages...
+2025-05-07 14:28:12,103 - DEBUG - [main_window.py:112] - ✓ Page compte créée
+2025-05-07 14:28:12,137 - INFO - [equipment_page.py:206] - === Chargement des personnages ===
+2025-05-07 14:28:12,143 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:12,419 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 14:28:12,431 - INFO - [equipment_page.py:396] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 14:28:12,433 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:12,914 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 990
+2025-05-07 14:28:12,916 - INFO - [equipment_page.py:427] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 14:28:12,916 - INFO - [equipment_page.py:261] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 14:28:12,919 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:13,460 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 14:28:13,462 - INFO - [equipment_page.py:316] - === Affichage de l'équipement ===
+2025-05-07 14:28:13,464 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:13,718 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2763843898/ HTTP/1.1" 200 3859
+2025-05-07 14:28:13,752 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:14,046 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/814876685/ HTTP/1.1" 200 2386
+2025-05-07 14:28:14,051 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:14,321 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1896309757/ HTTP/1.1" 200 3821
+2025-05-07 14:28:14,328 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:14,584 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2134769653/ HTTP/1.1" 200 2578
+2025-05-07 14:28:14,589 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:14,873 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/810612804/ HTTP/1.1" 200 2584
+2025-05-07 14:28:14,877 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:15,137 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1183187516/ HTTP/1.1" 200 2582
+2025-05-07 14:28:15,141 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:15,404 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2741258862/ HTTP/1.1" 200 2583
+2025-05-07 14:28:15,409 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:15,658 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/266021826/ HTTP/1.1" 200 2348
+2025-05-07 14:28:15,661 - INFO - [equipment_page.py:363] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 14:28:15,663 - INFO - [equipment_page.py:261] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 14:28:15,666 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:15,760 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 14:28:15,762 - INFO - [equipment_page.py:316] - === Affichage de l'équipement ===
+2025-05-07 14:28:15,764 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:15,852 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2763843898/ HTTP/1.1" 200 3859
+2025-05-07 14:28:15,856 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:15,944 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/814876685/ HTTP/1.1" 200 2386
+2025-05-07 14:28:15,948 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:16,035 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1896309757/ HTTP/1.1" 200 3821
+2025-05-07 14:28:16,039 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:16,139 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2134769653/ HTTP/1.1" 200 2578
+2025-05-07 14:28:16,143 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:16,237 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/810612804/ HTTP/1.1" 200 2584
+2025-05-07 14:28:16,240 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:16,324 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1183187516/ HTTP/1.1" 200 2582
+2025-05-07 14:28:16,329 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:16,420 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2741258862/ HTTP/1.1" 200 2583
+2025-05-07 14:28:16,423 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:16,517 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/266021826/ HTTP/1.1" 200 2348
+2025-05-07 14:28:16,519 - INFO - [equipment_page.py:363] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 14:28:16,520 - DEBUG - [main_window.py:115] - ✓ Page équipement créée
+2025-05-07 14:28:16,523 - DEBUG - [main_window.py:118] - ✓ Page missions créée
+2025-05-07 14:28:16,530 - DEBUG - [main_window.py:121] - ✓ Page meta créée
+2025-05-07 14:28:16,535 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-05-07 14:28:16,535 - INFO - [main_window.py:134] - ✅ Pages ajoutées avec succès
+2025-05-07 14:28:16,535 - INFO - [meta_page.py:41] - === Début de l'extraction avec authentification manuelle ===
+2025-05-07 14:28:16,536 - INFO - [main_window.py:141] - Configuration de la barre de statut
+2025-05-07 14:28:16,537 - INFO - [main_window.py:154] - ✅ Barre de statut configurée
+2025-05-07 14:28:16,538 - INFO - [main_window.py:160] - Application des styles
+2025-05-07 14:28:16,550 - INFO - [main_window.py:165] - ✅ Styles appliqués
+2025-05-07 14:28:16,551 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-05-07 14:28:16,653 - DEBUG - [selenium_manager.py:101] - Selenium Manager binary found at: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-05-07 14:28:16,654 - DEBUG - [selenium_manager.py:114] - Executing process: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-05-07 14:28:17,143 - DEBUG - [selenium_manager.py:140] - chromedriver not found in PATH
+2025-05-07 14:28:17,143 - DEBUG - [selenium_manager.py:140] - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-05-07 14:28:17,144 - DEBUG - [selenium_manager.py:140] - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-05-07 14:28:17,144 - DEBUG - [selenium_manager.py:140] - Output: "\r\r\n\r\r\nVersion=136.0.7103.93\r\r\n\r\r\n\r\r\n\r"
+2025-05-07 14:28:17,145 - DEBUG - [selenium_manager.py:140] - Detected browser: chrome 136.0.7103.93
+2025-05-07 14:28:17,145 - DEBUG - [selenium_manager.py:140] - Required driver: chromedriver 136.0.7103.92
+2025-05-07 14:28:17,145 - DEBUG - [selenium_manager.py:140] - chromedriver 136.0.7103.92 already in the cache
+2025-05-07 14:28:17,146 - DEBUG - [selenium_manager.py:140] - Driver path: C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\chromedriver.exe
+2025-05-07 14:28:17,146 - DEBUG - [selenium_manager.py:140] - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-05-07 14:28:17,156 - DEBUG - [service.py:231] - Started executable: `C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\chromedriver.exe` in a child process with pid: 13528 using 0 to output -3
+2025-05-07 14:28:17,459 - INFO - [main_window.py:171] - Changement de page vers l'index 1
+2025-05-07 14:28:17,462 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 1
+2025-05-07 14:28:17,675 - DEBUG - [remote_connection.py:403] - POST http://localhost:64613/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'useAutomationExtension': False, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--start-maximized', '--disable-blink-features=AutomationControlled']}}}}
+2025-05-07 14:28:17,676 - DEBUG - [connectionpool.py:241] - Starting new HTTP connection (1): localhost:64613
+2025-05-07 14:28:18,357 - DEBUG - [connectionpool.py:544] - http://localhost:64613 "POST /session HTTP/1.1" 200 0
+2025-05-07 14:28:18,357 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"136.0.7103.93","chrome":{"chromedriverVersion":"136.0.7103.92 (cb81a4cc5087a8303a6c8827ee2b80b71d26e334-refs/branch-heads/7103@{#1840})","userDataDir":"C:\\Users\\perio\\AppData\\Local\\Temp\\scoped_dir13528_2144881830"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:64616"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d4c6b1e27ec912fa15f1b14a833679a0"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 14:28:18,358 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 14:28:18,358 - DEBUG - [remote_connection.py:403] - GET http://localhost:64613/session/d4c6b1e27ec912fa15f1b14a833679a0/url {}
+2025-05-07 14:28:18,371 - DEBUG - [connectionpool.py:544] - http://localhost:64613 "GET /session/d4c6b1e27ec912fa15f1b14a833679a0/url HTTP/1.1" 200 0
+2025-05-07 14:28:18,372 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":"data:,"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 14:28:18,372 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 14:28:19,934 - INFO - [equipment_page.py:396] - Changement de personnage vers ID: 2305843010617604833
+2025-05-07 14:28:19,938 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:20,024 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 990
+2025-05-07 14:28:20,026 - INFO - [equipment_page.py:427] - Lumière mise à jour pour le nouveau personnage: 2017
+2025-05-07 14:28:20,026 - INFO - [equipment_page.py:261] - === Chargement de l'équipement pour le personnage 2305843010617604833 ===
+2025-05-07 14:28:20,029 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:20,309 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010617604833/?components=205%2C300%2C302 HTTP/1.1" 200 3157
+2025-05-07 14:28:20,312 - INFO - [equipment_page.py:316] - === Affichage de l'équipement ===
+2025-05-07 14:28:20,314 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:20,593 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/3947966653/ HTTP/1.1" 200 3777
+2025-05-07 14:28:20,599 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:20,849 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/431721920/ HTTP/1.1" 200 3791
+2025-05-07 14:28:20,854 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:21,117 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1762785662/ HTTP/1.1" 200 3767
+2025-05-07 14:28:21,122 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:21,384 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/3001229473/ HTTP/1.1" 200 2584
+2025-05-07 14:28:21,388 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:22,110 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/3797572280/ HTTP/1.1" 200 2591
+2025-05-07 14:28:22,115 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:22,825 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1958630864/ HTTP/1.1" 200 2591
+2025-05-07 14:28:22,829 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:23,071 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/129332559/ HTTP/1.1" 200 2690
+2025-05-07 14:28:23,076 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:23,334 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2809120022/ HTTP/1.1" 200 2377
+2025-05-07 14:28:23,337 - INFO - [equipment_page.py:363] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 14:28:25,581 - INFO - [equipment_page.py:396] - Changement de personnage vers ID: 2305843010696344032
+2025-05-07 14:28:25,583 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:25,675 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 990
+2025-05-07 14:28:25,676 - INFO - [equipment_page.py:427] - Lumière mise à jour pour le nouveau personnage: 2017
+2025-05-07 14:28:25,677 - INFO - [equipment_page.py:261] - === Chargement de l'équipement pour le personnage 2305843010696344032 ===
+2025-05-07 14:28:25,680 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:27,015 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010696344032/?components=205%2C300%2C302 HTTP/1.1" 200 3027
+2025-05-07 14:28:27,017 - INFO - [equipment_page.py:316] - === Affichage de l'équipement ===
+2025-05-07 14:28:27,019 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:27,271 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/557165046/ HTTP/1.1" 200 3896
+2025-05-07 14:28:27,277 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:27,537 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2907129557/ HTTP/1.1" 200 2549
+2025-05-07 14:28:27,542 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:27,789 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/568611923/ HTTP/1.1" 200 3763
+2025-05-07 14:28:27,794 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:28,049 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2783831726/ HTTP/1.1" 200 2623
+2025-05-07 14:28:28,055 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:28,323 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/287888126/ HTTP/1.1" 200 2639
+2025-05-07 14:28:28,327 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:28,586 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/331602521/ HTTP/1.1" 200 2629
+2025-05-07 14:28:28,590 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:28,855 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/3264721770/ HTTP/1.1" 200 2610
+2025-05-07 14:28:28,860 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:28,960 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/266021826/ HTTP/1.1" 200 2348
+2025-05-07 14:28:28,964 - INFO - [equipment_page.py:363] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 14:28:32,846 - INFO - [equipment_page.py:396] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 14:28:32,848 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:32,944 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 990
+2025-05-07 14:28:32,946 - INFO - [equipment_page.py:427] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 14:28:32,946 - INFO - [equipment_page.py:261] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 14:28:32,948 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,032 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 14:28:33,033 - INFO - [equipment_page.py:316] - === Affichage de l'équipement ===
+2025-05-07 14:28:33,035 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,121 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2763843898/ HTTP/1.1" 200 3859
+2025-05-07 14:28:33,126 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,208 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/814876685/ HTTP/1.1" 200 2386
+2025-05-07 14:28:33,212 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,296 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1896309757/ HTTP/1.1" 200 3821
+2025-05-07 14:28:33,300 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,382 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2134769653/ HTTP/1.1" 200 2578
+2025-05-07 14:28:33,386 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,405 - DEBUG - [remote_connection.py:403] - POST http://localhost:64613/session/d4c6b1e27ec912fa15f1b14a833679a0/execute/sync {'script': "\n                    return Array.from(document.querySelectorAll('.weapon-name')).map(el => ({\n     ...", 'args': []}
+2025-05-07 14:28:33,407 - DEBUG - [connectionpool.py:544] - http://localhost:64613 "POST /session/d4c6b1e27ec912fa15f1b14a833679a0/execute/sync HTTP/1.1" 404 0
+2025-05-07 14:28:33,408 - DEBUG - [remote_connection.py:436] - Remote response: status=404 | data={"value":{"error":"invalid session id","message":"invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: not connected to DevTools\n  (Session info: chrome=136.0.7103.93)","stacktrace":"\tGetHandleVerifier [0x00007FF7A05ACF25+75717]\n\tGetHandleVerifier [0x00007FF7A05ACF80+75808]\n\t(No symbol) [0x00007FF7A0378F9A]\n\t(No symbol) [0x00007FF7A0364E35]\n\t(No symbol) [0x00007FF7A0389DB4]\n\t(No symbol) [0x00007FF7A03FEE75]\n\t(No symbol) [0x00007FF7A041ECC2]\n\t(No symbol) [0x00007FF7A03F7153]\n\t(No symbol) [0x00007FF7A03C0421]\n\t(No symbol) [0x00007FF7A03C11B3]\n\tGetHandleVerifier [0x00007FF7A08AD6FD+3223453]\n\tGetHandleVerifier [0x00007FF7A08A7CA2+3200322]\n\tGetHandleVerifier [0x00007FF7A08C5AD3+3322739]\n\tGetHandleVerifier [0x00007FF7A05C69FA+180890]\n\tGetHandleVerifier [0x00007FF7A05CE0FF+211359]\n\tGetHandleVerifier [0x00007FF7A05B5274+109332]\n\tGetHandleVerifier [0x00007FF7A05B5422+109762]\n\tGetHandleVerifier [0x00007FF7A059BA39+4825]\n\tBaseThreadInitThunk [0x00007FFE30E7E8D7+23]\n\tRtlUserThreadStart [0x00007FFE32D914FC+44]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1101', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 14:28:33,408 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 14:28:33,409 - DEBUG - [remote_connection.py:403] - DELETE http://localhost:64613/session/d4c6b1e27ec912fa15f1b14a833679a0 {}
+2025-05-07 14:28:33,473 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/810612804/ HTTP/1.1" 200 2584
+2025-05-07 14:28:33,477 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,482 - DEBUG - [connectionpool.py:544] - http://localhost:64613 "DELETE /session/d4c6b1e27ec912fa15f1b14a833679a0 HTTP/1.1" 200 0
+2025-05-07 14:28:33,483 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 14:28:33,483 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 14:28:33,575 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/1183187516/ HTTP/1.1" 200 2582
+2025-05-07 14:28:33,578 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,660 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/2741258862/ HTTP/1.1" 200 2583
+2025-05-07 14:28:33,664 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 14:28:33,748 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/266021826/ HTTP/1.1" 200 2348
+2025-05-07 14:28:33,750 - INFO - [equipment_page.py:363] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-05-07 14:28:35,502 - ERROR - [meta_page.py:100] - Erreur critique: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A05ACF25+75717]
+	GetHandleVerifier [0x00007FF7A05ACF80+75808]
+	(No symbol) [0x00007FF7A0378F9A]
+	(No symbol) [0x00007FF7A0364E35]
+	(No symbol) [0x00007FF7A0389DB4]
+	(No symbol) [0x00007FF7A03FEE75]
+	(No symbol) [0x00007FF7A041ECC2]
+	(No symbol) [0x00007FF7A03F7153]
+	(No symbol) [0x00007FF7A03C0421]
+	(No symbol) [0x00007FF7A03C11B3]
+	GetHandleVerifier [0x00007FF7A08AD6FD+3223453]
+	GetHandleVerifier [0x00007FF7A08A7CA2+3200322]
+	GetHandleVerifier [0x00007FF7A08C5AD3+3322739]
+	GetHandleVerifier [0x00007FF7A05C69FA+180890]
+	GetHandleVerifier [0x00007FF7A05CE0FF+211359]
+	GetHandleVerifier [0x00007FF7A05B5274+109332]
+	GetHandleVerifier [0x00007FF7A05B5422+109762]
+	GetHandleVerifier [0x00007FF7A059BA39+4825]
+	BaseThreadInitThunk [0x00007FFE30E7E8D7+23]
+	RtlUserThreadStart [0x00007FFE32D914FC+44]
+
+2025-05-07 14:28:35,503 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée

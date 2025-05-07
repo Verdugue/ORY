@@ -38,176 +38,68 @@ class ScrapingThread(QThread):
 
     def get_destinytracker_stats(self):
         try:
-            logging.info("=== Début de l'extraction avancée des données ===")
-            weapons_data = []
+            logging.info("=== Début de l'extraction avec authentification manuelle ===")
+            self.progress.emit("Configuration du navigateur...")
             
             options = webdriver.ChromeOptions()
-            options.add_argument('--headless=new')
-            options.add_argument('--no-sandbox')
+            options.add_argument('--start-maximized')
             options.add_argument('--disable-blink-features=AutomationControlled')
-            
-            # Masquer encore plus profondément Selenium
-            options.add_experimental_option('excludeSwitches', ['enable-automation'])
+            options.add_experimental_option("excludeSwitches", ["enable-automation"])
             options.add_experimental_option('useAutomationExtension', False)
-            
-            # Intercepter et modifier les requêtes réseau
-            options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
             
             driver = webdriver.Chrome(options=options)
             
             try:
-                # Injecter un script qui va intercepter toutes les requêtes XHR
-                driver.execute_cdp_cmd('Network.enable', {})
-                driver.execute_cdp_cmd('Network.setBypassServiceWorker', {'bypass': True})
+                # Aller sur la page d'accueil
+                self.progress.emit("Accès à light.gg - Veuillez compléter le captcha...")
+                driver.get("https://www.light.gg")
                 
-                # Masquer complètement la présence de Selenium
-                driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
-                    'source': '''
-                        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-                        Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
-                        Object.defineProperty(navigator, 'languages', {get: () => ['fr-FR', 'fr', 'en-US', 'en']});
-                        window.chrome = { runtime: {} };
-                        
-                        // Intercepter et stocker toutes les réponses XHR
-                        var originalXHR = window.XMLHttpRequest;
-                        window.XMLHttpRequest = function() {
-                            var xhr = new originalXHR();
-                            var originalOpen = xhr.open;
-                            xhr.open = function() {
-                                xhr.addEventListener('load', function() {
-                                    try {
-                                        if (this.responseText) {
-                                            window.lastXHRResponse = this.responseText;
-                                        }
-                                    } catch(e) {}
-                                });
-                                originalOpen.apply(xhr, arguments);
-                            };
-                            return xhr;
-                        };
-                    '''
-                })
+                # Attendre que l'URL ne contienne plus "challenge"
+                while "challenge" in driver.current_url:
+                    time.sleep(1)
+                    
+                # Attendre 5 secondes supplémentaires pour être sûr
+                time.sleep(5)
                 
-                # Visiter la page avec une approche progressive
-                driver.get('https://www.light.gg')
-                time.sleep(2)
+                # Maintenant on peut aller sur la page des god rolls
+                self.progress.emit("Accès aux données des armes...")
+                driver.get("https://www.light.gg/god-roll/")
                 
-                # Simuler une navigation naturelle
-                driver.execute_script("""
-                    function simulateHumanBehavior() {
-                        const events = ['mousemove', 'scroll', 'click'];
-                        events.forEach(event => {
-                            document.dispatchEvent(new Event(event));
-                        });
-                        window.scrollTo(0, document.body.scrollHeight / 2);
-                    }
-                    simulateHumanBehavior();
+                # Attendre que la page soit chargée
+                time.sleep(10)
+                
+                # Extraction des données
+                weapons_data = driver.execute_script("""
+                    return Array.from(document.querySelectorAll('.weapon-name')).map(el => ({
+                        name: el.textContent.trim(),
+                        link: el.href,
+                        image: el.querySelector('img')?.src,
+                        usage: el.closest('tr')?.querySelector('.usage-percent')?.textContent.trim()
+                    }));
                 """)
                 
-                time.sleep(1)
-                driver.get('https://www.light.gg/god-roll/')
-                time.sleep(3)
-                
-                # Récupérer les données de plusieurs façons possibles
-                weapon_data = driver.execute_script("""
-                    return {
-                        perkStats: window.perkStats || {},
-                        lastXHR: window.lastXHRResponse || '',
-                        nextData: window.__NEXT_DATA__ || {},
-                        nuxtData: window.__NUXT__ || {},
-                        initialState: window.__INITIAL_STATE__ || {}
-                    };
-                """)
-                
-                # Analyser les logs de performance pour trouver les requêtes XHR
-                logs = driver.get_log('performance')
-                network_data = []
-                
-                for log in logs:
-                    try:
-                        log_data = json.loads(log['message'])['message']
-                        if ('Network.responseReceived' in log_data['method'] and 
-                            'json' in log_data['params']['response']['mimeType']):
-                            request_id = log_data['params']['requestId']
-                            response = driver.execute_cdp_cmd('Network.getResponseBody', {'requestId': request_id})
-                            if response and 'body' in response:
-                                network_data.append(response['body'])
-                    except:
-                        continue
-                
-                # Analyser toutes les sources de données possibles
-                data_sources = [
-                    weapon_data.get('perkStats', {}),
-                    weapon_data.get('lastXHR', ''),
-                    *network_data
-                ]
-                
-                for data_source in data_sources:
-                    try:
-                        if isinstance(data_source, str):
-                            data_source = json.loads(data_source)
-                        
-                        popular_weapons = (
-                            data_source.get('PopularWeaponStats') or 
-                            data_source.get('weapons') or 
-                            data_source.get('items', [])
-                        )
-                        
-                        if popular_weapons and isinstance(popular_weapons, list):
-                            for weapon in popular_weapons[:10]:
-                                try:
-                                    item_hash = weapon.get('ItemHash') or weapon.get('hash')
-                                    if not item_hash:
-                                        continue
-                                        
-                                    # Récupérer les détails via l'API Bungie
-                                    bungie_url = f'https://www.bungie.net/Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/{item_hash}/'
-                                    bungie_headers = {'X-API-Key': OAUTH_CONFIG['api_key']}
-                                    bungie_response = requests.get(bungie_url, headers=bungie_headers)
-                                    
-                                    if bungie_response.status_code == 200:
-                                        weapon_info = bungie_response.json()['Response']
-                                        weapons_data.append({
-                                            'name': weapon_info['displayProperties']['name'],
-                                            'type': weapon_info['itemTypeDisplayName'],
-                                            'image_url': f'icons/{item_hash}.png',
-                                            'usage_rate': f"{weapon.get('DayPercent', 0):.2f}%",
-                                            'activity': 'PvE'
-                                        })
-                                        
-                                except Exception as e:
-                                    logging.error(f"Erreur sur une arme: {str(e)}")
-                                    continue
-                                    
-                            if weapons_data:
-                                break  # On a trouvé nos données, on peut arrêter
-                                
-                    except Exception as e:
-                        logging.error(f"Erreur analyse source: {str(e)}")
-                        continue
+                if weapons_data:
+                    # Sauvegarder les cookies
+                    if not os.path.exists('cache'):
+                        os.makedirs('cache')
+                    with open('cache/light_gg_cookies.json', 'w') as f:
+                        json.dump(driver.get_cookies(), f)
+                    
+                    return [{
+                        'name': weapon['name'],
+                        'type': 'Weapon',
+                        'image_url': weapon['image'],
+                        'usage_rate': weapon.get('usage', 'N/A'),
+                        'activity': 'PvE'
+                    } for weapon in weapons_data[:10]]
                 
             finally:
                 driver.quit()
             
-            # Sauvegarder dans le cache si on a des données
-            if weapons_data:
-                if not os.path.exists('cache'):
-                    os.makedirs('cache')
-                with open('cache/weapons_data.json', 'w') as f:
-                    json.dump(weapons_data, f)
-                return weapons_data
-            
-            # En dernier recours, charger depuis le cache
-            if os.path.exists('cache/weapons_data.json'):
-                logging.info("Chargement des données depuis le cache")
-                with open('cache/weapons_data.json', 'r') as f:
-                    return json.load(f)
-            
             return []
             
         except Exception as e:
-            logging.error(f"Erreur fatale: {str(e)}")
-            logging.error("Traceback:", exc_info=True)
+            logging.error(f"Erreur critique: {str(e)}")
             return []
 
     def get_weapon_name(self, item_hash):

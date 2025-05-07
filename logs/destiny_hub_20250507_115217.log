@@ -1,0 +1,621 @@
+2025-05-07 11:52:17,657 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-05-07 11:52:17,657 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-05-07 11:52:17,658 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-05-07 11:52:17,658 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250507_115217.log
+2025-05-07 11:52:17,658 - INFO - [logger.py:55] - === Informations Système ===
+2025-05-07 11:52:17,658 - INFO - [logger.py:56] - OS: Windows 10
+2025-05-07 11:52:17,676 - INFO - [logger.py:57] - Architecture: AMD64
+2025-05-07 11:52:17,676 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-05-07 11:52:17,685 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-05-07 11:52:17,685 - INFO - [logger.py:63] - Mémoire disponible: 17.26 GB
+2025-05-07 11:52:17,685 - INFO - [logger.py:64] - Utilisation mémoire: 44.8%
+2025-05-07 11:52:17,685 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-05-07 11:52:17,687 - INFO - [logger.py:69] - Espace disque libre: 214.01 GB
+2025-05-07 11:52:17,687 - INFO - [logger.py:70] - Utilisation disque: 77.5%
+2025-05-07 11:52:17,687 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-05-07 11:52:17,688 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-05-07 11:52:17,688 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-05-07 11:52:17,688 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-05-07 11:52:17,688 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-05-07 11:52:17,688 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-05-07 11:52:17,688 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-05-07 11:52:17,688 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-05-07 11:52:17,688 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-05-07 11:52:17,689 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-05-07 11:52:17,689 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-05-07 11:52:17,689 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-05-07 11:52:17,689 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-05-07 11:52:17,689 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-05-07 11:52:17,690 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-05-07 11:52:17,690 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-05-07 11:52:17,690 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-05-07 11:52:17,690 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-05-07 11:52:17,690 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-05-07 11:52:17,690 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-05-07 11:52:17,691 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-05-07 11:52:17,691 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-05-07 11:52:17,692 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-05-07 11:52:17,692 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-05-07 11:52:17,692 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-05-07 11:52:17,692 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-05-07 11:52:17,692 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-05-07 11:52:17,692 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-05-07 11:52:17,694 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-05-07 11:52:17,694 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-05-07 11:52:17,694 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 69 fichiers
+2025-05-07 11:52:17,694 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1762785662.png, 1896309757.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2763843898.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 431721920.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 814876685.png, 952431286.png, 991314988.png
+2025-05-07 11:52:17,695 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 31 fichiers
+2025-05-07 11:52:17,695 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log, destiny_hub_20250417_095450.log, destiny_hub_20250417_095800.log, destiny_hub_20250417_100013.log, destiny_hub_20250417_101050.log, destiny_hub_20250417_101112.log, destiny_hub_20250417_101728.log, destiny_hub_20250417_101938.log, destiny_hub_20250417_102126.log, destiny_hub_20250417_102514.log, destiny_hub_20250417_102736.log, destiny_hub_20250417_103000.log, destiny_hub_20250417_103209.log, destiny_hub_20250417_103307.log, destiny_hub_20250417_103545.log, destiny_hub_20250507_114434.log, destiny_hub_20250507_114815.log, destiny_hub_20250507_114838.log, destiny_hub_20250507_115102.log, destiny_hub_20250507_115217.log
+2025-05-07 11:52:17,696 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-05-07 11:52:17,696 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-05-07 11:52:17,727 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-05-07 11:52:17,728 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-05-07 11:52:17,733 - DEBUG - [main_window.py:110] - Création des pages...
+2025-05-07 11:52:17,743 - DEBUG - [main_window.py:112] - ✓ Page compte créée
+2025-05-07 11:52:17,762 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 11:52:17,766 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:52:18,028 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 11:52:18,035 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 11:52:18,037 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:52:19,708 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 11:52:19,709 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 11:52:19,710 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 11:52:19,711 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:52:21,023 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 11:52:21,024 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 11:52:21,049 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 11:52:21,050 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 11:52:21,052 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:52:21,140 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 11:52:21,141 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 11:52:21,142 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 11:52:21,142 - DEBUG - [main_window.py:115] - ✓ Page équipement créée
+2025-05-07 11:52:21,144 - DEBUG - [main_window.py:118] - ✓ Page missions créée
+2025-05-07 11:52:21,174 - DEBUG - [main_window.py:121] - ✓ Page meta créée
+2025-05-07 11:52:21,177 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-05-07 11:52:21,177 - INFO - [main_window.py:134] - ✅ Pages ajoutées avec succès
+2025-05-07 11:52:21,177 - INFO - [meta_page.py:41] - === Début de l'extraction avec authentification manuelle ===
+2025-05-07 11:52:21,177 - INFO - [main_window.py:141] - Configuration de la barre de statut
+2025-05-07 11:52:21,178 - INFO - [main_window.py:154] - ✅ Barre de statut configurée
+2025-05-07 11:52:21,180 - INFO - [main_window.py:160] - Application des styles
+2025-05-07 11:52:21,186 - INFO - [main_window.py:165] - ✅ Styles appliqués
+2025-05-07 11:52:21,186 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-05-07 11:52:21,253 - DEBUG - [selenium_manager.py:101] - Selenium Manager binary found at: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-05-07 11:52:21,254 - DEBUG - [selenium_manager.py:114] - Executing process: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-05-07 11:52:22,830 - INFO - [main_window.py:171] - Changement de page vers l'index 1
+2025-05-07 11:52:22,830 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 1
+2025-05-07 11:52:24,785 - DEBUG - [selenium_manager.py:140] - Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "windows", arch: "amd64", lang: "python", selenium_version: "4.31" }
+2025-05-07 11:52:24,785 - DEBUG - [selenium_manager.py:140] - chromedriver not found in PATH
+2025-05-07 11:52:24,786 - DEBUG - [selenium_manager.py:140] - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-05-07 11:52:24,786 - DEBUG - [selenium_manager.py:140] - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-05-07 11:52:24,786 - DEBUG - [selenium_manager.py:140] - Output: "\r\r\n\r\r\nVersion=136.0.7103.48\r\r\n\r\r\n\r\r\n\r"
+2025-05-07 11:52:24,787 - DEBUG - [selenium_manager.py:140] - Detected browser: chrome 136.0.7103.48
+2025-05-07 11:52:24,787 - DEBUG - [selenium_manager.py:140] - Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2025-05-07 11:52:24,787 - DEBUG - [selenium_manager.py:140] - Required driver: chromedriver 136.0.7103.92
+2025-05-07 11:52:24,787 - DEBUG - [selenium_manager.py:140] - Acquiring lock: C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\sm.lock
+2025-05-07 11:52:24,787 - DEBUG - [selenium_manager.py:140] - Downloading chromedriver 136.0.7103.92 from https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.92/win64/chromedriver-win64.zip
+2025-05-07 11:52:24,787 - DEBUG - [selenium_manager.py:140] - Driver path: C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\chromedriver.exe
+2025-05-07 11:52:24,788 - DEBUG - [selenium_manager.py:140] - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-05-07 11:52:25,072 - DEBUG - [service.py:231] - Started executable: `C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\chromedriver.exe` in a child process with pid: 10588 using 0 to output -3
+2025-05-07 11:52:25,577 - DEBUG - [remote_connection.py:403] - POST http://localhost:58006/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'useAutomationExtension': False, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--start-maximized', '--disable-blink-features=AutomationControlled']}}}}
+2025-05-07 11:52:25,578 - DEBUG - [connectionpool.py:241] - Starting new HTTP connection (1): localhost:58006
+2025-05-07 11:52:26,312 - DEBUG - [connectionpool.py:544] - http://localhost:58006 "POST /session HTTP/1.1" 200 0
+2025-05-07 11:52:26,341 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"136.0.7103.48","chrome":{"chromedriverVersion":"136.0.7103.92 (cb81a4cc5087a8303a6c8827ee2b80b71d26e334-refs/branch-heads/7103@{#1840})","userDataDir":"C:\\Users\\perio\\AppData\\Local\\Temp\\scoped_dir10588_1396044877"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58021"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"628bce16c3b2fb1e88b294dd32481c7c"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:52:26,373 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:52:26,418 - DEBUG - [remote_connection.py:403] - POST http://localhost:58006/session/628bce16c3b2fb1e88b294dd32481c7c/url {'url': 'https://www.light.gg'}
+2025-05-07 11:52:28,660 - DEBUG - [connectionpool.py:544] - http://localhost:58006 "POST /session/628bce16c3b2fb1e88b294dd32481c7c/url HTTP/1.1" 200 0
+2025-05-07 11:52:28,660 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:52:28,661 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:52:28,661 - DEBUG - [remote_connection.py:403] - GET http://localhost:58006/session/628bce16c3b2fb1e88b294dd32481c7c/url {}
+2025-05-07 11:52:28,663 - DEBUG - [connectionpool.py:544] - http://localhost:58006 "GET /session/628bce16c3b2fb1e88b294dd32481c7c/url HTTP/1.1" 404 0
+2025-05-07 11:52:28,663 - DEBUG - [remote_connection.py:436] - Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=136.0.7103.48)","stacktrace":"\tGetHandleVerifier [0x00007FF7A05ACF25+75717]\n\tGetHandleVerifier [0x00007FF7A05ACF80+75808]\n\t(No symbol) [0x00007FF7A0378F9A]\n\t(No symbol) [0x00007FF7A0351B41]\n\t(No symbol) [0x00007FF7A03FEC2E]\n\t(No symbol) [0x00007FF7A041ECC2]\n\t(No symbol) [0x00007FF7A03F7153]\n\t(No symbol) [0x00007FF7A03C0421]\n\t(No symbol) [0x00007FF7A03C11B3]\n\tGetHandleVerifier [0x00007FF7A08AD6FD+3223453]\n\tGetHandleVerifier [0x00007FF7A08A7CA2+3200322]\n\tGetHandleVerifier [0x00007FF7A08C5AD3+3322739]\n\tGetHandleVerifier [0x00007FF7A05C69FA+180890]\n\tGetHandleVerifier [0x00007FF7A05CE0FF+211359]\n\tGetHandleVerifier [0x00007FF7A05B5274+109332]\n\tGetHandleVerifier [0x00007FF7A05B5422+109762]\n\tGetHandleVerifier [0x00007FF7A059BA39+4825]\n\tBaseThreadInitThunk [0x00007FFE30E7E8D7+23]\n\tRtlUserThreadStart [0x00007FFE32D914FC+44]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1023', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:52:28,664 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:52:28,664 - DEBUG - [remote_connection.py:403] - DELETE http://localhost:58006/session/628bce16c3b2fb1e88b294dd32481c7c {}
+2025-05-07 11:52:28,722 - DEBUG - [connectionpool.py:544] - http://localhost:58006 "DELETE /session/628bce16c3b2fb1e88b294dd32481c7c HTTP/1.1" 200 0
+2025-05-07 11:52:28,722 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:52:28,723 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:52:29,521 - INFO - [main_window.py:171] - Changement de page vers l'index 0
+2025-05-07 11:52:29,522 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 0
+2025-05-07 11:52:29,903 - INFO - [main_window.py:171] - Changement de page vers l'index 2
+2025-05-07 11:52:29,904 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 2
+2025-05-07 11:52:30,273 - INFO - [main_window.py:171] - Changement de page vers l'index 3
+2025-05-07 11:52:30,274 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 3
+2025-05-07 11:52:30,640 - INFO - [main_window.py:171] - Changement de page vers l'index 1
+2025-05-07 11:52:30,641 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 1
+2025-05-07 11:52:30,842 - ERROR - [meta_page.py:102] - Erreur critique: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A05ACF25+75717]
+	GetHandleVerifier [0x00007FF7A05ACF80+75808]
+	(No symbol) [0x00007FF7A0378F9A]
+	(No symbol) [0x00007FF7A0351B41]
+	(No symbol) [0x00007FF7A03FEC2E]
+	(No symbol) [0x00007FF7A041ECC2]
+	(No symbol) [0x00007FF7A03F7153]
+	(No symbol) [0x00007FF7A03C0421]
+	(No symbol) [0x00007FF7A03C11B3]
+	GetHandleVerifier [0x00007FF7A08AD6FD+3223453]
+	GetHandleVerifier [0x00007FF7A08A7CA2+3200322]
+	GetHandleVerifier [0x00007FF7A08C5AD3+3322739]
+	GetHandleVerifier [0x00007FF7A05C69FA+180890]
+	GetHandleVerifier [0x00007FF7A05CE0FF+211359]
+	GetHandleVerifier [0x00007FF7A05B5274+109332]
+	GetHandleVerifier [0x00007FF7A05B5422+109762]
+	GetHandleVerifier [0x00007FF7A059BA39+4825]
+	BaseThreadInitThunk [0x00007FFE30E7E8D7+23]
+	RtlUserThreadStart [0x00007FFE32D914FC+44]
+
+2025-05-07 11:52:30,843 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-05-07 11:52:31,105 - INFO - [main_window.py:171] - Changement de page vers l'index 3
+2025-05-07 11:52:31,106 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 3
+2025-05-07 11:52:38,453 - INFO - [main_window.py:171] - Changement de page vers l'index 2
+2025-05-07 11:52:38,454 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 2
+2025-05-07 11:52:38,877 - INFO - [main_window.py:171] - Changement de page vers l'index 1
+2025-05-07 11:52:38,878 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 1
+2025-05-07 11:52:48,219 - INFO - [main_window.py:171] - Changement de page vers l'index 0
+2025-05-07 11:52:48,220 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 0
+2025-05-07 11:52:48,860 - INFO - [main_window.py:171] - Changement de page vers l'index 2
+2025-05-07 11:52:48,861 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 2
+2025-05-07 11:52:49,298 - INFO - [main_window.py:171] - Changement de page vers l'index 1
+2025-05-07 11:52:49,298 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 1
+2025-05-07 11:52:55,619 - INFO - [main_window.py:171] - Changement de page vers l'index 2
+2025-05-07 11:52:55,620 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 2
+2025-05-07 11:52:55,822 - INFO - [main_window.py:171] - Changement de page vers l'index 3
+2025-05-07 11:52:55,823 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 3
+2025-05-07 11:52:57,136 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-05-07 11:52:57,136 - INFO - [meta_page.py:41] - === Début de l'extraction avec authentification manuelle ===
+2025-05-07 11:52:57,138 - DEBUG - [selenium_manager.py:101] - Selenium Manager binary found at: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-05-07 11:52:57,138 - DEBUG - [selenium_manager.py:114] - Executing process: C:\Users\perio\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-05-07 11:52:57,365 - DEBUG - [selenium_manager.py:140] - chromedriver not found in PATH
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - Output: "\r\r\n\r\r\nVersion=136.0.7103.48\r\r\n\r\r\n\r\r\n\r"
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - Detected browser: chrome 136.0.7103.48
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - Required driver: chromedriver 136.0.7103.92
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - chromedriver 136.0.7103.92 already in the cache
+2025-05-07 11:52:57,366 - DEBUG - [selenium_manager.py:140] - Driver path: C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\chromedriver.exe
+2025-05-07 11:52:57,368 - DEBUG - [selenium_manager.py:140] - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-05-07 11:52:57,373 - DEBUG - [service.py:231] - Started executable: `C:\Users\perio\.cache\selenium\chromedriver\win64\136.0.7103.92\chromedriver.exe` in a child process with pid: 16608 using 0 to output -3
+2025-05-07 11:52:57,890 - DEBUG - [remote_connection.py:403] - POST http://localhost:58093/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'useAutomationExtension': False, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--start-maximized', '--disable-blink-features=AutomationControlled']}}}}
+2025-05-07 11:52:57,891 - DEBUG - [connectionpool.py:241] - Starting new HTTP connection (1): localhost:58093
+2025-05-07 11:52:58,511 - DEBUG - [connectionpool.py:544] - http://localhost:58093 "POST /session HTTP/1.1" 200 0
+2025-05-07 11:52:58,511 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"136.0.7103.48","chrome":{"chromedriverVersion":"136.0.7103.92 (cb81a4cc5087a8303a6c8827ee2b80b71d26e334-refs/branch-heads/7103@{#1840})","userDataDir":"C:\\Users\\perio\\AppData\\Local\\Temp\\scoped_dir16608_683801174"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58097"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5ecdf738c8eb9a67eb701b69fa6cc035"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:52:58,511 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:52:58,512 - DEBUG - [remote_connection.py:403] - POST http://localhost:58093/session/5ecdf738c8eb9a67eb701b69fa6cc035/url {'url': 'https://www.light.gg'}
+2025-05-07 11:53:01,296 - DEBUG - [connectionpool.py:544] - http://localhost:58093 "POST /session/5ecdf738c8eb9a67eb701b69fa6cc035/url HTTP/1.1" 200 0
+2025-05-07 11:53:01,326 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:53:01,359 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:53:01,390 - DEBUG - [remote_connection.py:403] - GET http://localhost:58093/session/5ecdf738c8eb9a67eb701b69fa6cc035/url {}
+2025-05-07 11:53:01,512 - DEBUG - [connectionpool.py:544] - http://localhost:58093 "GET /session/5ecdf738c8eb9a67eb701b69fa6cc035/url HTTP/1.1" 200 0
+2025-05-07 11:53:01,546 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":"https://www.light.gg/"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:53:01,576 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:53:06,639 - DEBUG - [remote_connection.py:403] - POST http://localhost:58093/session/5ecdf738c8eb9a67eb701b69fa6cc035/url {'url': 'https://www.light.gg/god-roll/'}
+2025-05-07 11:53:09,034 - DEBUG - [connectionpool.py:544] - http://localhost:58093 "POST /session/5ecdf738c8eb9a67eb701b69fa6cc035/url HTTP/1.1" 200 0
+2025-05-07 11:53:09,046 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:53:09,047 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:53:19,048 - DEBUG - [remote_connection.py:403] - POST http://localhost:58093/session/5ecdf738c8eb9a67eb701b69fa6cc035/execute/sync {'script': "\n                    return Array.from(document.querySelectorAll('.weapon-name')).map(el => ({\n     ...", 'args': []}
+2025-05-07 11:53:19,065 - DEBUG - [connectionpool.py:544] - http://localhost:58093 "POST /session/5ecdf738c8eb9a67eb701b69fa6cc035/execute/sync HTTP/1.1" 200 0
+2025-05-07 11:53:19,066 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:53:19,066 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:53:19,066 - DEBUG - [remote_connection.py:403] - DELETE http://localhost:58093/session/5ecdf738c8eb9a67eb701b69fa6cc035 {}
+2025-05-07 11:53:19,172 - DEBUG - [connectionpool.py:544] - http://localhost:58093 "DELETE /session/5ecdf738c8eb9a67eb701b69fa6cc035 HTTP/1.1" 200 0
+2025-05-07 11:53:19,173 - DEBUG - [remote_connection.py:436] - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-07 11:53:19,173 - DEBUG - [remote_connection.py:465] - Finished Request
+2025-05-07 11:53:21,486 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-05-07 11:57:17,960 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 11:57:17,961 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 11:57:17,964 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:57:18,839 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 11:57:18,845 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 11:57:18,848 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:57:22,911 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 991
+2025-05-07 11:57:22,912 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 11:57:22,913 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 11:57:22,915 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:57:23,796 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 11:57:23,797 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 11:57:23,798 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 11:57:23,799 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 11:57:23,801 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 11:57:23,880 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 11:57:23,881 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 11:57:23,882 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:02:18,024 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:02:18,025 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:02:18,027 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:02:18,325 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:02:18,330 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:02:18,332 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:02:19,628 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 12:02:19,630 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:02:19,630 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:02:19,632 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:02:20,976 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:02:20,977 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:02:20,978 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:02:20,979 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:02:20,981 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:02:21,066 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:02:21,067 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:02:21,067 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:07:18,231 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:07:18,231 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:07:18,233 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:07:19,093 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:07:19,099 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:07:19,100 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:07:19,942 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 991
+2025-05-07 12:07:19,943 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:07:19,943 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:07:19,945 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:07:20,842 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:07:20,843 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:07:20,844 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:07:20,846 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:07:20,847 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:07:20,926 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:07:20,927 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:07:20,928 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:12:18,453 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:12:18,453 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:12:18,456 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:12:19,410 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2458
+2025-05-07 12:12:19,416 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:12:19,418 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:12:20,706 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 12:12:20,707 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:12:20,707 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:12:20,709 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:12:29,550 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:12:29,551 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:12:29,553 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:12:29,554 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:12:29,555 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:12:29,637 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:12:29,639 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:12:29,639 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:17:18,779 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:17:18,780 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:17:18,781 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:17:19,626 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:17:19,631 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:17:19,633 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:17:23,779 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 12:17:23,780 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:17:23,780 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:17:23,783 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:17:24,049 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:17:24,050 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:17:24,051 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:17:24,052 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:17:24,053 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:17:24,141 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:17:24,142 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:17:24,142 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:22:18,940 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:22:18,941 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:22:18,943 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:22:19,221 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:22:19,227 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:22:19,229 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:22:20,133 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 12:22:20,135 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:22:20,135 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:22:20,136 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:22:20,923 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:22:20,924 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:22:20,926 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:22:20,927 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:22:20,928 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:22:21,011 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:22:21,012 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:22:21,012 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:27:17,810 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:27:17,810 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:27:17,812 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:27:18,552 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:27:18,558 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:27:18,559 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:27:18,851 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 12:27:18,853 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:27:18,853 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:27:18,855 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:27:19,620 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:27:19,622 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:27:19,623 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:27:19,624 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:27:19,625 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:27:19,705 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:27:19,706 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:27:19,707 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:32:17,819 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:32:17,820 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:32:17,822 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:32:18,630 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:32:18,635 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:32:18,638 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:32:19,752 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 991
+2025-05-07 12:32:19,753 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:32:19,754 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:32:19,756 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:32:20,817 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:32:20,819 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:32:20,820 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:32:20,821 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:32:20,823 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:32:20,902 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:32:20,903 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:32:20,904 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:37:17,816 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:37:17,816 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:37:17,819 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:37:19,454 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:37:19,460 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:37:19,462 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:37:19,756 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 991
+2025-05-07 12:37:19,757 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:37:19,758 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:37:19,760 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:37:21,081 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:37:21,082 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:37:21,084 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:37:21,085 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:37:21,087 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:37:21,171 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:37:21,172 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:37:21,173 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:42:17,830 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:42:17,830 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:42:17,833 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:42:18,574 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:42:18,581 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:42:18,583 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:42:19,449 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 12:42:19,451 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:42:19,451 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:42:19,453 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:42:20,808 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:42:20,809 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:42:20,810 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:42:20,810 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:42:20,813 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:42:20,903 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:42:20,905 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:42:20,906 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:47:17,830 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:47:17,831 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:47:17,832 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:47:18,629 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2461
+2025-05-07 12:47:18,634 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:47:18,636 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:47:21,418 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 991
+2025-05-07 12:47:21,419 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:47:21,419 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:47:21,420 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:47:22,928 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:47:22,931 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:47:22,932 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:47:22,932 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:47:22,934 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:47:23,014 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:47:23,015 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:47:23,016 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:52:17,830 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:52:17,831 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:52:17,832 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:52:18,083 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2461
+2025-05-07 12:52:18,088 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:52:18,089 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:52:18,339 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 991
+2025-05-07 12:52:18,340 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:52:18,340 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:52:18,342 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:52:19,068 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:52:19,069 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:52:19,069 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:52:19,070 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:52:19,072 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:52:19,186 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:52:19,187 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:52:19,188 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:57:17,834 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 12:57:17,834 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 12:57:17,836 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:57:19,471 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 12:57:19,479 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 12:57:19,480 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:57:20,344 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-05-07 12:57:20,346 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 12:57:20,346 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:57:20,348 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:57:23,166 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:57:23,167 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:57:23,168 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 12:57:23,169 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 12:57:23,171 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 12:57:23,250 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 12:57:23,251 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 12:57:23,252 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:02:17,825 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:02:17,826 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:02:17,828 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:02:18,659 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 13:02:18,664 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:02:18,666 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:02:18,923 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-05-07 13:02:18,924 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:02:18,924 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:02:18,926 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:02:20,480 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:02:20,481 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:02:20,481 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:02:20,483 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:02:20,485 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:02:20,598 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:02:20,600 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:02:20,601 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:07:17,827 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:07:17,828 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:07:17,830 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:07:18,105 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 13:07:18,112 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:07:18,114 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:07:19,004 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 13:07:19,005 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:07:19,006 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:07:19,008 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:07:21,273 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:07:21,274 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:07:21,275 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:07:21,276 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:07:21,279 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:07:21,398 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:07:21,399 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:07:21,400 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:12:17,843 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:12:17,843 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:12:17,845 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:12:20,606 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2460
+2025-05-07 13:12:20,611 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:12:20,613 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:12:21,280 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 13:12:21,281 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:12:21,281 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:12:21,283 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:12:24,051 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:12:24,052 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:12:24,054 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:12:24,054 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:12:24,057 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:12:24,176 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:12:24,178 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:12:24,178 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:17:17,863 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:17:17,864 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:17:17,866 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:17:18,129 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2460
+2025-05-07 13:17:18,135 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:17:18,137 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:17:18,402 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 13:17:18,403 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:17:18,403 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:17:18,405 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:17:18,749 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:17:18,751 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:17:18,751 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:17:18,752 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:17:18,754 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:17:18,834 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:17:18,836 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:17:18,837 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:22:17,863 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:22:17,863 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:22:17,865 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:22:18,157 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2460
+2025-05-07 13:22:18,163 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:22:18,165 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:22:19,458 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-05-07 13:22:19,459 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:22:19,461 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:22:19,462 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:22:20,288 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:22:20,290 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:22:20,290 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:22:20,291 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:22:20,294 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:22:20,411 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:22:20,412 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:22:20,413 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:27:17,868 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:27:17,868 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:27:17,870 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:27:18,176 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2460
+2025-05-07 13:27:18,182 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:27:18,183 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:27:18,440 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-05-07 13:27:18,440 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:27:18,441 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:27:18,443 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:27:18,737 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:27:18,737 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:27:18,739 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:27:18,740 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:27:18,742 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:27:18,820 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:27:18,821 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:27:18,823 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:32:17,869 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:32:17,870 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:32:17,873 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:32:18,763 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2460
+2025-05-07 13:32:18,768 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:32:18,770 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:32:20,069 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-05-07 13:32:20,071 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:32:20,071 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:32:20,073 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:32:21,604 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:32:21,604 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:32:21,606 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:32:21,607 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:32:21,608 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:32:21,695 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:32:21,696 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:32:21,696 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:37:17,871 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:37:17,871 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:37:17,874 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:37:20,020 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 13:37:20,024 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:37:20,026 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:37:21,209 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 994
+2025-05-07 13:37:21,210 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:37:21,210 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:37:21,212 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:37:21,948 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:37:21,956 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:37:21,958 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:37:21,959 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:37:21,961 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:37:22,069 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:37:22,070 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:37:22,071 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:42:17,900 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:42:17,901 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:42:17,902 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:42:18,195 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 13:42:18,203 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:42:18,204 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:42:19,012 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 992
+2025-05-07 13:42:19,013 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:42:19,014 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:42:19,016 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:42:19,302 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:42:19,304 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:42:19,305 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:42:19,305 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:42:19,307 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:42:19,407 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:42:19,409 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:42:19,409 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:44:43,314 - INFO - [main_window.py:171] - Changement de page vers l'index 1
+2025-05-07 13:44:43,314 - DEBUG - [main_window.py:178] - ✓ Page changée avec succès vers 1
+2025-05-07 13:47:17,905 - INFO - [equipment_page.py:382] - === Actualisation des données du personnage ===
+2025-05-07 13:47:17,906 - INFO - [equipment_page.py:178] - === Chargement des personnages ===
+2025-05-07 13:47:17,907 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:47:18,762 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2459
+2025-05-07 13:47:18,769 - INFO - [equipment_page.py:344] - Changement de personnage vers ID: 2305843010596444327
+2025-05-07 13:47:18,771 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:47:19,778 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 990
+2025-05-07 13:47:19,779 - INFO - [equipment_page.py:374] - Lumière mise à jour pour le nouveau personnage: 2018
+2025-05-07 13:47:19,779 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:47:19,781 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:47:20,723 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:47:20,725 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:47:20,726 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'
+2025-05-07 13:47:20,727 - INFO - [equipment_page.py:233] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-05-07 13:47:20,729 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-05-07 13:47:20,813 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3058
+2025-05-07 13:47:20,814 - INFO - [equipment_page.py:287] - === Affichage de l'équipement ===
+2025-05-07 13:47:20,815 - ERROR - [equipment_page.py:338] - Erreur lors de l'affichage de l'équipement: setIcon(self, icon: QIcon): argument 1 has unexpected type 'QPixmap'

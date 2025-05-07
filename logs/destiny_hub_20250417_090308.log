@@ -1,0 +1,114 @@
+2025-04-17 09:03:08,126 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-04-17 09:03:08,128 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-04-17 09:03:08,128 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-04-17 09:03:08,128 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250417_090308.log
+2025-04-17 09:03:08,129 - INFO - [logger.py:55] - === Informations Système ===
+2025-04-17 09:03:08,129 - INFO - [logger.py:56] - OS: Windows 10
+2025-04-17 09:03:08,147 - INFO - [logger.py:57] - Architecture: AMD64
+2025-04-17 09:03:08,147 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-04-17 09:03:08,155 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-04-17 09:03:08,156 - INFO - [logger.py:63] - Mémoire disponible: 15.79 GB
+2025-04-17 09:03:08,156 - INFO - [logger.py:64] - Utilisation mémoire: 49.5%
+2025-04-17 09:03:08,156 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-04-17 09:03:08,157 - INFO - [logger.py:69] - Espace disque libre: 219.58 GB
+2025-04-17 09:03:08,157 - INFO - [logger.py:70] - Utilisation disque: 76.9%
+2025-04-17 09:03:08,157 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-04-17 09:03:08,158 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-04-17 09:03:08,158 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-04-17 09:03:08,158 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-04-17 09:03:08,158 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-04-17 09:03:08,158 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-04-17 09:03:08,160 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-04-17 09:03:08,160 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-04-17 09:03:08,160 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-04-17 09:03:08,160 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-04-17 09:03:08,160 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-04-17 09:03:08,160 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-04-17 09:03:08,160 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-04-17 09:03:08,160 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-04-17 09:03:08,160 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-04-17 09:03:08,162 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-04-17 09:03:08,162 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-04-17 09:03:08,162 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-04-17 09:03:08,162 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-04-17 09:03:08,162 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-04-17 09:03:08,162 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-04-17 09:03:08,163 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-04-17 09:03:08,163 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-04-17 09:03:08,163 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-04-17 09:03:08,164 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-04-17 09:03:08,164 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-04-17 09:03:08,164 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-04-17 09:03:08,164 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-04-17 09:03:08,165 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-04-17 09:03:08,165 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-04-17 09:03:08,165 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 64 fichiers
+2025-04-17 09:03:08,165 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 952431286.png, 991314988.png
+2025-04-17 09:03:08,166 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 1 fichiers
+2025-04-17 09:03:08,166 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log
+2025-04-17 09:03:08,166 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-04-17 09:03:08,167 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-04-17 09:03:08,194 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-04-17 09:03:08,195 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-04-17 09:03:08,200 - DEBUG - [main_window.py:112] - Création des pages...
+2025-04-17 09:03:08,217 - DEBUG - [main_window.py:114] - ✓ Page compte créée
+2025-04-17 09:03:08,237 - INFO - [equipment_page.py:164] - === Chargement des personnages ===
+2025-04-17 09:03:08,242 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:03:11,108 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200%2C205 HTTP/1.1" 200 2477
+2025-04-17 09:03:11,116 - INFO - [equipment_page.py:332] - Changement de personnage vers ID: 2305843010596444327
+2025-04-17 09:03:11,118 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:03:11,368 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/?components=200 HTTP/1.1" 200 993
+2025-04-17 09:03:11,370 - INFO - [equipment_page.py:361] - Lumière mise à jour pour le nouveau personnage: 2019
+2025-04-17 09:03:11,370 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 09:03:11,372 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:03:12,359 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 09:03:12,361 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 09:03:12,385 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 09:03:12,385 - INFO - [equipment_page.py:219] - === Chargement de l'équipement pour le personnage 2305843010596444327 ===
+2025-04-17 09:03:12,388 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.bungie.net:443
+2025-04-17 09:03:12,444 - DEBUG - [connectionpool.py:544] - https://www.bungie.net:443 "GET /Platform/Destiny2/3/Profile/4611686018536948250/Character/2305843010596444327/?components=205%2C300%2C302 HTTP/1.1" 200 3083
+2025-04-17 09:03:12,446 - INFO - [equipment_page.py:273] - === Affichage de l'équipement ===
+2025-04-17 09:03:12,448 - INFO - [equipment_page.py:323] - Affichage terminé - 3 armes, 5 pièces d'armure
+2025-04-17 09:03:12,448 - DEBUG - [main_window.py:117] - ✓ Page équipement créée
+2025-04-17 09:03:12,451 - DEBUG - [main_window.py:120] - ✓ Page missions créée
+2025-04-17 09:03:12,455 - DEBUG - [main_window.py:123] - ✓ Page meta créée
+2025-04-17 09:03:12,458 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:03:12,458 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg ===
+2025-04-17 09:03:12,459 - INFO - [main_window.py:141] - ✅ Pages ajoutées avec succès
+2025-04-17 09:03:12,459 - INFO - [meta_page.py:53] - Récupération des données depuis https://www.light.gg/api/v1/perkstats
+2025-04-17 09:03:12,459 - INFO - [main_window.py:148] - Configuration de la barre de statut
+2025-04-17 09:03:12,460 - INFO - [main_window.py:161] - ✅ Barre de statut configurée
+2025-04-17 09:03:12,461 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-17 09:03:12,461 - INFO - [main_window.py:167] - Application des styles
+2025-04-17 09:03:12,467 - INFO - [main_window.py:172] - ✅ Styles appliqués
+2025-04-17 09:03:12,468 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-04-17 09:03:12,593 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /api/v1/perkstats HTTP/1.1" 403 None
+2025-04-17 09:03:12,594 - DEBUG - [meta_page.py:55] - Status code: 403
+2025-04-17 09:03:12,595 - ERROR - [meta_page.py:87] - Erreur lors de la récupération des données: 403
+2025-04-17 09:03:12,595 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-04-17 09:03:14,208 - INFO - [main_window.py:178] - Changement de page vers l'index 3
+2025-04-17 09:03:14,208 - DEBUG - [main_window.py:187] - ✓ Page changée avec succès vers 3
+2025-04-17 09:03:18,458 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:03:18,459 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg ===
+2025-04-17 09:03:18,459 - INFO - [meta_page.py:53] - Récupération des données depuis https://www.light.gg/api/v1/perkstats
+2025-04-17 09:03:18,461 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-17 09:03:18,558 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /api/v1/perkstats HTTP/1.1" 403 None
+2025-04-17 09:03:18,561 - DEBUG - [meta_page.py:55] - Status code: 403
+2025-04-17 09:03:18,561 - ERROR - [meta_page.py:87] - Erreur lors de la récupération des données: 403
+2025-04-17 09:03:18,563 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-04-17 09:03:18,610 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:03:18,611 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg ===
+2025-04-17 09:03:18,611 - INFO - [meta_page.py:53] - Récupération des données depuis https://www.light.gg/api/v1/perkstats
+2025-04-17 09:03:18,612 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-17 09:03:18,660 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /api/v1/perkstats HTTP/1.1" 403 None
+2025-04-17 09:03:18,662 - DEBUG - [meta_page.py:55] - Status code: 403
+2025-04-17 09:03:18,662 - ERROR - [meta_page.py:87] - Erreur lors de la récupération des données: 403
+2025-04-17 09:03:18,663 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée
+2025-04-17 09:03:19,641 - INFO - [meta_page.py:28] - === Début du scraping des armes meta ===
+2025-04-17 09:03:19,642 - INFO - [meta_page.py:41] - === Début de la récupération des stats depuis light.gg ===
+2025-04-17 09:03:19,642 - INFO - [meta_page.py:53] - Récupération des données depuis https://www.light.gg/api/v1/perkstats
+2025-04-17 09:03:19,645 - DEBUG - [connectionpool.py:1049] - Starting new HTTPS connection (1): www.light.gg:443
+2025-04-17 09:03:19,717 - DEBUG - [connectionpool.py:544] - https://www.light.gg:443 "GET /api/v1/perkstats HTTP/1.1" 403 None
+2025-04-17 09:03:19,719 - DEBUG - [meta_page.py:55] - Status code: 403
+2025-04-17 09:03:19,719 - ERROR - [meta_page.py:87] - Erreur lors de la récupération des données: 403
+2025-04-17 09:03:19,720 - ERROR - [meta_page.py:36] - Erreur critique: Aucune arme n'a pu être récupérée

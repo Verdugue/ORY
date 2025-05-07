@@ -1,0 +1,86 @@
+2025-05-07 11:48:38,546 - INFO - [logger.py:31] - === Démarrage de Destiny Hub ===
+2025-05-07 11:48:38,546 - INFO - [logger.py:32] - Version Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+2025-05-07 11:48:38,547 - INFO - [logger.py:33] - Système d'exploitation: win32
+2025-05-07 11:48:38,547 - INFO - [logger.py:34] - Fichier de log créé: logs/destiny_hub_20250507_114838.log
+2025-05-07 11:48:38,547 - INFO - [logger.py:55] - === Informations Système ===
+2025-05-07 11:48:38,547 - INFO - [logger.py:56] - OS: Windows 10
+2025-05-07 11:48:38,566 - INFO - [logger.py:57] - Architecture: AMD64
+2025-05-07 11:48:38,567 - INFO - [logger.py:58] - Processeur: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+2025-05-07 11:48:38,576 - INFO - [logger.py:62] - Mémoire totale: 31.25 GB
+2025-05-07 11:48:38,576 - INFO - [logger.py:63] - Mémoire disponible: 17.16 GB
+2025-05-07 11:48:38,577 - INFO - [logger.py:64] - Utilisation mémoire: 45.1%
+2025-05-07 11:48:38,577 - INFO - [logger.py:68] - Espace disque total: 952.48 GB
+2025-05-07 11:48:38,577 - INFO - [logger.py:69] - Espace disque libre: 214.00 GB
+2025-05-07 11:48:38,577 - INFO - [logger.py:70] - Utilisation disque: 77.5%
+2025-05-07 11:48:38,577 - INFO - [logger.py:77] - === Vérification de l'environnement ===
+2025-05-07 11:48:38,579 - INFO - [logger.py:93] - ✓ BUNGIE_API_KEY trouvée
+2025-05-07 11:48:38,580 - DEBUG - [logger.py:94] - Longueur de BUNGIE_API_KEY: 32
+2025-05-07 11:48:38,580 - ERROR - [logger.py:96] - ✗ CLIENT_ID non trouvée dans .env
+2025-05-07 11:48:38,580 - ERROR - [logger.py:96] - ✗ CLIENT_SECRET non trouvée dans .env
+2025-05-07 11:48:38,580 - INFO - [logger.py:105] - === Vérification des dépendances ===
+2025-05-07 11:48:38,580 - INFO - [logger.py:119] - ✓ PyQt6 version: Version inconnue
+2025-05-07 11:48:38,581 - INFO - [logger.py:119] - ✓ requests version: 2.32.3
+2025-05-07 11:48:38,581 - INFO - [logger.py:119] - ✓ python-dotenv version: Version inconnue
+2025-05-07 11:48:38,581 - INFO - [logger.py:119] - ✓ psutil version: 5.9.5
+2025-05-07 11:48:38,581 - INFO - [logger.py:119] - ✓ beautifulsoup4 version: 4.13.4
+2025-05-07 11:48:38,581 - INFO - [logger.py:126] - === Vérification des fichiers ===
+2025-05-07 11:48:38,583 - INFO - [logger.py:148] - ✓ .env trouvé (Configuration)
+2025-05-07 11:48:38,584 - INFO - [logger.py:148] - ✓ main.py trouvé (Point d'entrée)
+2025-05-07 11:48:38,584 - INFO - [logger.py:148] - ✓ requirements.txt trouvé (Dépendances)
+2025-05-07 11:48:38,585 - DEBUG - [logger.py:173] - === Contenu de requirements.txt ===
+2025-05-07 11:48:38,585 - DEBUG - [logger.py:177] - - requests==2.31.0
+2025-05-07 11:48:38,585 - DEBUG - [logger.py:177] - - customtkinter==5.2.1
+2025-05-07 11:48:38,585 - DEBUG - [logger.py:177] - - pillow==10.2.0
+2025-05-07 11:48:38,586 - DEBUG - [logger.py:177] - - python-dotenv==1.0.0
+2025-05-07 11:48:38,586 - INFO - [logger.py:158] - ✓ Dossier ui trouvé (Interface utilisateur) - 4 fichiers
+2025-05-07 11:48:38,586 - DEBUG - [logger.py:159] - Contenu de ui: main_window.py, pages, styles.py, __pycache__
+2025-05-07 11:48:38,587 - INFO - [logger.py:158] - ✓ Dossier ui/pages trouvé (Pages de l'interface) - 5 fichiers
+2025-05-07 11:48:38,587 - DEBUG - [logger.py:159] - Contenu de ui/pages: account_page.py, equipment_page.py, meta_page.py, missions_page.py, __pycache__
+2025-05-07 11:48:38,587 - INFO - [logger.py:158] - ✓ Dossier api trouvé (API Bungie) - 3 fichiers
+2025-05-07 11:48:38,587 - DEBUG - [logger.py:159] - Contenu de api: bungie_client.py, oauth_handler.py, __pycache__
+2025-05-07 11:48:38,589 - INFO - [logger.py:158] - ✓ Dossier utils trouvé (Utilitaires) - 3 fichiers
+2025-05-07 11:48:38,589 - DEBUG - [logger.py:159] - Contenu de utils: config.py, logger.py, __pycache__
+2025-05-07 11:48:38,590 - INFO - [logger.py:158] - ✓ Dossier data trouvé (Données) - 4 fichiers
+2025-05-07 11:48:38,590 - DEBUG - [logger.py:159] - Contenu de data: account.json, full_account.json, icons, profile_data.json
+2025-05-07 11:48:38,590 - INFO - [logger.py:158] - ✓ Dossier icons trouvé (Icônes) - 69 fichiers
+2025-05-07 11:48:38,591 - DEBUG - [logger.py:159] - Contenu de icons: 1003860281.png, 1183187516.png, 1197771438.png, 129332559.png, 1320342774.png, 1457394908.png, 1484009400.png, 1522633034.png, 152583919.png, 1533314821.png, 1616346845.png, 1762785662.png, 1896309757.png, 1907110519.png, 1911060537.png, 1958630864.png, 2012043039.png, 2134769653.png, 2151724216.png, 2185244404.png, 2190967049.png, 2198166292.png, 2286507447.png, 241462142.png, 2441435355.png, 2550323932.png, 2591586261.png, 2629014079.png, 266021826.png, 2738060683.png, 2741258862.png, 2742930797.png, 2763843898.png, 2783831726.png, 2809120022.png, 2827764482.png, 287888126.png, 2907129557.png, 2949538030.png, 2962546549.png, 3001229473.png, 3158812152.png, 3183180185.png, 3264721770.png, 331602521.png, 3434301337.png, 3569802112.png, 3628991658.png, 3733702440.png, 3797572280.png, 3828080585.png, 3844610113.png, 3906357376.png, 3947966653.png, 4026763349.png, 4062934448.png, 4146702548.png, 4282591831.png, 4293588774.png, 431721920.png, 537041732.png, 557165046.png, 568611923.png, 643145875.png, 788073488.png, 810612804.png, 814876685.png, 952431286.png, 991314988.png
+2025-05-07 11:48:38,591 - INFO - [logger.py:158] - ✓ Dossier logs trouvé (Fichiers de log) - 29 fichiers
+2025-05-07 11:48:38,591 - DEBUG - [logger.py:159] - Contenu de logs: destiny_hub_20250417_090308.log, destiny_hub_20250417_090501.log, destiny_hub_20250417_091449.log, destiny_hub_20250417_091744.log, destiny_hub_20250417_092047.log, destiny_hub_20250417_092453.log, destiny_hub_20250417_093036.log, destiny_hub_20250417_093355.log, destiny_hub_20250417_093518.log, destiny_hub_20250417_093701.log, destiny_hub_20250417_094459.log, destiny_hub_20250417_094915.log, destiny_hub_20250417_095450.log, destiny_hub_20250417_095800.log, destiny_hub_20250417_100013.log, destiny_hub_20250417_101050.log, destiny_hub_20250417_101112.log, destiny_hub_20250417_101728.log, destiny_hub_20250417_101938.log, destiny_hub_20250417_102126.log, destiny_hub_20250417_102514.log, destiny_hub_20250417_102736.log, destiny_hub_20250417_103000.log, destiny_hub_20250417_103209.log, destiny_hub_20250417_103307.log, destiny_hub_20250417_103545.log, destiny_hub_20250507_114434.log, destiny_hub_20250507_114815.log, destiny_hub_20250507_114838.log
+2025-05-07 11:48:38,592 - INFO - [logger.py:158] - ✓ Dossier cache trouvé (Cache des images) - 0 fichiers
+2025-05-07 11:48:38,592 - DEBUG - [logger.py:159] - Contenu de cache: 
+2025-05-07 11:48:38,624 - INFO - [main_window.py:17] - === Initialisation de la fenêtre principale ===
+2025-05-07 11:48:38,625 - INFO - [main_window.py:32] - Configuration de l'interface utilisateur
+2025-05-07 11:48:38,631 - DEBUG - [main_window.py:116] - Création des pages...
+2025-05-07 11:48:38,642 - DEBUG - [main_window.py:118] - ✓ Page compte créée
+2025-05-07 11:48:38,662 - ERROR - [main_window.py:143] - ❌ Erreur lors de la création des pages: 'QVBoxLayout' object is not iterable
+2025-05-07 11:48:38,662 - ERROR - [main_window.py:144] - Détails de l'erreur:
+Traceback (most recent call last):
+  File "C:\Users\perio\OneDrive\Documents\GitHub\ORY\ui\main_window.py", line 120, in setup_ui
+    self.equipment_page = EquipmentPage(self)
+                          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\perio\OneDrive\Documents\GitHub\ORY\ui\pages\equipment_page.py", line 75, in __init__
+    self.setup_ui()
+  File "C:\Users\perio\OneDrive\Documents\GitHub\ORY\ui\pages\equipment_page.py", line 107, in setup_ui
+    for slot in self.weapon_slots:
+TypeError: 'QVBoxLayout' object is not iterable
+2025-05-07 11:48:38,664 - INFO - [main_window.py:147] - Configuration de la barre de statut
+2025-05-07 11:48:38,665 - INFO - [main_window.py:160] - ✅ Barre de statut configurée
+2025-05-07 11:48:38,665 - INFO - [main_window.py:166] - Application des styles
+2025-05-07 11:48:38,669 - INFO - [main_window.py:171] - ✅ Styles appliqués
+2025-05-07 11:48:38,669 - INFO - [main_window.py:26] - ✅ Interface principale initialisée avec succès
+2025-05-07 11:48:40,696 - INFO - [main_window.py:177] - Changement de page vers l'index 0
+2025-05-07 11:48:40,697 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 0
+2025-05-07 11:48:41,289 - INFO - [main_window.py:177] - Changement de page vers l'index 1
+2025-05-07 11:48:41,290 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 1
+2025-05-07 11:48:41,916 - INFO - [main_window.py:177] - Changement de page vers l'index 0
+2025-05-07 11:48:41,916 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 0
+2025-05-07 11:48:42,279 - INFO - [main_window.py:177] - Changement de page vers l'index 3
+2025-05-07 11:48:42,279 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 3
+2025-05-07 11:48:42,660 - INFO - [main_window.py:177] - Changement de page vers l'index 0
+2025-05-07 11:48:42,660 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 0
+2025-05-07 11:48:43,215 - INFO - [main_window.py:177] - Changement de page vers l'index 1
+2025-05-07 11:48:43,216 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 1
+2025-05-07 11:48:43,496 - INFO - [main_window.py:177] - Changement de page vers l'index 2
+2025-05-07 11:48:43,496 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 2
+2025-05-07 11:48:43,896 - INFO - [main_window.py:177] - Changement de page vers l'index 0
+2025-05-07 11:48:43,896 - DEBUG - [main_window.py:184] - ✓ Page changée avec succès vers 0
